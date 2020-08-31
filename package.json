@@ -10,7 +10,8 @@
   "main": "postcss.config.js",
   "devDependencies": {},
   "scripts": {
-    "build:css": "postcss css/tailwind.css -o css/index.css"
+    "build:css": "postcss css/tailwind.css -o css/index.css",
+    "build:css:prod": "NODE_ENV=production postcss css/tailwind.css -o css/index.css"
   },
   "author": "Eryshium team",
   "license": "ISC",
