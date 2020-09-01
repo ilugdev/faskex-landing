@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
@@ -791,5 +793,20 @@ module.exports = {
     animation: ["responsive"],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".custom-discs": {
+          "&::before": {
+            content: "'•'",
+            color: "#e1d058",
+            position: "absolute",
+            left: "0",
+          },
+        },
+      };
+
+      addUtilities(newUtilities);
+    }),
+  ],
 };
