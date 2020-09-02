@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Geometric_415;
+  src: url("geometric 415_black bt.ttf");
+  font-weight: bold;
+}
+
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";

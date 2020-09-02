@@ -258,6 +258,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Helvetica",
         "OpenSans-Regular",
         "system-ui",
         "-apple-system",
@@ -273,7 +274,14 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      serif: [
+        "Geometric_415",
+        "Georgia",
+        "Cambria",
+        '"Times New Roman"',
+        "Times",
+        "serif",
+      ],
       mono: [
         "Menlo",
         "Monaco",
@@ -796,13 +804,39 @@ module.exports = {
   plugins: [
     plugin(function ({ addUtilities }) {
       const newUtilities = {
-        ".custom-discs": {
+        ".custom-discs-yellow": {
           "&::before": {
             content: "'•'",
-            color: "#e1d058",
+            color: "#ffcc28",
             position: "absolute",
+            top: "0.8rem",
             left: "0",
+            fontSize: "2rem",
+            lineHeight: "1px",
           },
+        },
+        ".custom-discs-cyan": {
+          "&::before": {
+            content: "'•'",
+            color: "#0096d3",
+            position: "absolute",
+            top: "0.8rem",
+            left: "0",
+            fontSize: "2rem",
+            lineHeight: "1px",
+          },
+        },
+        ".bg-cyan": {
+          backgroundColor: "#0096d3",
+        },
+        ".text-cyan": {
+          color: "#0096d3",
+        },
+        ".bg-blue": {
+          backgroundColor: "#215d93",
+        },
+        ".bg-yellow": {
+          backgroundColor: "#ffcc28",
         },
       };
 
