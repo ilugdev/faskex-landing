@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASKEX</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="bg-white">
+    <header class="w-full flex justify-between px-20 py-3">
+      <img class="w-32" src="imgs/home/logo.png" alt="logo" />
+
+      <div class="flex">
+        <div class="flex space-x-5">
+          <button class="flex items-center text-sm font-bold text-black">
+            <img
+              class="w-8 h-8 mr-1"
+              src="imgs/home/icon_regis.png"
+              alt="icono_registro"
+            />
+            REGISTRARSE
+          </button>
+          <button class="flex items-center text-sm font-bold text-black">
+            <img
+              class="w-8 h-8 mr-1"
+              src="imgs/home/icon_login.png"
+              alt="icono_registro"
+            />
+            INGRESAR
+          </button>
+        </div>
+
+        <button class="ml-12">
+          <img class="w-10" src="imgs/home/icon_menu.png" alt="icono_menu" />
+        </button>
+      </div>
+    </header>
+
+    <div class="w-full flex bg-cyan relative">
+      <div class="w-1/2 flex items-center relative">
+        <img
+          class="w-full h-full absolute top-0 left-0"
+          src="imgs/home/img_mensajeria.png"
+          alt="imagen_slider"
+        />
+        <div class="absolute" style="right: 2rem">
+          <h1 class="font-bold text-4xl">Dile <b>ADIÓS</b> a los</h1>
+          <h1 class="font-bold text-4xl">procesos lentos</h1>
+          <p class="font-medium text-xl">Enviós rápidos, transparentes y</p>
+          <p class="font-medium text-xl">hasta 8 veces más económicas que</p>
+          <p class="font-medium text-xl">la competencia.</p>
+          <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
+            DESCRUBE MÁS AQUÍ
+          </button>
+        </div>
+        <div class="absolute flex space-x-1" style="right: 2rem; bottom: 2rem">
+          <div class="w-3 h-3 bg-white rounded-full"></div>
+          <div
+            class="w-3 h-3 bg-white opacity-50 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-3 h-3 bg-white opacity-50 rounded-full cursor-pointer"
+          ></div>
+          <div
+            class="w-3 h-3 bg-white opacity-50 rounded-full cursor-pointer"
+          ></div>
+        </div>
+      </div>
+
+      <div
+        class="w-1/2 py-20 pl-16 text-white bg-no-repeat bg-right bg-contain"
+        style="background-image: url(imgs/home/img_seguimiento.png)"
+      >
+        <h1 class="font-bold text-4xl">Realizar Seguimiento</h1>
+        <div class="mt-2">
+          <p>Haga su seguimiento, conozca el recorrido</p>
+          <p>y el estado de entrega de sus envíos.</p>
+        </div>
+
+        <div class="flex flex-col space-y-3 my-8">
+          <label>
+            <input type="radio" name="seguimiento_por" checked />
+            Nº DE TRACKING
+          </label>
+          <label>
+            <input type="radio" name="seguimiento_por" />
+            Nº DE ORDEN DE SERVICIO
+          </label>
+          <label>
+            <input type="radio" name="seguimiento_por" />
+            Nº GUÍA DE CLIENTE
+          </label>
+        </div>
+        <form class="w-1/2 flex">
+          <label class="flex justify-between bg-blue items-center px-2 py-3">
+            <img
+              class="w-8"
+              src="icons_tracking/icon_tracking.png"
+              alt="icono_subscribirse"
+            />
+            <input
+              class="mx-5 outline-none bg-blue"
+              type="text"
+              placeholder="ID TRACKING"
+            />
+          </label>
+          <button
+            class="w-16 flex justify-center items-center text-xs mr-1 px-3 py-2 bg-white cursor-pointer"
+          >
+            <img
+              class="w-8"
+              src="icons_tracking/icon_search.png"
+              alt="icono_buscar"
+            />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col justify-center py-16 bg-blue">
+      <div class="text-center text-white">
+        <h1 class="text-2xl font-bold leading-0">
+          <b>ENVÍOS</b>
+          courier, rápido, fácil y seguro
+        </h1>
+        <p>
+          Faskex Express estamos a la vanguardia para ofrecerle un portafolio de
+          servicios, diseñado
+        </p>
+        <p>de acuerdo a las necesidades logísticas de su negocio.</p>
+      </div>
+
+      <div class="flex flex-col px-40">
+        <div class="w-full flex mt-10 relative bg-white">
+          <div class="w-full flex flex-col items-center bg-white">
+            <div class="flex flex-col items-center justify-center p-10 my-3">
+              <img
+                class="w-16"
+                src="imgs/home/icon_mensajeria.png"
+                alt="icono_mensajeria"
+              />
+              <div class="flex flex-col mt-2 text-center">
+                <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
+                <p class="text-sm">Envíe sus documentos a nivel local y</p>
+                <p class="text-sm">nacional de manera rápida y segura.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-1 h-56 my-auto bg-blue"></div>
+          <div class="w-full flex flex-col items-center bg-white">
+            <div class="flex flex-col items-center justify-center p-10 my-3">
+              <img
+                class="w-16"
+                src="imgs/home/icon_courier.png"
+                alt="icono_mensajeria"
+              />
+              <div class="flex flex-col mt-2 text-center">
+                <h1 class="font-bold text-blue mb-2">COURIER</h1>
+                <p class="text-sm">Envíe paquetes y encomiendas a nuestors</p>
+                <p class="text-sm">
+                  destionos del norte, centro y sur del país.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-1 h-56 my-auto bg-blue"></div>
+          <div class="w-full flex flex-col items-center bg-white">
+            <div class="flex flex-col items-center justify-center p-10 my-3">
+              <img
+                class="w-16"
+                src="imgs/home/icon_gestiones.png"
+                alt="icono_mensajeria"
+              />
+              <div class="flex flex-col mt-2 text-center">
+                <h1 class="font-bold text-blue mb-2">GESTIONES TOTALES</h1>
+                <p class="text-sm">Externalice con nosotros la Gestión</p>
+                <p class="text-sm">de sus trámites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <button
+            class="w-full text-center py-3 bg-cyan text-white"
+            style="outline: none"
+          >
+            VER MÁS
+          </button>
+          <button
+            class="w-full text-center py-3 bg-cyan text-white"
+            style="outline: none"
+          >
+            VER MÁS
+          </button>
+          <button
+            class="w-full text-center py-3 bg-cyan text-white"
+            style="outline: none"
+          >
+            VER MÁS
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="w-full bg-cover bg-no-repeat"
+      style="background-image: url(imgs/home/img_experiencia_faskex.png)"
+    >
+      <div class="w-1/2 flex flex-col items-center relative px-12">
+        <div class="text-center pt-16">
+          <h1 class="text-2xl font-bold leading-0">
+            <b>EXPERIENCIA FASKEX</b>
+          </h1>
+          <p class="text-sm font-medium leading-0">
+            Lorem ipsum has benn the industry's standard dummy text scrabled it
+            to
+          </p>
+          <p class="text-sm font-medium leading-0">
+            make a type specimen book.
+          </p>
+        </div>
+
+        <div class="flex mt-8 pb-24">
+          <div class="w-40 flex flex-col items-center">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+            >
+              <img
+                class="w-12"
+                src="imgs/home/icon_seguimiento.png"
+                alt="icono_gestiones"
+              />
+            </div>
+            <div class="flex flex-col mt-2 text-center">
+              <h2 class="font-bold text-xs">Sin límite de tiempo</h2>
+              <h2 class="font-bold text-xs">o de lugar</h2>
+            </div>
+          </div>
+          <div class="w-40 flex flex-col items-center">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+            >
+              <img
+                class="w-12"
+                src="imgs/home/icon_tiempo.png"
+                alt="icono_gestiones"
+              />
+            </div>
+            <div class="flex flex-col mt-2 text-center">
+              <h2 class="font-bold text-xs">Velocidad como</h2>
+              <h2 class="font-bold text-xs">prioridad</h2>
+            </div>
+          </div>
+          <div class="w-40 flex flex-col items-center">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+            >
+              <img
+                class="w-12"
+                src="imgs/home/icon_atencion.png"
+                alt="icono_gestiones"
+              />
+            </div>
+            <div class="flex flex-col mt-2 text-center">
+              <h2 class="font-bold text-xs">Atención</h2>
+              <h2 class="font-bold text-xs">personalizada</h2>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex space-x-3" style="bottom: 3.7rem">
+          <div class="w-3 h-3 bg-white rounded-full"></div>
+          <div
+            class="w-3 h-3 bg-white opacity-50 rounded-full cursor-pointer"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full flex justify-center items-center bg-yellow p-12">
+      <div class="flex flex-col mr-12">
+        <h1 class="text-2xl font-bold">
+          Tú decides a donde <b>ENVIAR</b> y nosotros cumplimos
+        </h1>
+        <p class="text-sm font-bold">
+          Nuestro servicio es 100% en linea, amigable y el más económico del
+          mercado.
+        </p>
+      </div>
+      <button class="px-12 py-2 bg-blue text-white">¡LO QUIERO YA!</button>
+    </div>
+
+    <div class="w-full flex justify-between px-12 bg-white relative">
+      <div class="flex flex-col py-12">
+        <div class="flex flex-col">
+          <h1 class="text-4xl font-bold"><b>Escríbenos o llámalos al</b></h1>
+          <h1 class="text-4xl font-bold"><b>719-6218</b></h1>
+        </div>
+        <form class="w-full flex flex-col">
+          <div class="flex space-x-3 mb-1">
+            <input
+              class="w-1/2 pl-3 py-2 border"
+              style="border-color: #215d93"
+              type="text"
+              name="name"
+              placeholder="NOMBRE"
+            />
+            <input
+              class="w-1/2 pl-3 py-2 border"
+              style="border-color: #215d93"
+              type="text"
+              name="lastname"
+              placeholder="APELLIDO"
+            />
+          </div>
+          <div class="flex space-x-3 mb-1">
+            <input
+              class="w-1/2 pl-3 py-2 border"
+              style="border-color: #215d93"
+              type="email"
+              name="email"
+              placeholder="E-MAIL"
+            />
+            <input
+              class="w-1/2 pl-3 y-2 border"
+              style="border-color: #215d93"
+              type="number"
+              name="mobileNumber"
+              placeholder="CELULAR"
+            />
+          </div>
+          <textarea
+            class="resize-none border pl-3 pt-3 mb-1"
+            style="border-color: #215d93"
+            rows="5"
+            name="message"
+            placeholder="MENSAJE"
+          ></textarea>
+          <div>
+            <input
+              class="bg-blue px-10 py-3 text-white"
+              type="submit"
+              value="ENVIAR"
+            />
+          </div>
+        </form>
+      </div>
+      <img
+        class="w-5/12 h-full absolute"
+        style="right: 20rem"
+        src="imgs/home/img_wsp.png"
+        alt="chica_indicando contacto"
+      />
+      <div class="flex flex-col items-center" style="align-self: center">
+        <div class="flex flex-col">
+          <h1 class="text-4xl font-bold">Encuéntranos en</h1>
+          <h1 class="text-4xl font-bold"><b>WHATSAPP</b></h1>
+        </div>
+        <div class="w-32 h-32 my-5 bg-black"></div>
+        <div class="text-left pl-8" style="align-self: flex-start">
+          <p>Escanéa este código QR que</p>
+          <p>aparece en esta seccón y</p>
+          <p>añádenos a tus contactos.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-full flex flex-col items-between bg-blue py-12">
+      <div class="w-9/12 m-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-3">
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
+              <img
+                class="w-8 h-8"
+                src="icons_footer/facebook.png"
+                alt="icono_facebook"
+              />
+            </a>
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
+              <img
+                class="w-8 h-8"
+                src="icons_footer/instagram.png"
+                alt="icono_instagram"
+              />
+            </a>
+          </div>
+          <form class="w-1/2 flex bg-white rounded-md">
+            <label class="w-full flex justify-between items-center px-2 py-3">
+              <img
+                class="w-8"
+                src="icons_footer/suscribete.png"
+                alt="icono_subscribirse"
+              />
+              <input
+                class="w-full mx-3 outline-none"
+                type="text"
+                placeholder="Ingresa tu E-mail para enterarte de nuestras novedades."
+              />
+              <input
+                class="text-xs mr-1 px-3 py-2 bg-blue text-white rounded-md cursor-pointer"
+                type="submit"
+                value="ÚNETE"
+              />
+            </label>
+          </form>
+        </div>
+        <p class="text-white text-center mt-12">
+          &copy; Copyright 2019 - Faskex.com Todos los Derechos Reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -835,6 +835,9 @@ module.exports = {
         ".bg-blue": {
           backgroundColor: "#215d93",
         },
+        ".text-blue": {
+          color: "#215d93",
+        },
         ".bg-yellow": {
           backgroundColor: "#ffcc28",
         },
