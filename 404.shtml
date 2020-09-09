@@ -55,9 +55,10 @@
 
         <h1 class="font-bold text-6xl mt-3 text-center py-8">404</h1>
         <p class="py-2 text-xl">
-          La página solicitada no ha sido encontrada, porfavor verifique que la url este bien escrita y si el problema persiste  comuniquese con el soporte técnico de la web.
+          La página solicitada no ha sido encontrada, porfavor verifique que la
+          url este bien escrita y si el problema persiste comuniquese con el
+          soporte técnico de la web.
         </p>
-
       </div>
     </div>
 
@@ -81,14 +82,14 @@
             <a href="facebook.com" target="_blank" rel="noopener">
               <img
                 class="w-8 h-8"
-                src="icons_footer/facebook.png"
+                src="imgs/icons_footer/facebook.png"
                 alt="icono_facebook"
               />
             </a>
             <a href="instagram.com" target="_blank" rel="noopener">
               <img
                 class="w-8 h-8"
-                src="icons_footer/instagram.png"
+                src="imgs/icons_footer/instagram.png"
                 alt="icono_instagram"
               />
             </a>
@@ -97,7 +98,7 @@
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
                 class="w-8"
-                src="icons_footer/suscribete.png"
+                src="imgs/icons_footer/suscribete.png"
                 alt="icono_subscribirse"
               />
               <input
