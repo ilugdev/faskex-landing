@@ -4,7 +4,7 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  purge: ["./*.html"],
+  purge: ["*.html", "./*.html", "./*.shtml"],
   target: "relaxed",
   prefix: "",
   important: false,
