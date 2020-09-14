@@ -9,27 +9,32 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body class="bg-white">
-
-
-<!--==============================================================================
+    <!--==============================================================================
                                 MODAL
-=================================================================================-->    
-<div class="w-full h-screen flex" id="modal" style="display: none;">
-  <div class="w-full flex flex-col px-32 py-12" >
-      <div class="text-center " >
-        <i class="material-icons" id="modal-close" style="
-          font-size:48px;
-          position:absolute;
-          margin-left:30%;
-          color: white;
-          cursor: pointer;">
-         close
-        </i>
-          <div class="w-32 flex" style="position: relative;left: 45%;">
+=================================================================================-->
+    <div class="w-full h-screen flex" id="modal" style="display: none">
+      <div class="w-full flex flex-col px-32 py-12">
+        <div class="text-center">
+          <i
+            class="material-icons"
+            id="modal-close"
+            style="
+              font-size: 48px;
+              position: absolute;
+              margin-left: 30%;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            close
+          </i>
+          <div class="w-32 flex" style="position: relative; left: 45%">
             <div
               class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
             >
@@ -39,162 +44,176 @@
                 alt="icon_contacto-comercial"
               />
             </div>
-
           </div>
 
-        <div class="my-8 w-2/3" style="position: relative;left: 15%;" >
-          <p class="text-justify text-white">
-              Si quieres abrir tu propio negocio, ampliar el que ya tienes o cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES LOGÍSTICAS del mercado. 
-          </p>
+          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+            <p class="text-justify text-white">
+              Si quieres abrir tu propio negocio, ampliar el que ya tienes o
+              cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES
+              LOGÍSTICAS del mercado.
+            </p>
 
-          <p class="my-4 text-justify text-white">
-              Disponemos de la tecnología, la organización y las personas con la experiencia necesaria para ayudarte en cada paso.  
-          </p>
+            <p class="my-4 text-justify text-white">
+              Disponemos de la tecnología, la organización y las personas con la
+              experiencia necesaria para ayudarte en cada paso.
+            </p>
 
-          <p class="my-4 text-justify text-white">
-             Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN COMPROMISO! <br>
-             <span style="color:#ffcc28;">(*) Datos obligatorios</span>
-          </p>
-      </div>
-
-       <form style="position: relative;left: 15%;" class="w-2/3 flex flex-col ">
-          <div class="w-full flex flex-col">
-            <input
-              class="w-full border border-white pl-2 py-1"
-              type="text"
-              placeholder="* Nombre completo"
-              name="fullName"
-              required
-              id="fullName"
-              style="color: white;"
-            />
-            <div class="w-full flex space-x-3 mt-3">
-              <input
-                class="w-1/2 border border-white pl-2 py-1"
-                type="email"
-                placeholder="* E-mail"
-                name="mailing"
-                required
-                id="mailing"
-                style="color: white;"
-              />
-              <input
-                class="w-1/2 border border-white pl-2 py-1"
-                type="text"
-                placeholder="* Celular"
-                name="tlf"
-                maxlength="9"
-                required
-                id="tlf"
-                style="color: white;"
-              />
-            </div>
-           <div class="w-full flex space-x-3 mt-3">
-              <input
-                class="w-1/2 border border-white pl-2 py-1"
-                type="text"
-                placeholder="* Nombre de la Empresa"
-                name="companyName"
-                required
-                id="companyName"
-                style="color: white;"
-              />
-              <input
-                class="w-1/2 border border-white pl-2 py-1"
-                type="text"
-                placeholder="* Dirección de la Empresa"
-                name="addressName"
-                required
-                id="addressName"
-                style="color: white;"
-              />
-            </div>
-
-
-            <div class="flex justify-center mt-8">
-              <button id="enviar-modal" class="bg-blue px-10 py-2 text-white cursor-pointer" type="button">
-                ENVIAR
-              </button>
-              <input
-                class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
-                type="button"
-                value="CANCELAR"
-                id="modal-cancelar"
-              />
-              
-            </div>
+            <p class="my-4 text-justify text-white">
+              Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN
+              COMPROMISO! <br />
+              <span style="color: #ffcc28">(*) Datos obligatorios</span>
+            </p>
           </div>
-        </form>
+
+          <form
+            style="position: relative; left: 15%"
+            class="w-2/3 flex flex-col"
+          >
+            <div class="w-full flex flex-col">
+              <input
+                class="w-full border border-white pl-2 py-1"
+                type="text"
+                placeholder="* Nombre completo"
+                name="fullName"
+                required
+                id="fullName"
+                style="color: white"
+              />
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="email"
+                  placeholder="* E-mail"
+                  name="mailing"
+                  required
+                  id="mailing"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Celular"
+                  name="tlf"
+                  maxlength="9"
+                  required
+                  id="tlf"
+                  style="color: white"
+                />
+              </div>
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Nombre de la Empresa"
+                  name="companyName"
+                  required
+                  id="companyName"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Dirección de la Empresa"
+                  name="addressName"
+                  required
+                  id="addressName"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="flex justify-center mt-8">
+                <button
+                  id="enviar-modal"
+                  class="bg-blue px-10 py-2 text-white cursor-pointer"
+                  type="button"
+                >
+                  ENVIAR
+                </button>
+                <input
+                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  type="button"
+                  value="CANCELAR"
+                  id="modal-cancelar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
-<!--==============================================================================
+    <!--==============================================================================
                                 MENU SIDE BAR  
-=================================================================================--> 
-<div class="dark"></div>
-<div class="bg-white w-1/3 h-screen sideBar" id="sideBar">
-  <header class="w-full flex justify-between px-20 py-3">
-    <div class="flex">
-    <a class="ml-64 py-8" id="menu_close"  style="cursor: pointer;">
-          <img class="w-10" src="imgs/menu/icon_cerrar_menu.png" alt="icono_menu_cerrar" />
-        </a>
-      </div>
-  </header>
-    <div class="px-20 items-center content-center ">
-      <img
-           class="w-56"
-           src="imgs/home/logo.png"
-            alt="logo"
-        />
-    </div>
-
-    <div class="w-3/5 mx-24 ">
-      <ul class="w-full py-5">
-        <li class="w-full py-2">
-          <a href="index.html" class="w-full text-left" style="cursor: pointer;">
-                    HOME
-                <hr>
-              </a>
-           </li>
-        <li class="w-full py-2">
-          <a href="us.html" class="w-full text-left" style="cursor: pointer;">
-                    FASKEX
-                <hr>
-             </a>
-           </li>
-        <li class="w-full py-2">
-          <a class="w-full text-left" style="cursor: pointer;">
-                    COTIZADOR
+=================================================================================-->
+    <div class="dark"></div>
+    <div class="bg-white w-1/3 h-screen sideBar" id="sideBar">
+      <header class="w-full flex justify-between px-20 py-3">
+        <div class="flex">
+          <a class="ml-64 py-8" id="menu_close" style="cursor: pointer">
+            <img
+              class="w-10"
+              src="imgs/menu/icon_cerrar_menu.png"
+              alt="icono_menu_cerrar"
+            />
           </a>
-                <hr>
-           </li>
-        <li class="w-full py-2">
-          <a href="atencionalcliente.html" style="cursor: pointer;" class="w-full text-left">
-                    ATENCIÓN AL CLIENTE
-                <hr>
-              </a>
-           </li>
-        <li class="w-full py-2" style="cursor: pointer;">
-          <span id="modal-open" class="w-full text-left">
-                    CONTACTO COMERCIAL
-          </span> 
-                <hr>
-           </li>
+        </div>
+      </header>
+      <div class="px-20 items-center content-center">
+        <img class="w-56" src="imgs/home/logo.png" alt="logo" />
+      </div>
+
+      <div class="w-3/5 mx-24">
+        <ul class="w-full py-5">
+          <li class="w-full py-2">
+            <a
+              href="index.html"
+              class="w-full text-left"
+              style="cursor: pointer"
+            >
+              HOME
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2">
+            <a href="us.html" class="w-full text-left" style="cursor: pointer">
+              FASKEX
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2">
+            <a class="w-full text-left" style="cursor: pointer"> COTIZADOR </a>
+            <hr />
+          </li>
+          <li class="w-full py-2">
+            <a
+              href="atencionalcliente.html"
+              style="cursor: pointer"
+              class="w-full text-left"
+            >
+              ATENCIÓN AL CLIENTE
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2" style="cursor: pointer">
+            <span id="modal-open" class="w-full text-left">
+              CONTACTO COMERCIAL
+            </span>
+            <hr />
+          </li>
         </ul>
 
         <div>
           <p class="text-sm">
-              Queremos ayudarte. Comunícate con nosotros.¡SIN COMPROMISO!
-            </p>
-            <h1 class="text-4xl font-bold flex w-full"> 
-               <img
-                  id="tlf_img"
-                    src="imgs/atencion_al_cliente/icon_phone.png"
-                    alt="icon_phone"
-                 />
-              <span class="ml-4"> 719-6218</span>
-            </h1>
+            Queremos ayudarte. Comunícate con nosotros.¡SIN COMPROMISO!
+          </p>
+          <h1 class="text-4xl font-bold flex w-full">
+            <img
+              id="tlf_img"
+              src="imgs/atencion_al_cliente/icon_phone.png"
+              alt="icon_phone"
+            />
+            <span class="ml-4"> 719-6218</span>
+          </h1>
         </div>
 
         <div class="flex space-x-8 my-4">
@@ -215,31 +234,40 @@
             INGRESAR
           </a>
         </div>
-
+      </div>
     </div>
-</div>
 
-<!--==============================================================================
+    <!--==============================================================================
                                 CURPO DE LA PAGINA 
-=================================================================================-->    
-  
+=================================================================================-->
 
-    <header class="w-full flex justify-between px-20 py-3">
-      <img class="w-32" src="imgs/home/logo.png" alt="logo" />
+    <header
+      class="w-full flex justify-between items-end px-20 pb-5"
+      style="height: 120px"
+    >
+      <div>
+        <img src="imgs/home/logo.png" alt="logo" />
+      </div>
 
       <div class="flex">
         <div class="flex space-x-5">
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_regis.png"
               alt="icono_registro"
             />
             REGISTRARSE
           </a>
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_login.png"
               alt="icono_registro"
             />
@@ -247,12 +275,8 @@
           </a>
         </div>
 
-        <a  id="btn_menu">
-          <img
-            class="w- ml-12"
-            src="imgs/home/icon_menu.png"
-            alt="icono_menu"
-          />
+        <a class="ml-12" id="btn_menu" style="cursor: pointer">
+          <img src="imgs/home/icon_menu.png" alt="icono_menu" />
         </a>
       </div>
     </header>
@@ -271,10 +295,14 @@
 
         <h1 class="font-bold text-4xl mt-3">Courier</h1>
         <p>
-Servicio de recojo, habilitado y distribución de paquetes y encomiendas. Tiene seguimiento y control mediante el sistema de rastreo Faskex en su trayecto. 
+          Servicio de recojo, habilitado y distribución de paquetes y
+          encomiendas. Tiene seguimiento y control mediante el sistema de
+          rastreo Faskex en su trayecto.
         </p>
         <p class="mt-3">
-Con nosotros obtienes servicios que nadie más te ofrece, con garantía de seguridad y rapidez inigualable. Nuestras modalidades a nivel local:
+          Con nosotros obtienes servicios que nadie más te ofrece, con garantía
+          de seguridad y rapidez inigualable. Nuestras modalidades a nivel
+          local:
         </p>
 
         <div class="flex justify-start mt-10">
@@ -315,7 +343,11 @@ Con nosotros obtienes servicios que nadie más te ofrece, con garantía de segur
       <div class="w-1/2 flex flex-col text-white mt-8">
         <h1 class="text-2xl font-bold">Envíos <b>NACIONALES</b></h1>
         <p>
-Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto) y hasta 50 kg. de peso. La distribución se realiza a través de nuestros motorizados. En este caso, para las zonas rurales se considerará un costo y tiempo adicional para su entrega, la cual será informado oportunamente.
+          Servicio de distribución de paquetes de 1 m. por cada lado (ancho,
+          largo y alto) y hasta 50 kg. de peso. La distribución se realiza a
+          través de nuestros motorizados. En este caso, para las zonas rurales
+          se considerará un costo y tiempo adicional para su entrega, la cual
+          será informado oportunamente.
         </p>
       </div>
       <div class="w-1/2 pl-16">
@@ -331,21 +363,25 @@ Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto
         <h1 class="font-bold text-2xl"><b>CARACTERÍSTICAS</b> generales</h1>
         <ul class="mt-5 ml-5">
           <li class="relative pl-4 custom-discs-cyan">
-            Se aplica peso volumen en caso los paquetes tengan mayor tamaño que peso.
+            Se aplica peso volumen en caso los paquetes tengan mayor tamaño que
+            peso.
           </li>
           <li class="relative pl-4 custom-discs-cyan">
-            Las entregas se realizarán al día siguiente de realizado el recojo, a excepción del servicio EXPRESS.
+            Las entregas se realizarán al día siguiente de realizado el recojo,
+            a excepción del servicio EXPRESS.
           </li>
           <li class="relative pl-4 custom-discs-cyan">
-            El servicio incluye: Embalaje simple, Etiqueta, Cargo y Digitalización de cargos.
+            El servicio incluye: Embalaje simple, Etiqueta, Cargo y
+            Digitalización de cargos.
           </li>
           <li class="relative pl-4 custom-discs-cyan">
-            El cliente debe declarar de forma oral y escrita la mercadería y valor a transportar.
+            El cliente debe declarar de forma oral y escrita la mercadería y
+            valor a transportar.
           </li>
           <li class="relative pl-4 custom-discs-cyan">
-            El paquete puede ser recibido por cualquier persona que se encuentre en la dirección de entrega presentando su DNI vigente.
+            El paquete puede ser recibido por cualquier persona que se encuentre
+            en la dirección de entrega presentando su DNI vigente.
           </li>
- 
         </ul>
       </div>
       <div class="w-1 bg-black"></div>
@@ -353,13 +389,16 @@ Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto
         <h1 class="font-bold text-2xl"><b>RESTRICCIONES</b> del servicio</h1>
         <ul class="mt-5 ml-5">
           <li class="relative pl-4 custom-discs-cyan">
-            No se admiten joyas, armas de fuego, artículos de cómputo, vales de consumo y mascotas.
+            No se admiten joyas, armas de fuego, artículos de cómputo, vales de
+            consumo y mascotas.
           </li>
           <li class="relative pl-4 custom-discs-cyan">
-            Los traslados de los productos son en condiciones y temperaturas normales.
+            Los traslados de los productos son en condiciones y temperaturas
+            normales.
           </li>
           <li class="relative flex flex-col pl-4 custom-discs-cyan">
-            Para mayor información leer nuestro apartado de Términos y Condiciones. 
+            Para mayor información leer nuestro apartado de Términos y
+            Condiciones.
             <a class="text-cyan" href="#" target="_blank" rel="noopener">
               Términos y Condiciones
             </a>
@@ -385,14 +424,14 @@ Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto
       <div class="w-9/12 m-auto">
         <div class="flex justify-between items-center">
           <div class="flex space-x-3">
-            <a href="facebook.com" target="_blank" rel="noopener">
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
                 class="w-8 h-8"
                 src="imgs/icons_footer/facebook.png"
                 alt="icono_facebook"
               />
             </a>
-            <a href="instagram.com" target="_blank" rel="noopener">
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
                 class="w-8 h-8"
                 src="imgs/icons_footer/instagram.png"
@@ -403,12 +442,11 @@ Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto
           <form class="w-1/2 flex bg-white rounded-md">
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
-                class="w-8"
                 src="imgs/icons_footer/suscribete.png"
                 alt="icono_subscribirse"
               />
               <input
-                class="w-full mx-3 outline-none"
+                class="w-full mx-3 text-sm outline-none"
                 type="text"
                 placeholder="Ingresa tu E-mail para enterarte de nuestras novedades."
               />
@@ -425,66 +463,75 @@ Servicio de distribución de paquetes de 1 m. por cada lado (ancho, largo y alto
         </p>
       </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
 
     <script>
-
-/*====================================================================================
+      /*====================================================================================
                                VALIDACION DE DATOS 
 ======================================================================================*/
 
-       // Validación datos
+      // Validación datos
 
-       $(document).ready(function(){
-        $("#enviar-modal").click(function(){
-        var fullName= document.getElementById("fullName").value;
-        var mailing= document.getElementById("mailing").value;
-        var tlf= document.getElementById("tlf").value;
-        var companyName= document.getElementById("companyName").value;
-        var addressName= document.getElementById("addressName").value;
-        var countTlf=tlf.length;
-        var expresiones=/\w+@\w+\.+[a-z]/;
+      $(document).ready(function () {
+        $("#enviar-modal").click(function () {
+          var fullName = document.getElementById("fullName").value;
+          var mailing = document.getElementById("mailing").value;
+          var tlf = document.getElementById("tlf").value;
+          var companyName = document.getElementById("companyName").value;
+          var addressName = document.getElementById("addressName").value;
+          var countTlf = tlf.length;
+          var expresiones = /\w+@\w+\.+[a-z]/;
 
-       if(mailing==="" || fullName==="" || tlf==="" || companyName==="" || addressName===""){
-        swal({
-         title: "¡Llene todos los datos!",
-         icon: "warning",
-         button: "Aceptar",
+          if (
+            mailing === "" ||
+            fullName === "" ||
+            tlf === "" ||
+            companyName === "" ||
+            addressName === ""
+          ) {
+            swal({
+              title: "¡Llene todos los datos!",
+              icon: "warning",
+              button: "Aceptar",
+            });
+          } else {
+            if (!expresiones.test(mailing)) {
+              swal({
+                title: "Formato de correo no valido",
+                icon: "warning",
+                button: "Aceptar",
+              });
+            }
+            if (countTlf < 9) {
+              swal({
+                title: "Formato de tlf no valido",
+                icon: "warning",
+                button: "Aceptar",
+              });
+            }
+          }
+
+          if (
+            mailing != "" &&
+            fullName != "" &&
+            tlf != "" &&
+            companyName != "" &&
+            addressName != "" &&
+            countTlf == 9 &&
+            expresiones.test(mailing)
+          ) {
+            swal({
+              title: "Funciona",
+              icon: "success",
+              button: "Aceptar",
+            });
+          }
         });
-
-        }else{
-           if(!expresiones.test(mailing)){
-            swal({
-            title: "Formato de correo no valido",
-            icon: "warning",
-            button: "Aceptar",
-           });
-           }
-           if(countTlf<9){
-            swal({
-            title: "Formato de tlf no valido",
-            icon: "warning",
-            button: "Aceptar",
-           });        
-       }
-     }
-
-      if (mailing!="" && fullName!="" && tlf!="" && companyName!="" &&addressName!="" && countTlf==9 && expresiones.test(mailing)) {
-
-          swal({
-            title: "Funciona",
-            icon: "success",
-            button: "Aceptar",
-           });  
-      }
-
-
-     });
-  });
-
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,11 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 9999;
+}
+
+input[type="text"],
+[type="number"],
+[type="email"] {
+  background-color: rgba(255, 99, 71, 0);
+}

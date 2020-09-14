@@ -8,36 +8,43 @@
     <link rel="stylesheet" href="css/scrolling.css" />
   </head>
   <body class="bg-white">
-    <header class="w-full flex justify-between px-20 py-3">
-      <img class="w-32" src="imgs/home/logo.png" alt="logo" />
+    <header
+      class="w-full flex justify-between items-end px-20 pb-5"
+      style="height: 120px"
+    >
+      <div>
+        <img src="imgs/home/logo.png" alt="logo" />
+      </div>
 
       <div class="flex">
         <div class="flex space-x-5">
-          <button class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_regis.png"
               alt="icono_registro"
             />
             REGISTRARSE
-          </button>
-          <button class="flex items-center text-sm font-bold text-black">
+          </a>
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_login.png"
               alt="icono_registro"
             />
             INGRESAR
-          </button>
+          </a>
         </div>
 
-        <button>
-          <img
-            class="w- ml-12"
-            src="imgs/home/icon_menu.png"
-            alt="icono_menu"
-          />
-        </button>
+        <a class="ml-12" id="btn_menu" style="cursor: pointer">
+          <img src="imgs/home/icon_menu.png" alt="icono_menu" />
+        </a>
       </div>
     </header>
 
@@ -79,14 +86,14 @@
       <div class="w-9/12 m-auto">
         <div class="flex justify-between items-center">
           <div class="flex space-x-3">
-            <a href="facebook.com" target="_blank" rel="noopener">
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
                 class="w-8 h-8"
                 src="imgs/icons_footer/facebook.png"
                 alt="icono_facebook"
               />
             </a>
-            <a href="instagram.com" target="_blank" rel="noopener">
+            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
                 class="w-8 h-8"
                 src="imgs/icons_footer/instagram.png"
@@ -97,12 +104,11 @@
           <form class="w-1/2 flex bg-white rounded-md">
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
-                class="w-8"
                 src="imgs/icons_footer/suscribete.png"
                 alt="icono_subscribirse"
               />
               <input
-                class="w-full mx-3 outline-none"
+                class="w-full mx-3 text-sm outline-none"
                 type="text"
                 placeholder="Ingresa tu E-mail para enterarte de nuestras novedades."
               />
