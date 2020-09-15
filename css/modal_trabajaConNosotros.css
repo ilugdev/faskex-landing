@@ -1,0 +1,49 @@
+       #modalTrabajo{
+        background-color:rgba(0, 0, 0, 0.9);
+        position: fixed;
+        z-index: 9999;
+       }
+
+      input[type=text],[type=number],[type=email] {
+         background-color: rgba(255, 99, 71, 0);
+          /*color: white;*/
+       }
+
+       #puesto{
+          background-color: rgba(255, 99, 71, 0);
+          color: #92ABB1;
+       }
+
+       #contendedor-input{
+          background-color: rgba(255, 99, 71, 0);
+          cursor: pointer;
+       }
+       #text-input{
+          color: #92ABB1;
+
+       }
+
+       #cv{
+           position: absolute;
+           width: 48%;cursor: pointer;
+           opacity: 0;
+         }
+
+      .bloqueo {
+          pointer-events: none;
+          cursor: default;
+      }  
+
+/*
+       ::-webkit-input-placeholder {  
+         color: #ffcc28!important;
+       }
+
+       :-ms-input-placeholder { 
+         color: #ffcc28!important;
+       }
+
+       ::placeholder {
+         color: #ffcc28!important;
+       }
+*/

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/scrolling.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
+    co
+    <link rel="stylesheet" href="css/modal_trabajaConNosotros.css" />
 
     <link
       rel="stylesheet"
@@ -16,8 +18,160 @@
   </head>
   <body class="bg-white">
     <!--==============================================================================
-                                MODAL
+                             MODAL TRABAJA CON NOSOTROS
 =================================================================================-->
+    <div class="w-full h-screen flex" id="modalTrabajo" style="display: none">
+      <div class="w-full flex flex-col px-32 py-12">
+        <div class="text-center">
+          <i
+            class="material-icons"
+            id="modalTrabajo-close"
+            style="
+              font-size: 48px;
+              position: absolute;
+              margin-left: 30%;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            close
+          </i>
+          <div class="w-32 flex" style="position: relative; left: 45%">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+            >
+              <img
+                class="w-10"
+                src="imgs/faskex/icon_bolsa.png"
+                alt="icon_bolsa"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+            <p class="text-justify text-white">
+              Buscamos jóvenes profesionales que quieren hacer la diferencia,
+              desarrollando e inspirando a otros, ser la unidad de ideas
+              innovadoras y producir resultados, y sobre todo que viven nuestros
+              valores.
+            </p>
+
+            <p class="my-4 text-justify text-white">
+              Por favor ingrese los siguientes datos:<br />
+              <span style="color: #ffcc28">(*) Datos obligatorios</span>
+            </p>
+          </div>
+
+          <form
+            style="position: relative; left: 15%"
+            class="w-2/3 flex flex-col"
+          >
+            <div class="w-full flex flex-col">
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* DNI"
+                  name="dni"
+                  required
+                  id="dni"
+                  maxlength="8"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Nombre Completo"
+                  name="nombreCompleto"
+                  required
+                  id="nombreCompleto"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="email"
+                  placeholder="* E-mail"
+                  name="correo"
+                  required
+                  id="correo"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Celular"
+                  name="celular"
+                  maxlength="9"
+                  required
+                  id="celular"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="w-full flex space-x-3 mt-3">
+                <select
+                  class="w-1/2 border border-white pl-2 py-1"
+                  name="puesto"
+                  id="puesto"
+                  required
+                >
+                  <option value="" disabled selected>
+                    *Puesto al cual desea laborar
+                  </option>
+                  <option value="Mensajero">Mensajero</option>
+                  <option value="Operario">Operario</option>
+                  <option value="Motorizado">Motorizado</option>
+                  <option value="Atención al Cliente">
+                    Atención al Cliente
+                  </option>
+                  <option value="Ventas-Marketing">Ventas | Marketing</option>
+                </select>
+
+                <div
+                  class="w-1/2 border border-white pl-2 py-1 flex"
+                  id="contendedor-input"
+                >
+                  <p id="text-input">
+                    * Adjuntar C.V (En PDF ó Word menos a 1 MB)
+                  </p>
+                  <input
+                    type="file"
+                    name="cv"
+                    required
+                    id="cv"
+                    accept=".pdf,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  />
+                </div>
+              </div>
+
+              <div class="flex justify-center mt-8">
+                <button
+                  id="enviar-modalTrabajo"
+                  class="bg-blue px-10 py-2 text-white cursor-pointer"
+                  type="button"
+                >
+                  ENVIAR
+                </button>
+                <input
+                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  type="button"
+                  value="CANCELAR"
+                  id="modalTrabajo-cancelar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--==============================================================================
+                             MODAL CONTACTO COMERCIAL
+=================================================================================-->
+
     <div class="w-full h-screen flex" id="modal" style="display: none">
       <div class="w-full flex flex-col px-32 py-12">
         <div class="text-center">
@@ -242,22 +396,33 @@
                                 CURPO DE LA PAGINA 
 =================================================================================-->
 
-    <header class="w-full flex justify-between px-20 py-3">
-      <img class="w-32" src="imgs/home/logo.png" alt="logo" />
+    <header
+      class="w-full flex justify-between items-end px-20 pb-5"
+      style="height: 120px"
+    >
+      <div>
+        <img src="imgs/home/logo.png" alt="logo" />
+      </div>
 
       <div class="flex">
         <div class="flex space-x-5">
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_regis.png"
               alt="icono_registro"
             />
             REGISTRARSE
           </a>
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-xs text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_login.png"
               alt="icono_registro"
             />
@@ -265,26 +430,22 @@
           </a>
         </div>
 
-        <a id="btn_menu">
-          <img
-            class="w- ml-12"
-            src="imgs/home/icon_menu.png"
-            alt="icono_menu"
-          />
+        <a class="ml-12" id="btn_menu" style="cursor: pointer">
+          <img src="imgs/home/icon_menu.png" alt="icono_menu" />
         </a>
       </div>
     </header>
 
-    <div class="w-full flex bg-cyan">
+    <div class="w-full flex bg-cyan" style="height: 448px">
       <div class="w-1/2">
         <img
-          class="w-full h-full pr-5"
+          class="h-full pr-5"
           src="imgs/faskex/faskex_main.png"
           alt="imagen_personas_sonriendo"
         />
       </div>
 
-      <div class="w-1/2 py-12 ml-3 pr-20 text-white">
+      <div class="w-1/2 flex flex-col justify-center ml-3 pr-20 text-white">
         <p class="font-light text-sm">Faskex / Nuestra empresa</p>
 
         <h1 class="font-bold text-4xl mt-3">Nuestra Empresa</h1>
@@ -389,7 +550,9 @@
           oportunidad.
         </p>
       </div>
-      <button class="px-12 py-2 bg-blue text-white">¡LO QUIERO YA!</button>
+      <button class="px-12 py-2 bg-blue text-white" id="modalTrabajo-open">
+        ¡LO QUIERO YA!
+      </button>
     </div>
 
     <footer class="w-full flex flex-col items-between bg-blue py-12">
@@ -414,12 +577,11 @@
           <form class="w-1/2 flex bg-white rounded-md">
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
-                class="w-8"
                 src="imgs/icons_footer/suscribete.png"
                 alt="icono_subscribirse"
               />
               <input
-                class="w-full mx-3 outline-none"
+                class="w-full mx-3 text-sm outline-none"
                 type="text"
                 placeholder="Ingresa tu E-mail para enterarte de nuestras novedades."
               />
@@ -440,6 +602,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
+    <script type="text/javascript" src="./js/modalTrabajo.js"></script>
 
     <script>
       /*====================================================================================

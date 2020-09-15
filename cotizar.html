@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serivicios | Courier</title>
+    <title>FASKEX | Cotizar</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/scrolling.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -170,7 +169,8 @@
               class="w-full text-left"
               style="cursor: pointer"
             >
-              HOME
+              <i class="material-icons" id="arrow_list">arrow_forward</i>
+              <span class="ml-8">HOME</span>
               <hr />
             </a>
           </li>
@@ -217,17 +217,23 @@
         </div>
 
         <div class="flex space-x-8 my-4">
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-sm font-bold text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_regis.png"
               alt="icono_registro"
             />
             REGISTRARSE
           </a>
-          <a class="flex items-center text-sm font-bold text-black">
+          <a
+            class="flex items-center text-sm font-bold text-black"
+            style="cursor: pointer"
+          >
             <img
-              class="w-8 h-8 mr-1"
+              class="mr-1"
               src="imgs/home/icon_login.png"
               alt="icono_registro"
             />
@@ -240,7 +246,6 @@
     <!--==============================================================================
                                 CURPO DE LA PAGINA 
 =================================================================================-->
-
     <header
       class="w-full flex justify-between items-end px-20 pb-5"
       style="height: 120px"
@@ -282,135 +287,48 @@
     </header>
 
     <div class="w-full flex bg-cyan" style="height: 448px">
-      <div class="w-1/2">
+      <div class="w-1/2 pr-5">
         <img
-          class="h-full pr-5"
-          src="imgs/courier/img_courier.png"
-          alt="imagen_personas_sonriendo"
+          class="h-full"
+          src="imgs/cotizador/cotizador_banner.png"
+          alt="cotizar_imagen"
         />
       </div>
+      <div class="w-1/2 flex flex-col justify-center text-white pr-5">
+        <p class="font-light text-sm">Cotizador</p>
 
-      <div class="w-1/2 py-12 ml-3 pr-20 text-white">
-        <p class="font-light text-sm">Serivicios / Courier</p>
+        <h1 class="font-bold text-4xl mt-3">Cotiza tu envío</h1>
+        <p class="leading-none">
+          En Faskex Express tenemos el objetivo de engrandecer y hacer crecer tu
+          negocio. Poniendo a tu disposición una gama de servicios ideales para
+          cubrir eficiente y eficazmente su operación logística, con las mejores
+          opciones de valor agregado: seguridad, tecnología, confiabilidad,
+          entre otras más.
+        </p>
 
-        <h1 class="font-bold text-4xl mt-3">Courier</h1>
-        <p>
-          Servicio de recojo, habilitado y distribución de paquetes y
-          encomiendas. Tiene seguimiento y control mediante el sistema de
-          rastreo Faskex en su trayecto.
+        <h2 class="font-bold text-xl mt-8">TARIFAS CORPORATIVAS</h2>
+        <p class="leading-none">
+          Somos tu mejor aliado estratégico, ofreciéndote una plataforma
+          moderna, un canal rápido y oportuno al cumplimiento de un excelente
+          servicio.
         </p>
         <p class="mt-3">
-          Con nosotros obtienes servicios que nadie más te ofrece, con garantía
-          de seguridad y rapidez inigualable. Nuestras modalidades a nivel
-          local:
+          ¿moderna, un canal rápido y oportuno al cumplimiento de un excelente?
         </p>
-
-        <div class="flex justify-start mt-10">
-          <div class="w-32 flex flex-col items-center">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
-            >
-              <img
-                class="w-10"
-                src="imgs/courier/icon_se.png"
-                alt="icono_courier"
-              />
-            </div>
-            <div class="flex flex-col mt-2 text-center">
-              <h2 class="font-bold text-xs">SUPER EXPRESS</h2>
-            </div>
-          </div>
-
-          <div class="w-32 flex flex-col items-center">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
-            >
-              <img
-                class="w-10"
-                src="imgs/courier/icon_e.png"
-                alt="icono_courier"
-              />
-            </div>
-            <div class="flex flex-col mt-2 text-center">
-              <h2 class="font-bold text-xs">EXPRESS</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full flex px-32 py-12 bg-blue" style="height: 405px">
-      <div class="w-1/2 flex flex-col text-white mt-16">
-        <h1 class="text-2xl font-bold">Envíos <b>NACIONALES</b></h1>
-        <p>
-          Servicio de distribución de paquetes de 1 m. por cada lado (ancho,
-          largo y alto) y hasta 50 kg. de peso. La distribución se realiza a
-          través de nuestros motorizados. En este caso, para las zonas rurales
-          se considerará un costo y tiempo adicional para su entrega, la cual
-          será informado oportunamente.
+        <p class="mt-5">
+          Somos tu mejor aliado estratégico, ofreciéndote una plataforma
+          moderna, un canal rápido y oportuno al cumplimiento de un excelente
+          servicio.
         </p>
       </div>
-      <div class="w-1/2 pl-16">
-        <img
-          src="imgs/courier/img_nacionales.png"
-          alt="diferente_localidades"
-        />
-      </div>
     </div>
 
-    <div class="w-full flex justify-evenly px-32 py-12" style="height: 458px">
-      <div class="w-1/2 flex flex-col">
-        <h1 class="font-bold text-2xl"><b>CARACTERÍSTICAS</b> generales</h1>
-        <ul class="mt-5 ml-5">
-          <li class="relative pl-4 custom-discs-cyan">
-            Se aplica peso volumen en caso los paquetes tengan mayor tamaño que
-            peso.
-          </li>
-          <li class="relative pl-4 custom-discs-cyan">
-            Las entregas se realizarán al día siguiente de realizado el recojo,
-            a excepción del servicio EXPRESS.
-          </li>
-          <li class="relative pl-4 custom-discs-cyan">
-            El servicio incluye: Embalaje simple, Etiqueta, Cargo y
-            Digitalización de cargos.
-          </li>
-          <li class="relative pl-4 custom-discs-cyan">
-            El cliente debe declarar de forma oral y escrita la mercadería y
-            valor a transportar.
-          </li>
-          <li class="relative pl-4 custom-discs-cyan">
-            El paquete puede ser recibido por cualquier persona que se encuentre
-            en la dirección de entrega presentando su DNI vigente.
-          </li>
-        </ul>
-      </div>
-      <div class="w-px mx-3 bg-black"></div>
-      <div class="w-1/2 flex flex-col">
-        <h1 class="font-bold text-2xl"><b>RESTRICCIONES</b> del servicio</h1>
-        <ul class="mt-5 ml-5">
-          <li class="relative pl-4 custom-discs-cyan">
-            No se admiten joyas, armas de fuego, artículos de cómputo, vales de
-            consumo y mascotas.
-          </li>
-          <li class="relative pl-4 custom-discs-cyan">
-            Los traslados de los productos son en condiciones y temperaturas
-            normales.
-          </li>
-          <li class="relative flex flex-col pl-4 custom-discs-cyan">
-            Para mayor información leer nuestro apartado de Términos y
-            Condiciones.
-            <a class="text-cyan" href="#" target="_blank" rel="noopener">
-              Términos y Condiciones
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div></div>
 
     <div class="w-full flex justify-center items-center bg-yellow p-12">
       <div class="flex flex-col mr-12">
         <h1 class="text-2xl font-bold">
-          Tú decides a dónde <b>ENVIAR</b> y nosotros cumplimos
+          Tú decides a donde <b>ENVIAR</b> y nosotros cumplimos
         </h1>
         <p class="text-sm font-bold">
           Nuestro servicio es 100% en linea, amigable y el más económico del
@@ -418,6 +336,208 @@
         </p>
       </div>
       <button class="px-12 py-2 bg-blue text-white">¡LO QUIERO YA!</button>
+    </div>
+
+    <div class="w-full flex">
+      <form id="cotizar" class="w-1/2 flex flex-col justify-center px-20">
+        <div class="flex space-x-12">
+          <label>
+            <input type="radio" name="nivel" value="nivel_local" checked onclick="checkNivel(event)" />
+            A nivel Local
+          </label>
+          <label>
+            <input type="radio" name="nivel" value="nivel_nacional" onclick="checkNivel(event)" />
+            A nivel Nacional
+          </label>
+        </div>
+        <h1 id="form-title" class="text-4xl font-bold text-center mt-10 mb-8">
+          Envíos <b>LOCALES</b>
+        </h1>
+        <select name="type" class="w-full h-10 border border-black pl-2">
+          <option value="Documentos">Documentos</option>
+          <option value="Paquetes">Paquetes</option>
+        </select>
+        <div class="w-full flex space-x-3 mt-3">
+          <select
+            name="lugar_origen"
+            class="w-1/2 h-10 border border-black pl-2"
+          >
+            <option hidden>Lugar de Origen</option>
+            <option value="Ancon">Ancon</option>
+            <option value="Ate">Ate</option>
+            <option value="Barranco">Barranco</option>
+            <option value="Breña">Breña</option>
+            <option value="Callao">Callao</option>
+            <option value="Carabayllo">Carabayllo</option>
+            <option value="Cercado">Cercado</option>
+            <option value="Cieneguilla">Cieneguilla</option>
+            <option value="Comas">Comas</option>
+            <option value="Chaclacayo">Chaclacayo</option>
+            <option value="Chorrillos">Chorrillos</option>
+            <option value="Chosica">Chosica</option>
+            <option value="El Agustino">El Agustino</option>
+            <option value="Independencia">Independencia</option>
+            <option value="Jesus">Jesus</option>
+            <option value="María">María</option>
+            <option value="La Molina">La Molina</option>
+            <option value="La Perla">La Perla</option>
+            <option value="La Punta">La Punta</option>
+            <option value="La Victoria">La Victoria</option>
+            <option value="Lince">Lince</option>
+            <option value="Los Olivos">Los Olivos</option>
+            <option value="Lurigancho">Lurigancho</option>
+            <option value="Lurín">Lurín</option>
+            <option value="Magdalena">Magdalena</option>
+            <option value="Miraflores">Miraflores</option>
+            <option value="Pachacamac">Pachacamac</option>
+            <option value="Pucusana">Pucusana</option>
+            <option value="Pueblo">Pueblo</option>
+            <option value="Libre">Libre</option>
+            <option value="Puente">Puente</option>
+            <option value="Piedra">Piedra</option>
+            <option value="Punta">Punta</option>
+            <option value="Negra">Negra</option>
+            <option value="Punta">Punta</option>
+            <option value="Hermosa">Hermosa</option>
+            <option value="Rimac">Rimac</option>
+            <option value="San Bartolo">San Bartolo</option>
+            <option value="San Isidro">San Isidro</option>
+            <option value="San Borja">San Borja</option>
+            <option value="San Juan De Miraflores">
+              San Juan De Miraflores
+            </option>
+          </select>
+          <select
+            name="lugar_destino"
+            class="w-1/2 h-10 border border-black pl-2"
+          >
+            <option hidden>Lugar de Destino</option>
+            <option value="Aguaytia">Aguaytia</option>
+            <option value="Andahuaylas">Andahuaylas</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Ayacucho">Ayacucho</option>
+            <option value="Ayaviri">Ayaviri</option>
+            <option value="Bagua Chica">Bagua Chica</option>
+            <option value="Barranca">Barranca</option>
+            <option value="Bellavista">Bellavista</option>
+            <option value="Cajamarca">Cajamarca</option>
+            <option value="Camana">Camana</option>
+            <option value="Cañete">Cañete</option>
+            <option value="Casma">Casma</option>
+            <option value="Celendim">Celendim</option>
+            <option value="Chachapoyas">Chachapoyas</option>
+            <option value="Chancay">Chancay</option>
+            <option value="Chepen">Chepen</option>
+            <option value="Chiclayo">Chiclayo</option>
+            <option value="Chimbote">Chimbote</option>
+            <option value="Chincha">Chincha</option>
+            <option value="Chota">Chota</option>
+            <option value="Chulucanas">Chulucanas</option>
+            <option value="Cutervo">Cutervo</option>
+            <option value="Espinar">Espinar</option>
+            <option value="Gran Chimú">Gran Chimú</option>
+            <option value="Huacho">Huacho</option>
+            <option value="Huancavelica">Huancavelica</option>
+            <option value="Huancayo">Huancayo</option>
+            <option value="Huánuco">Huánuco</option>
+            <option value="Huaral">Huaral</option>
+            <option value="Huaráz">Huaráz</option>
+            <option value="Huarmey">Huarmey</option>
+            <option value="Huarochirí">Huarochirí</option>
+            <option value="Huaytará">Huaytará</option>
+            <option value="Ilo">Ilo</option>
+            <option value="Iquitos">Iquitos</option>
+            <option value="Jaen">Jaen</option>
+            <option value="Juanjui">Juanjui</option>
+            <option value="Juliaca">Juliaca</option>
+            <option value="Junín">Junín</option>
+            <option value="Lambayeque">Lambayeque</option>
+            <option value="Lamas">Lamas</option>
+            <option value="La Merced">La Merced</option>
+            <option value="La Oroya">La Oroya</option>
+            <option value="Los Órganos">Los Órganos</option>
+            <option value="Madre de Dios">Madre de Dios</option>
+            <option value="Marcona">Marcona</option>
+            <option value="Matucana">Matucana</option>
+            <option value="Mollendo">Mollendo</option>
+            <option value="Moquegua">Moquegua</option>
+            <option value="Moyobamba">Moyobamba</option>
+            <option value="Nazca</option>">Nazca</option></option>
+            <option value="Naranjos Altos">Naranjos Altos</option>
+            <option value="Nva. Cajamarca">Nva. Cajamarca</option>
+            <option value="Octubamba">Octubamba</option>
+            <option value="Oxapampa">Oxapampa</option>
+            <option value="Pacasmayo">Pacasmayo</option>
+            <option value="Paijan">Paijan</option>
+            <option value="Paita">Paita</option>
+            <option value="Palpa">Palpa</option>
+            <option value="Pasco">Pasco</option>
+            <option value="Piura">Piura</option>
+            <option value="Pucallpa">Pucallpa</option>
+            <option value="Puno">Puno</option>
+            <option value="Quillabamba">Quillabamba</option>
+            <option value="Rioja">Rioja</option>
+            <option value="Satipo">Satipo</option>
+            <option value="Sullana">Sullana</option>
+            <option value="Tacna">Tacna</option>
+            <option value="Talara">Talara</option>
+            <option value="Tarapoto">Tarapoto</option>
+            <option value="Tarma">Tarma</option>
+            <option value="Tingo María">Tingo María</option>
+            <option value="Tocache">Tocache</option>
+            <option value="Tumbes">Tumbes</option>
+            <option value="Trujillo">Trujillo</option>
+            <option value="Villa Rica">Villa Rica</option>
+            <option value="Virú">Virú</option>
+            <option value="Yauri">Yauri</option>
+            <option value="Yurimaguas">Yurimaguas</option>
+            <option value="Otros...">Otros...</option>
+          </select>
+        </div>
+        <div class="flex space-x-3 mt-3">
+          <input
+            type="number"
+            class="w-1/2 h-10 border border-black pl-3"
+            placeholder="Peso (gr.)"
+          />
+          <input
+            type="number"
+            class="w-1/2 h-10 border border-black pl-3"
+            placeholder="Cantidad"
+          />
+        </div>
+
+        <div class="mt-8" style="align-self: center">
+          <img
+            id="tipo_paquete"
+            class="w-40 h-40"
+            src="imgs/cotizador/img_documentos.png"
+            alt="paquete_o_documento"
+          />
+        </div>
+
+        <div class="flex mt-8 space-x-5" style="align-self: center">
+          <button
+            class="w-40 h-10 bg-blue text-white text-center cursor-pointer"
+            onclick="resetForm(event)"
+          >
+            CANCELAR
+          </button>
+          <input
+            class="w-40 h-10 bg-blue text-white text-center cursor-pointer"
+            type="submit"
+            value="ENVIAR"
+          />
+        </div>
+      </form>
+      <div class="w-1/2 h-full">
+        <img
+          class="w-full h-full"
+          style="object-fit: fill"
+          src="imgs/cotizador/img_envios.png"
+          alt="imagen_repartidor con paquete"
+        />
+      </div>
     </div>
 
     <footer class="w-full flex flex-col items-between bg-blue py-12">
@@ -468,6 +588,36 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
+
+    <script>
+      let formTitle = document.querySelector('#form-title')
+      let imgPaquete = document.querySelector('#tipo_paquete')
+      let cotizarForm = document.querySelector('#cotizar')
+      let nivel_radio_btn = Array.from(document.querySelector('input[type=radio][name=nivel]'))
+
+      const TYPES_PACKAGE_IMG = ['imgs/cotizador/img_documentos.png', 'imgs/cotizador/img_paquete.png']
+
+      //cambiar form title al cambiar de nivel
+      function checkNivel({ target }) {
+        let { value } = target
+        value === "nivel_local" ? formTitle.innerHTML = 'Envíos <b>LOCALES</b>' : formTitle.innerHTML = 'Envíos <b>NACIONALES</b>'
+      }
+
+      //cambiar imagen al cambiar de paquete
+      document.querySelector('select[name=type]').addEventListener('change', ({ target }) => {
+        let { value } = target
+
+        value.toLowerCase() === 'documentos' ? imgPaquete.src = TYPES_PACKAGE_IMG[0] : imgPaquete.src = TYPES_PACKAGE_IMG[1]
+      })
+
+      //resetear formulario
+      function resetForm(event) {
+        event.preventDefault()
+
+        imgPaquete.src = TYPES_PACKAGE_IMG[0]
+        cotizarForm.reset()
+      }
+    </script>
 
     <script>
       /*====================================================================================
