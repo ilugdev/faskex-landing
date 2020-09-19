@@ -6,8 +6,431 @@
     <title>404 | PÁGINA NO ENCONTRADA</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/scrolling.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/modal_contactoComercial.css" />
+    <link rel="stylesheet" href="css/registro.css" />
+    <link 
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body class="bg-white">
+  
+<!--==============================================================================
+                             MODAL REGISTRO
+=================================================================================-->  
+<div class="w-full h-screen flex" id="modalRegistro" style="display: none;">
+  <div class="w-full flex flex-col px-32 py-12" >
+      <div class="text-center " >
+        <i class="material-icons" id="modalRegistro-close" style="
+          font-size:48px;
+          position:absolute;
+          margin-left:30%;
+          color: white;
+          cursor: pointer;">
+         close
+        </i>
+          <div class="w-32 flex" style="position: relative;left: 45%;">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+            >
+              <img
+                class="w-10"
+                src="imgs/home/icon_regis.png"
+                alt="icon_regis"
+              />
+            </div>
+
+          </div>
+
+        <div class="my-8 w-2/3" style="position: relative;left: 15%;" >
+          <p class="text-justify text-white">
+¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al seguimiento de tus envío, ofertas, enterarte de nuestra novedades y mucho más.
+          </p>
+
+          <p class="my-4 text-justify text-white">
+             <span style="color:#ffcc28;">(*) Datos obligatorios</span>
+          </p>
+      </div>
+
+       <form style="position: relative;left: 15%;" class="w-2/3 flex flex-col ">
+          <div class="w-full flex flex-col">
+
+           <div class="w-full flex space-x-3 mt-3">
+                <select class="w-1/2 border border-white pl-2 py-1" name="typeDocument" id="typeDocument" required>
+                <option value="" disabled selected>* Tipo de documento</option>
+                <option value="DNI">DNI</option>
+                <option value="CE">CARNET DE EXTRANJERIA</option>
+                <option value="PASAPORTE">PASAPORTE</option>
+             </select> 
+
+              <input
+                class="w-1/2 border border-white pl-2 py-1"
+                type="text"
+                placeholder="* Numero de documento"
+                name="numberDocument"
+                required
+                id="numberDocument"
+                maxlength="8"
+                style="color: white;"
+              />
+ 
+            </div>
+
+              <input
+                class="w-full border border-white space-x-3 mt-3 pl-2 py-1"
+                type="text"
+                placeholder="* Nombre completo"
+                name="NombreRegistro"
+                required
+                id="NombreRegistro"
+                style="color: white"
+              />
+
+
+
+           <div class="w-full flex space-x-3 mt-3">
+            <input
+                class="w-1/2 border border-white pl-2 py-1"
+                type="text"
+                placeholder="* Celular"
+                name="numberTelephone"
+                maxlength="9"
+                required
+                id="numberTelephone"
+                style="color: white;"
+              />
+
+
+            <input
+                class="w-1/2 border border-white pl-2 py-1"
+                type="text"
+                placeholder="* Razon social"
+                name="ruc"
+                maxlength="9"
+                required
+                id="ruc"
+                style="color: white;"
+              />
+               </div>
+
+
+            <div class="w-full flex space-x-3 mt-3">
+              <input
+                class="w-1/2 border border-white pl-2 py-1"
+                type="email"
+                placeholder="* E-mail"
+                name="emailRegistro"
+                required
+                id="emailRegistro"
+                style="color: white;"
+              />
+              <input
+                class="w-1/2 border border-white pl-2 py-1"
+                type="email"
+                placeholder="* Confirmar e-mail"
+                name="emailConfirmar"
+                maxlength="9"
+                required
+                id="emailConfirmar"
+                style="color: white;"
+              />
+            </div>
+
+
+           <div class="w-full flex space-x-3 mt-3">
+            <div class="w-1/2 flex">
+
+              <input
+                   class="w-full border border-white pl-2 py-1"
+                   type="password"
+                   placeholder="* Clave"
+                   name="pdw"
+                   maxlength="9"
+                   required
+                   id="pwd"
+                   style="color: white;"
+                />
+              <i class="fa fa-eye mx-1 " id="pwd-hide" style="color: white;font-size: 19px; cursor: pointer;" onclick="showPassword()">
+              </i>
+
+            </div>
+
+            <div class="w-1/2 flex">
+
+              <input
+                   class="w-full border border-white pl-2 py-1"
+                   type="password"
+                   placeholder="* Clave"
+                   name="pwdConfi"
+                   maxlength="9"
+                   required
+                   id="pwdConfi"
+                   style="color: white;"
+                />
+              <i class="fa fa-eye mx-1 " id="pwdConfi-hide" style="color: white;font-size: 19px; cursor: pointer;" onclick="showPasswordConfi()">
+              </i>
+
+            </div>
+
+               </div>   
+
+
+
+            <div class="flex justify-center mt-8">
+              <button id="enviar-registro" class="bg-blue px-10 py-2 text-white cursor-pointer" type="button">
+                ENVIAR
+              </button>
+              <input
+                class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                type="button"
+                value="CANCELAR"
+                id="modalRehistrocancelar"
+              />
+              
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!--==============================================================================
+                                MODAL
+=================================================================================-->
+    <div class="w-full h-screen flex" id="modal" style="display: none">
+      <div class="w-full flex flex-col px-32 py-12">
+        <div class="text-center">
+          <i
+            class="material-icons"
+            id="modal-close"
+            style="
+              font-size: 48px;
+              position: absolute;
+              margin-left: 30%;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            close
+          </i>
+          <div class="w-32 flex" style="position: relative; left: 45%">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+            >
+              <img
+                class="w-10"
+                src="imgs/contacto_comercial/icon_contacto-comercial.png"
+                alt="icon_contacto-comercial"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+            <p class="text-justify text-white">
+              Si quieres abrir tu propio negocio, ampliar el que ya tienes o
+              cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES
+              LOGÍSTICAS del mercado.
+            </p>
+
+            <p class="my-4 text-justify text-white">
+              Disponemos de la tecnología, la organización y las personas con la
+              experiencia necesaria para ayudarte en cada paso.
+            </p>
+
+            <p class="my-4 text-justify text-white">
+              Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN
+              COMPROMISO! <br />
+              <span style="color: #ffcc28">(*) Datos obligatorios</span>
+            </p>
+          </div>
+
+          <form
+            style="position: relative; left: 15%"
+            class="w-2/3 flex flex-col"
+          >
+            <div class="w-full flex flex-col">
+              <input
+                class="w-full border border-white pl-2 py-1"
+                type="text"
+                placeholder="* Nombre completo"
+                name="fullName"
+                required
+                id="fullName"
+                style="color: white"
+              />
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="email"
+                  placeholder="* E-mail"
+                  name="mailing"
+                  required
+                  id="mailing"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Celular"
+                  name="tlf"
+                  maxlength="9"
+                  required
+                  id="tlf"
+                  style="color: white"
+                />
+              </div>
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Nombre de la Empresa"
+                  name="companyName"
+                  required
+                  id="companyName"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Dirección de la Empresa"
+                  name="addressName"
+                  required
+                  id="addressName"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="flex justify-center mt-8">
+                <button
+                  id="enviar-modal"
+                  class="bg-blue px-10 py-2 text-white cursor-pointer"
+                  type="button"
+                >
+                  ENVIAR
+                </button>
+                <input
+                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  type="button"
+                  value="CANCELAR"
+                  id="modal-cancelar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--==============================================================================
+                                MENU SIDE BAR  
+=================================================================================-->
+    <div class="dark"></div>
+    <div class="bg-white w-1/3 h-screen sideBar" id="sideBar">
+      <header class="w-full flex justify-between px-20 py-3">
+        <div class="flex">
+          <a class="ml-64 py-8" id="menu_close" style="cursor: pointer">
+            <img
+              class="w-10"
+              src="imgs/menu/icon_cerrar_menu.png"
+              alt="icono_menu_cerrar"
+            />
+          </a>
+        </div>
+      </header>
+      <div class="px-20 items-center content-center">
+        <img class="w-56" src="imgs/home/logo.png" alt="logo" />
+      </div>
+
+      <div class="w-3/5 mx-24">
+        <ul class="w-full py-5">
+          <li class="w-full py-2">
+            <a
+              href="index.html"
+              class="w-full text-left"
+              style="cursor: pointer"
+            >
+              <i class="material-icons" id="arrow_list">arrow_forward</i>
+              <span class="ml-8">HOME</span>
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2">
+            <a href="us.html" class="w-full text-left" style="cursor: pointer">
+              FASKEX
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2">
+            <a class="w-full text-left" style="cursor: pointer"> COTIZADOR </a>
+            <hr />
+          </li>
+          <li class="w-full py-2">
+            <a
+              href="atencionalcliente.html"
+              style="cursor: pointer"
+              class="w-full text-left"
+            >
+              ATENCIÓN AL CLIENTE
+              <hr />
+            </a>
+          </li>
+          <li class="w-full py-2" style="cursor: pointer">
+            <span id="modal-open" class="w-full text-left">
+              CONTACTO COMERCIAL
+            </span>
+            <hr />
+          </li>
+        </ul>
+
+        <div>
+          <p class="text-sm">
+            Queremos ayudarte. Comunícate con nosotros.¡SIN COMPROMISO!
+          </p>
+          <h1 class="text-4xl font-bold flex w-full">
+            <img
+              id="tlf_img"
+              src="imgs/atencion_al_cliente/icon_phone.png"
+              alt="icon_phone"
+            />
+            <span class="ml-4"> 719-6218</span>
+          </h1>
+        </div>
+
+        <div class="flex space-x-8 my-4">
+          <a
+            class="flex items-center text-sm font-bold text-black"
+            style="cursor: pointer"
+          >
+            <img
+              class="mr-1"
+              src="imgs/home/icon_regis.png"
+              alt="icono_registro"
+            />
+            REGISTRARSE
+          </a>
+          <a
+            class="flex items-center text-sm font-bold text-black"
+            style="cursor: pointer"
+          >
+            <img
+              class="mr-1"
+              src="imgs/home/icon_login.png"
+              alt="icono_registro"
+            />
+            INGRESAR
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--==============================================================================
+                                CURPO DE LA PAGINA 
+=================================================================================-->
     <header
       class="w-full flex justify-between items-end px-20 pb-5"
       style="height: 120px"
@@ -21,6 +444,8 @@
           <a
             class="flex items-center text-xs text-black"
             style="cursor: pointer"
+            id="modalRegistro-open"
+
           >
             <img
               class="mr-1"
@@ -47,6 +472,7 @@
         </a>
       </div>
     </header>
+
 
     <div class="w-full flex bg-cyan">
       <div class="w-1/2">
@@ -125,5 +551,106 @@
         </p>
       </div>
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/modalComercial.js"></script>
+    <script type="text/javascript" src="./js/modalRegiestro.js"></script>
+
+    <script>
+      let formTitle = document.querySelector('#form-title')
+      let imgPaquete = document.querySelector('#tipo_paquete')
+      let cotizarForm = document.querySelector('#cotizar')
+      let nivel_radio_btn = Array.from(document.querySelector('input[type=radio][name=nivel]'))
+
+      const TYPES_PACKAGE_IMG = ['imgs/cotizador/img_documentos.png', 'imgs/cotizador/img_paquete.png']
+
+      //cambiar form title al cambiar de nivel
+      function checkNivel({ target }) {
+        let { value } = target
+        value === "nivel_local" ? formTitle.innerHTML = 'Envíos <b>LOCALES</b>' : formTitle.innerHTML = 'Envíos <b>NACIONALES</b>'
+      }
+
+      //cambiar imagen al cambiar de paquete
+      document.querySelector('select[name=type]').addEventListener('change', ({ target }) => {
+        let { value } = target
+
+        value.toLowerCase() === 'documentos' ? imgPaquete.src = TYPES_PACKAGE_IMG[0] : imgPaquete.src = TYPES_PACKAGE_IMG[1]
+      })
+
+      //resetear formulario
+      function resetForm(event) {
+        event.preventDefault()
+
+        imgPaquete.src = TYPES_PACKAGE_IMG[0]
+        cotizarForm.reset()
+      }
+    </script>
+
+    <script>
+      /*====================================================================================
+                               VALIDACION DE DATOS 
+======================================================================================*/
+
+      // Validación datos
+
+      $(document).ready(function () {
+        $("#enviar-modal").click(function () {
+          var fullName = document.getElementById("fullName").value;
+          var mailing = document.getElementById("mailing").value;
+          var tlf = document.getElementById("tlf").value;
+          var companyName = document.getElementById("companyName").value;
+          var addressName = document.getElementById("addressName").value;
+          var countTlf = tlf.length;
+          var expresiones = /\w+@\w+\.+[a-z]/;
+
+          if (
+            mailing === "" ||
+            fullName === "" ||
+            tlf === "" ||
+            companyName === "" ||
+            addressName === ""
+          ) {
+            swal({
+              title: "¡Llene todos los datos!",
+              icon: "warning",
+              button: "Aceptar",
+            });
+          } else {
+            if (!expresiones.test(mailing)) {
+              swal({
+                title: "Formato de correo no valido",
+                icon: "warning",
+                button: "Aceptar",
+              });
+            }
+            if (countTlf < 9) {
+              swal({
+                title: "Formato de tlf no valido",
+                icon: "warning",
+                button: "Aceptar",
+              });
+            }
+          }
+
+          if (
+            mailing != "" &&
+            fullName != "" &&
+            tlf != "" &&
+            companyName != "" &&
+            addressName != "" &&
+            countTlf == 9 &&
+            expresiones.test(mailing)
+          ) {
+            swal({
+              title: "Funciona",
+              icon: "success",
+              button: "Aceptar",
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+      #modalRegistro{
+        background-color:rgba(0, 0, 0, 0.9);
+        position: fixed;
+        z-index: 9999;
+       }
+
+      input[type=text],[type=number],[type=email], [type=password]{
+         background-color: rgba(255, 99, 71, 0);
+          /*color: white;*/
+       }
+
+       #typeDocument{
+          background-color: rgba(255, 99, 71, 0);
+          color: #92ABB1;
+       }
+
+
+
+/*
+       ::-webkit-input-placeholder {  
+         color: #ffcc28!important;
+       }
+
+       :-ms-input-placeholder { 
+         color: #ffcc28!important;
+       }
+
+       ::placeholder {
+         color: #ffcc28!important;
+       }
+*/

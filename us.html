@@ -8,15 +8,212 @@
     <link rel="stylesheet" href="css/scrolling.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
-    co
     <link rel="stylesheet" href="css/modal_trabajaConNosotros.css" />
-
+    <link rel="stylesheet" href="css/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
   <body class="bg-white">
+    <!--==============================================================================
+                             MODAL REGISTRO
+=================================================================================-->
+    <div class="w-full h-screen flex" id="modalRegistro" style="display: none">
+      <div class="w-full flex flex-col px-32 py-12">
+        <div class="text-center">
+          <i
+            class="material-icons"
+            id="modalRegistro-close"
+            style="
+              font-size: 48px;
+              position: absolute;
+              margin-left: 30%;
+              color: white;
+              cursor: pointer;
+            "
+          >
+            close
+          </i>
+          <div class="w-32 flex" style="position: relative; left: 45%">
+            <div
+              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+            >
+              <img
+                class="w-10"
+                src="imgs/home/icon_regis.png"
+                alt="icon_regis"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+            <p class="text-justify text-white">
+              ¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al
+              seguimiento de tus envío, ofertas, enterarte de nuestra novedades
+              y mucho más.
+            </p>
+
+            <p class="my-4 text-justify text-white">
+              <span style="color: #ffcc28">(*) Datos obligatorios</span>
+            </p>
+          </div>
+
+          <form
+            style="position: relative; left: 15%"
+            class="w-2/3 flex flex-col"
+          >
+            <div class="w-full flex flex-col">
+              <div class="w-full flex space-x-3 mt-3">
+                <select
+                  class="w-1/2 border border-white pl-2 py-1"
+                  name="typeDocument"
+                  id="typeDocument"
+                  required
+                >
+                  <option value="" disabled selected>
+                    * Tipo de documento
+                  </option>
+                  <option value="DNI">DNI</option>
+                  <option value="CE">CARNET DE EXTRANJERIA</option>
+                  <option value="PASAPORTE">PASAPORTE</option>
+                </select>
+
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Numero de documento"
+                  name="numberDocument"
+                  required
+                  id="numberDocument"
+                  maxlength="8"
+                  style="color: white"
+                />
+              </div>
+
+              <input
+                class="w-full border border-white space-x-3 mt-3 pl-2 py-1"
+                type="text"
+                placeholder="* Nombre completo"
+                name="NombreRegistro"
+                required
+                id="NombreRegistro"
+                style="color: white"
+              />
+
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Celular"
+                  name="numberTelephone"
+                  maxlength="9"
+                  required
+                  id="numberTelephone"
+                  style="color: white"
+                />
+
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="text"
+                  placeholder="* Razon social"
+                  name="ruc"
+                  maxlength="9"
+                  required
+                  id="ruc"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="w-full flex space-x-3 mt-3">
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="email"
+                  placeholder="* E-mail"
+                  name="emailRegistro"
+                  required
+                  id="emailRegistro"
+                  style="color: white"
+                />
+                <input
+                  class="w-1/2 border border-white pl-2 py-1"
+                  type="email"
+                  placeholder="* Confirmar e-mail"
+                  name="emailConfirmar"
+                  maxlength="9"
+                  required
+                  id="emailConfirmar"
+                  style="color: white"
+                />
+              </div>
+
+              <div class="w-full flex space-x-3 mt-3">
+                <div class="w-1/2 flex">
+                  <input
+                    class="w-full border border-white pl-2 py-1"
+                    type="password"
+                    placeholder="* Clave"
+                    name="pdw"
+                    maxlength="9"
+                    required
+                    id="pwd"
+                    style="color: white"
+                  />
+                  <i
+                    class="fa fa-eye mx-1"
+                    id="pwd-hide"
+                    style="color: white; font-size: 19px; cursor: pointer"
+                    onclick="showPassword()"
+                  >
+                  </i>
+                </div>
+
+                <div class="w-1/2 flex">
+                  <input
+                    class="w-full border border-white pl-2 py-1"
+                    type="password"
+                    placeholder="* Clave"
+                    name="pwdConfi"
+                    maxlength="9"
+                    required
+                    id="pwdConfi"
+                    style="color: white"
+                  />
+                  <i
+                    class="fa fa-eye mx-1"
+                    id="pwdConfi-hide"
+                    style="color: white; font-size: 19px; cursor: pointer"
+                    onclick="showPasswordConfi()"
+                  >
+                  </i>
+                </div>
+              </div>
+
+              <div class="flex justify-center mt-8">
+                <button
+                  id="enviar-registro"
+                  class="bg-blue px-10 py-2 text-white cursor-pointer"
+                  type="button"
+                >
+                  ENVIAR
+                </button>
+                <input
+                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  type="button"
+                  value="CANCELAR"
+                  id="modalRehistrocancelar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!--==============================================================================
                              MODAL TRABAJA CON NOSOTROS
 =================================================================================-->
@@ -336,7 +533,13 @@
             </a>
           </li>
           <li class="w-full py-2">
-            <a class="w-full text-left" style="cursor: pointer"> COTIZADOR </a>
+            <a
+              href="cotizar.html"
+              class="w-full text-left"
+              style="cursor: pointer"
+            >
+              COTIZADOR
+            </a>
             <hr />
           </li>
           <li class="w-full py-2">
@@ -409,6 +612,7 @@
           <a
             class="flex items-center text-xs text-black"
             style="cursor: pointer"
+            id="modalRegistro-open"
           >
             <img
               class="mr-1"
@@ -463,22 +667,19 @@
           servicio.
         </p>
         <div class="flex justify-start mt-10">
-          <div class="w-32 flex flex-col items-center">
+          <div class="w-32 flex justify-center items-center">
             <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+              class="flex justify-center items-center bg-white rounded-full"
+              style="width: 121px; height: 121px"
             >
-              <img
-                class="w-16"
-                src="imgs/faskex/icon_vision.png"
-                alt="icon_vision"
-              />
+              <img src="imgs/faskex/icon_vision.png" alt="icon_vision" />
             </div>
           </div>
 
-          <div class="w-2/3 flex flex-col items-center pl-2">
-            <div class="flex flex-col mt-2">
-              <h2 class="font-bold text-xs">VISIÓN</h2>
-              <p class="text-xs text-justify">
+          <div class="flex flex-col items-center pl-2">
+            <div class="flex flex-col">
+              <h2 class="font-bold text-md">VISIÓN</h2>
+              <p class="text-md text-justify">
                 Ser una organización ágil, moderna, confiable, profesional,
                 humana y responsable socialmente; en donde conectamos y
                 reducimos las distancias y el tiempo para cumplir
@@ -603,6 +804,7 @@
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
     <script type="text/javascript" src="./js/modalTrabajo.js"></script>
+    <script type="text/javascript" src="./js/modalRegiestro.js"></script>
 
     <script>
       /*====================================================================================

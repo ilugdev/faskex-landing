@@ -1,7 +1,11 @@
 @font-face {
-  font-family: Geometric_415;
-  src: url("geometric 415_black bt.ttf");
+  font-family: geometric_415_black;
+  src: url("../font/geometric_415_black.ttf");
   font-weight: bold;
+}
+
+b {
+  font-family: geometric_415_black;
 }
 
 @import "tailwindcss/base";
