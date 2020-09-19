@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASKEX</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/scrolling.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body class="bg-cyan">
+    <!--==============================================================================
+                             LOGING FASKEX
+=================================================================================-->
+    <div class="w-full h-screen bg-cyan flex" style="display: block">
+      <img
+        src="imgs/tacking/track_left.png"
+        alt="track_left"
+        class="1/2 flex flex-col"
+        style="position: fixed; left: 19.2%; top: 13%"
+      />
+      <img
+        src="imgs/tacking/track_right.png"
+        alt="track_right"
+        class="1/2 flex flex-col"
+        style="position: fixed; right: 23.2%; top: 13%"
+      />
+      <div
+        class="w-1/4 flex flex-col ml-64 mt-24 fixed"
+        style="margin-left: 36%"
+      >
+        <div class="w-full flex px-16 py-6 bg-white">
+          <div class="text-center">
+            <img
+              class="w-46 flex py-4"
+              src="imgs/home/logo.png"
+              alt="logo"
+              width="200"
+            />
+
+            <div class="w-full">
+              <h1 class="font-bold text-center my-2">
+                ¡Te damos la BIENVENIDO!
+              </h1>
+              <p class="text-centery text-black">Inicia Sesión con tu cuenta</p>
+            </div>
+
+            <form
+              class="w-full flex flex-col"
+              action="lib/control.php"
+              method="post"
+              named="frmlogeo_rastreo"
+              id="myForm"
+            >
+              <div class="w-full flex flex-col">
+                <input
+                  class="w-full border border-black mt-3 pl-2 py-1"
+                  type="text"
+                  placeholder="* E-mail"
+                  name="usuario"
+                  required
+                  style="color: black"
+                  id="correo"
+                />
+
+                <div class="w-full flex">
+                  <input
+                    class="w-full border border-black mt-3 pl-2 py-1"
+                    type="password"
+                    placeholder="* Contraseña"
+                    name="clave"
+                    required
+                    style="color: black"
+                    id="pwd"
+                    maxlength="11"
+                  />
+                  <i
+                    class="fa fa-eye mx-1 mt-4"
+                    id="pwd-hide"
+                    style="color: black; font-size: 19px; cursor: pointer"
+                    onclick="showPassword()"
+                  >
+                  </i>
+                </div>
+
+                <div class="flex justify-center mt-8">
+                  <button
+                    id="entrar"
+                    class="px-10 py-2 text-black cursor-pointer"
+                    style="background-color: #ffcc28"
+                    name="entrar"
+                    type="button"
+                  >
+                    ENVIAR
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <footer class="bg-blue px-10 py-6 text-white">
+          <p class="text-centery text-center text-white py-3">
+            &copy; Copyright 2019 - Faskex.com
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+      /*====================================================================================
+                                MOSTRAR CLAVE
+      ======================================================================================*/
+
+      //showPassword
+      function showPassword() {
+        let pswd = document.querySelector("#pwd");
+        let eyeIcon = document.querySelector("#pwd-hide");
+
+        if (pswd.type === "password") {
+          pswd.type = "text";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash");
+        } else {
+          pswd.type = "password";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#entrar").click(function () {
+          //VARIABLES DECLARADAS
+          let correo = document.getElementById("correo").value;
+          let pwd = document.getElementById("pwd").value;
+          let emailRegex = /\w+@\w+\.+[a-z]/;
+          let countPwd = pwd.length;
+
+          if (correo === "" || pwd === "") {
+            swal({
+              title: "¡Llene todos los datos!",
+              icon: "warning",
+              button: "Aceptar",
+            });
+          } else {
+            if (!emailRegex.test(correo)) {
+              swal({
+                title: "Formato de correo no valido",
+                icon: "warning",
+                button: "Aceptar",
+              });
+
+              if (countPwd >= 13) {
+                swal({
+                  title: "La clave es muy larga",
+                  icon: "warning",
+                  button: "Aceptar",
+                });
+              }
+            }
+
+            if (
+              correo != "" &&
+              pwd != "" &&
+              emailRegex.test(correo) &&
+              countPwd < 13
+            ) {
+              document.getElementById("myForm").submit();
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
