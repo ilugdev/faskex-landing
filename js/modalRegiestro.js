@@ -38,10 +38,6 @@ function showPasswordConfi() {
                                 MODAL registro
 ======================================================================================*/
 
-function openModalRegistro() {
-  $("#modalRegistro").css("display", "block");
-}
-
 $(document).ready(function () {
   $("#modalRegistro-open").click(function () {
     $("#modalRegistro").css("display", "block");

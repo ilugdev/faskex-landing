@@ -683,7 +683,7 @@
         </div>
         <select
             name="tipo_via"
-            class="w-full h-10 border border-black pl-2 mt-3 "
+            class="w-full h-10 hidden border border-black pl-2 mt-3"
           >
           <option hidden>Seleccione tipo de Vía</option>
           <option value="terrestre">Terrestre</option>
@@ -822,10 +822,10 @@
         
         if(value === "nivel_local") {
           formTitle.innerHTML = 'Envíos <b>LOCALES</b>'
-          tipo_via_select.style.display = 'block'
+          tipo_via_select.style.display = 'none'
         } else {
           formTitle.innerHTML = 'Envíos <b>NACIONALES</b>'
-          tipo_via_select.style.display = 'none'
+          tipo_via_select.style.display = 'block'
         }
       }
 
@@ -847,7 +847,7 @@
       //resetear formulario
       function resetForm(event) {
         event.preventDefault()
-        tipo_via_select.style.display = 'block'
+        tipo_via_select.style.display = 'none'
         paquete_dimensiones.style.display = 'none'
         paquete_container.style.width = "100%"
 
