@@ -4,6 +4,28 @@
   font-weight: bold;
 }
 
+.header-height {
+  height: 100px;
+}
+
+@media (min-width: 1024px) {
+  .carousel-margin-left {
+    margin-left: calc(100% - 50%);
+  }
+  .header-height {
+    height: 120px;
+  }
+  .height-519 {
+    height: 519px;
+  }
+  .height-306 {
+    height: 306px;
+  }
+  .height-444 {
+    height: 444px;
+  }
+}
+
 b {
   font-family: geometric_415_black;
 }

@@ -330,10 +330,10 @@
                                 MENU SIDE BAR  
 =================================================================================-->
     <div class="dark"></div>
-    <div class="bg-white w-1/3 h-screen sideBar" id="sideBar">
-      <header class="w-full flex justify-between px-20 py-3">
-        <div class="flex">
-          <a class="ml-64 py-8" id="menu_close" style="cursor: pointer">
+    <div class="bg-white w-full lg:w-1/3 h-screen sideBar" id="sideBar">
+      <header class="w-full flex justify-between px-20 lg:py-3">
+        <div class="w-full flex justify-end">
+          <a class="py-8" id="menu_close" style="cursor: pointer">
             <img
               class="w-10"
               src="imgs/menu/icon_cerrar_menu.png"
@@ -342,11 +342,11 @@
           </a>
         </div>
       </header>
-      <div class="px-20 items-center content-center">
-        <img class="w-56" src="imgs/home/logo.png" alt="logo" />
+      <div class="lg:px-20 items-center content-center">
+        <img class="m-auto lg:w-56" src="imgs/home/logo.png" alt="logo" />
       </div>
 
-      <div class="w-3/5 mx-24">
+      <div class="m-auto mx-20 lg:mx-0 lg:px-20">
         <ul class="w-full py-5">
           <li class="w-full py-2">
             <a
@@ -354,7 +354,7 @@
               class="w-full text-left"
               style="cursor: pointer"
             >
-              <span>HOME</span>
+              HOME
               <hr />
             </a>
           </li>
@@ -365,8 +365,14 @@
             </a>
           </li>
           <li class="w-full py-2">
-            <i class="material-icons" id="arrow_list">arrow_forward</i>
-            <a class="w-full text-left" style="cursor: pointer"><span class="ml-8">COTIZADOR</span></a>
+            <a
+              href="cotizar.html"
+              class="w-full text-left"
+              style="cursor: pointer"
+            >
+              <i class="material-icons" id="arrow_list">arrow_forward</i>
+              <span class="ml-8">COTIZADOR</span>
+            </a>
             <hr />
           </li>
           <li class="w-full py-2">
@@ -401,10 +407,10 @@
           </h1>
         </div>
 
-        <div class="flex space-x-8 my-4">
+        <div class="flex lg:hidden space-x-12 my-4">
           <a
-            class="flex items-center text-sm font-bold text-black"
-            style="cursor: pointer"
+            class="flex items-center font-bold text-black"
+            style="font-size: 0.6rem"
           >
             <img
               class="mr-1"
@@ -414,8 +420,8 @@
             REGISTRARSE
           </a>
           <a
-            class="flex items-center text-sm font-bold text-black"
-            style="cursor: pointer"
+            class="flex items-center font-bold text-black"
+            style="font-size: 0.6rem"
           >
             <img
               class="mr-1"
@@ -431,57 +437,55 @@
     <!--==============================================================================
                                 CURPO DE LA PAGINA 
 =================================================================================-->
-    <header
-      class="w-full flex justify-between items-end px-20 pb-5"
-      style="height: 120px"
+<header
+class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
+>
+<div>
+  <img class="w-40 lg:w-auto" src="imgs/home/logo.png" alt="logo" />
+</div>
+
+<div class="flex">
+  <div class="hidden lg:flex space-x-5">
+    <a
+      class="flex items-center text-xs text-black"
+      style="cursor: pointer"
+      id="modalRegistro-open"
     >
-      <div>
-        <img src="imgs/home/logo.png" alt="logo" />
-      </div>
+      <img
+        class="mr-1"
+        src="imgs/home/icon_regis.png"
+        alt="icono_registro"
+      />
+      REGISTRARSE
+    </a>
+    <a
+      class="flex items-center text-xs text-black"
+      style="cursor: pointer"
+    >
+      <img
+        class="mr-1"
+        src="imgs/home/icon_login.png"
+        alt="icono_registro"
+      />
+      INGRESAR
+    </a>
+  </div>
 
-      <div class="flex">
-        <div class="flex space-x-5">
-          <a
-            class="flex items-center text-xs text-black"
-            style="cursor: pointer"
-            id="modalRegistro-open"
+  <a class="ml-12" id="btn_menu" style="cursor: pointer">
+    <img src="imgs/home/icon_menu.png" alt="icono_menu" />
+  </a>
+</div>
+</header>
 
-          >
-            <img
-              class="mr-1"
-              src="imgs/home/icon_regis.png"
-              alt="icono_registro"
-            />
-            REGISTRARSE
-          </a>
-          <a
-            class="flex items-center text-xs text-black"
-            style="cursor: pointer"
-          >
-            <img
-              class="mr-1"
-              src="imgs/home/icon_login.png"
-              alt="icono_registro"
-            />
-            INGRESAR
-          </a>
-        </div>
-
-        <a class="ml-12" id="btn_menu" style="cursor: pointer">
-          <img src="imgs/home/icon_menu.png" alt="icono_menu" />
-        </a>
-      </div>
-    </header>
-
-    <div class="w-full flex bg-cyan" style="height: 448px">
-      <div class="w-1/2 pr-5">
+    <div class="w-full height-519 flex bg-cyan">
+      <div class="w-1/2 hidden lg:block pr-5">
         <img
           class="h-full"
           src="imgs/cotizador/cotizador_banner.png"
           alt="cotizar_imagen"
         />
       </div>
-      <div class="w-1/2 flex flex-col justify-center text-white pr-20">
+      <div class="w-full lg:w-1/2 flex flex-col justify-center text-white px-5 lg:px-0 lg:pr-20 py-5 lg:py-0">
         <p class="font-light text-sm">Cotizador</p>
 
         <h1 class="font-bold text-4xl mt-3">Cotiza tu envío</h1>
@@ -512,7 +516,9 @@
 
     <div></div>
 
-    <div class="w-full flex justify-center items-center bg-yellow p-12">
+    <div
+      class="w-full flex flex-col lg:flex-row justify-center items-center bg-yellow p-12"
+    >
       <div class="flex flex-col mr-12">
         <h1 class="text-2xl font-bold">
           Tú decides a donde <b>ENVIAR</b> y nosotros cumplimos
@@ -522,11 +528,11 @@
           mercado.
         </p>
       </div>
-      <button class="px-12 py-2 bg-blue text-white">¡LO QUIERO YA!</button>
+      <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">¡LO QUIERO YA!</button>
     </div>
 
     <div class="w-full flex">
-      <form id="cotizar" class="w-1/2 flex flex-col justify-center px-20">
+      <form id="cotizar" class="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-20 py-5 lg:py-0">
         <div class="flex space-x-12">
           <label>
             <input type="radio" name="nivel" value="nivel_local" checked onclick="checkNivel(event)" />
@@ -540,14 +546,14 @@
         <h1 id="form-title" class="text-4xl font-bold text-center mt-10 mb-8">
           Envíos <b style>LOCALES</b>
         </h1>
-        <select name="type" class="w-full h-10 border border-black pl-2">
+        <select name="type" class="w-full h-8 lg:h-10 border border-black pl-2">
           <option value="Documentos">Documentos</option>
           <option value="Paquetes">Paquetes</option>
         </select>
         <div class="w-full flex space-x-3 mt-3">
           <select
             name="lugar_origen"
-            class="w-1/2 h-10 border border-black pl-2"
+            class="w-1/2 h-8 lg:h-10 border border-black pl-2"
           >
             <option hidden>Lugar de Origen</option>
             <option value="Ancon">Ancon</option>
@@ -596,7 +602,7 @@
           </select>
           <select
             name="lugar_destino"
-            class="w-1/2 h-10 border border-black pl-2"
+            class="w-1/2 h-8 lg:h-10 border border-black pl-2"
           >
             <option hidden>Lugar de Destino</option>
             <option value="Aguaytia">Aguaytia</option>
@@ -683,7 +689,7 @@
         </div>
         <select
             name="tipo_via"
-            class="w-full h-10 hidden border border-black pl-2 mt-3"
+            class="w-full h-8 lg:h-10 hidden border border-black pl-2 mt-3"
           >
           <option hidden>Seleccione tipo de Vía</option>
           <option value="terrestre">Terrestre</option>
@@ -692,12 +698,12 @@
         <div class="flex space-x-3 mt-3">
           <input
             type="number"
-            class="w-1/2 h-10 border border-black pl-3"
+            class="w-1/2 h-8 lg:h-10 border border-black pl-3"
             placeholder="Peso (gr.)"
           />
           <input
             type="number"
-            class="w-1/2 h-10 border border-black pl-3"
+            class="w-1/2 h-8 lg:h-10 border border-black pl-3"
             placeholder="Cantidad"
           />
         </div>
@@ -706,7 +712,7 @@
           <div id="paquete_container" class="w-full flex justify-center">
             <img
               id="tipo_paquete"
-              class="w-40 h-40"
+              class="w-24 h-24 lg:w-40 lg:h-40"
               src="imgs/cotizador/img_documentos.png"
               alt="paquete_o_documento"
             />
@@ -715,17 +721,17 @@
             <h1 class="text-md text-blue font-black">DIMENSIONES</h1>
             <input
               type="number"
-              class="w-full h-10 border border-black pl-3"
+              class="w-full h-8 lg:h-10 border border-black pl-3"
               placeholder="Ancho (cm.)"
             />
             <input
               type="number"
-              class="w-full h-10 border border-black pl-3"
+              class="w-full h-8 lg:h-10 border border-black pl-3"
               placeholder="Largo (cm.)"
             />
             <input
               type="number"
-              class="w-full h-10 border border-black pl-3"
+              class="w-full h-8 lg:h-10 border border-black pl-3"
               placeholder="Alto (cm.)"
             />
           </div>
@@ -733,19 +739,19 @@
 
         <div class="flex mt-8 space-x-5" style="align-self: center">
           <button
-            class="w-40 h-10 bg-blue text-white text-center cursor-pointer"
+            class="w-32 lg:w-40 h-8 lg:h-10 bg-blue text-white text-center cursor-pointer"
             onclick="resetForm(event)"
           >
             CANCELAR
           </button>
           <input
-            class="w-40 h-10 bg-blue text-white text-center cursor-pointer"
+            class="w-32 lg:w-40 h-8 lg:h-10 bg-blue text-white text-center cursor-pointer"
             type="submit"
             value="ENVIAR"
           />
         </div>
       </form>
-      <div class="w-1/2 h-full flex">
+      <div class="w-1/2 h-full hidden lg:flex">
         <img
           class="w-full h-full"
           style="object-fit: fill"

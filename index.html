@@ -345,10 +345,10 @@
                                 MENU SIDE BAR  
 =================================================================================-->
     <div class="dark"></div>
-    <div class="bg-white w-1/3 h-screen sideBar" id="sideBar">
-      <header class="w-full flex justify-between px-20 py-3">
-        <div class="flex">
-          <a class="ml-64 py-8" id="menu_close" style="cursor: pointer">
+    <div class="bg-white w-full lg:w-1/3 h-screen sideBar" id="sideBar">
+      <header class="w-full flex justify-between px-20 lg:py-3">
+        <div class="w-full flex justify-end">
+          <a class="py-8" id="menu_close" style="cursor: pointer">
             <img
               class="w-10"
               src="imgs/menu/icon_cerrar_menu.png"
@@ -357,11 +357,11 @@
           </a>
         </div>
       </header>
-      <div class="px-20 items-center content-center">
-        <img class="w-56" src="imgs/home/logo.png" alt="logo" />
+      <div class="lg:px-20 items-center content-center">
+        <img class="m-auto lg:w-56" src="imgs/home/logo.png" alt="logo" />
       </div>
 
-      <div class="w-3/5 mx-24">
+      <div class="m-auto mx-20 lg:mx-0 lg:px-20">
         <ul class="w-full py-5">
           <li class="w-full py-2">
             <a
@@ -422,10 +422,10 @@
           </h1>
         </div>
 
-        <div class="flex space-x-8 my-4">
+        <div class="flex lg:hidden space-x-12 my-4">
           <a
-            class="flex items-center text-sm font-bold text-black"
-            style="cursor: pointer"
+            class="flex items-center font-bold text-black"
+            style="font-size: 0.6rem"
           >
             <img
               class="mr-1"
@@ -435,8 +435,8 @@
             REGISTRARSE
           </a>
           <a
-            class="flex items-center text-sm font-bold text-black"
-            style="cursor: pointer"
+            class="flex items-center font-bold text-black"
+            style="font-size: 0.6rem"
           >
             <img
               class="mr-1"
@@ -453,15 +453,14 @@
                                 CURPO DE LA PAGINA 
 =================================================================================-->
     <header
-      class="w-full flex justify-between items-end px-20 pb-5"
-      style="height: 120px"
+      class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
     >
       <div>
-        <img src="imgs/home/logo.png" alt="logo" />
+        <img class="w-40 lg:w-auto" src="imgs/home/logo.png" alt="logo" />
       </div>
 
       <div class="flex">
-        <div class="flex space-x-5">
+        <div class="hidden lg:flex space-x-5">
           <a
             class="flex items-center text-xs text-black"
             style="cursor: pointer"
@@ -502,17 +501,21 @@
               src="imgs/banners_home/mensajeria.png"
               alt="imagen_slider"
             />
-            <div class="absolute" style="margin-left: calc(100% - 50%)">
+            <div class="absolute text-center lg:text-left carousel-margin-left">
               <div class="mb-3">
                 <h1 class="font-bold text-4xl leading-none">
                   Dile <b>ADIÓS</b> a los
                 </h1>
                 <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
               </div>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 Enviós rápidos, transparentes y hasta 8
               </p>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 veces más económicas que la competencia.
               </p>
               <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
@@ -528,17 +531,21 @@
               src="imgs/banners_home/mensajeria.png"
               alt="imagen_slider"
             />
-            <div class="absolute" style="margin-left: calc(100% - 50%)">
+            <div class="absolute text-center lg:text-left carousel-margin-left">
               <div class="mb-3">
                 <h1 class="font-bold text-4xl leading-none">
                   Dile <b>ADIÓS</b> a los
                 </h1>
                 <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
               </div>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 Enviós rápidos, transparentes y hasta 8
               </p>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 veces más económicas que la competencia.
               </p>
               <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
@@ -554,17 +561,21 @@
               src="imgs/banners_home/mensajeria.png"
               alt="imagen_slider"
             />
-            <div class="absolute" style="margin-left: calc(100% - 50%)">
+            <div class="absolute text-center lg:text-left carousel-margin-left">
               <div class="mb-3">
                 <h1 class="font-bold text-4xl leading-none">
                   Dile <b>ADIÓS</b> a los
                 </h1>
                 <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
               </div>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 Enviós rápidos, transparentes y hasta 8
               </p>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 veces más económicas que la competencia.
               </p>
               <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
@@ -580,17 +591,21 @@
               src="imgs/banners_home/mensajeria.png"
               alt="imagen_slider"
             />
-            <div class="absolute" style="margin-left: calc(100% - 50%)">
+            <div class="absolute text-center lg:text-left carousel-margin-left">
               <div class="mb-3">
                 <h1 class="font-bold text-4xl leading-none">
                   Dile <b>ADIÓS</b> a los
                 </h1>
                 <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
               </div>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 Enviós rápidos, transparentes y hasta 8
               </p>
-              <p class="font-medium text-xl">
+              <p
+                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
+              >
                 veces más económicas que la competencia.
               </p>
               <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
@@ -603,27 +618,31 @@
     </div>
 
     <div
-      class="w-full flex flex-col justify-center py-16 bg-blue relative"
-      style="height: 519px"
+      class="w-full height-519 flex flex-col justify-center py-16 bg-blue relative"
     >
       <div class="text-center text-white">
-        <h1 class="text-2xl font-bold leading-0">
+        <h1 class="w-3/4 lg:w-full m-auto text-2xl font-bold leading-0">
           <b>ENVÍOS</b>
           courier, rápido, fácil y seguro
         </h1>
-        <p>
+        <p class="w-3/4 lg:w-full m-auto">
           Faskex Express estamos a la vanguardia para ofrecerle un portafolio de
           servicios, diseñado
         </p>
-        <p>de acuerdo a las necesidades logísticas de su negocio.</p>
+        <p class="w-3/4 lg:w-full m-auto">
+          de acuerdo a las necesidades logísticas de su negocio.
+        </p>
       </div>
 
-      <div class="flex flex-col px-40" style="height: 306px">
-        <div class="w-full flex mt-10 relative bg-white" style="height: 80%">
+      <div class="height-306 flex flex-col px-5 lg:px-40">
+        <div
+          class="w-full flex flex-col lg:flex-row mt-10 relative lg:bg-white"
+          style="height: 80%"
+        >
           <div
-            class="w-full flex flex-col justify-center items-center bg-white"
+            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
           >
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center py-8">
               <img src="imgs/home/icon_mensajeria.png" alt="icono_mensajeria" />
               <div class="flex flex-col mt-2 text-center">
                 <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
@@ -631,12 +650,18 @@
                 <p class="text-xs">nacional de manera rápida y segura.</p>
               </div>
             </div>
+            <button
+              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+              style="outline: none"
+            >
+              VER MÁS
+            </button>
           </div>
-          <div class="w-1 my-auto bg-blue"></div>
+          <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
           <div
-            class="w-full flex flex-col justify-center items-center bg-white"
+            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
           >
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center py-8">
               <img src="imgs/home/icon_courier.png" alt="icono_mensajeria" />
               <div class="flex flex-col mt-2 text-center">
                 <h1 class="font-bold text-blue mb-2">COURIER</h1>
@@ -646,12 +671,18 @@
                 </p>
               </div>
             </div>
+            <button
+              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+              style="outline: none"
+            >
+              VER MÁS
+            </button>
           </div>
-          <div class="w-1 my-auto bg-blue"></div>
+          <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
           <div
-            class="w-full flex flex-col justify-center items-center bg-white"
+            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
           >
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center py-8">
               <img src="imgs/home/icon_gestiones.png" alt="icono_mensajeria" />
               <div class="flex flex-col mt-2 text-center">
                 <h1 class="font-bold text-blue mb-2">GESTIONES TOTALES</h1>
@@ -659,23 +690,29 @@
                 <p class="text-xs">de sus trámites.</p>
               </div>
             </div>
+            <button
+              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+              style="outline: none"
+            >
+              VER MÁS
+            </button>
           </div>
         </div>
-        <div class="flex" style="height: 20%">
+        <div class="hidden lg:flex">
           <button
-            class="w-full text-center bg-cyan text-white"
+            class="w-full text-center bg-cyan text-white lg:py-3"
             style="outline: none"
           >
             VER MÁS
           </button>
           <button
-            class="w-full text-center bg-cyan text-white"
+            class="w-full text-center bg-cyan text-white lg:py-3"
             style="outline: none"
           >
             VER MÁS
           </button>
           <button
-            class="w-full text-center bg-cyan text-white"
+            class="w-full text-center bg-cyan text-white lg:py-3"
             style="outline: none"
           >
             VER MÁS
@@ -688,7 +725,7 @@
       class="w-full bg-cover bg-no-repeat"
       style="background-image: url(imgs/home/img_experiencia_faskex.png)"
     >
-      <div class="w-1/2 flex flex-col items-center relative px-12">
+      <div class="w-full lg:w-1/2 flex flex-col items-center relative px-12">
         <div class="text-center pt-16">
           <h1 class="text-2xl font-bold leading-0">
             <b>EXPERIENCIA FASKEX</b>
@@ -699,8 +736,8 @@
           </p>
         </div>
 
-        <div class="flex mt-8 pb-24">
-          <div class="w-40 flex flex-col items-center">
+        <div class="flex flex-col md:flex-row mt-8 pb-24 space-y">
+          <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
             <div
               class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
             >
@@ -725,7 +762,7 @@
                 alt="icono_gestiones"
               />
             </div>
-            <div class="flex flex-col mt-2 text-center">
+            <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
               <h2 class="font-bold text-xs">Velocidad como</h2>
               <h2 class="font-bold text-xs">prioridad</h2>
             </div>
@@ -740,7 +777,7 @@
                 alt="icono_gestiones"
               />
             </div>
-            <div class="flex flex-col mt-2 text-center">
+            <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
               <h2 class="font-bold text-xs">Atención</h2>
               <h2 class="font-bold text-xs">personalizada</h2>
             </div>
@@ -755,7 +792,9 @@
       </div>
     </div>
 
-    <div class="w-full flex justify-center items-center bg-yellow p-12">
+    <div
+      class="w-full flex flex-col lg:flex-row justify-center items-center bg-yellow p-12"
+    >
       <div class="flex flex-col mr-12">
         <h1 class="text-2xl font-bold">
           Tú decides a donde <b>ENVIAR</b> y nosotros cumplimos
@@ -765,14 +804,15 @@
           mercado.
         </p>
       </div>
-      <button class="px-12 py-2 bg-blue text-white">¡LO QUIERO YA!</button>
+      <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
+        ¡LO QUIERO YA!
+      </button>
     </div>
 
     <div
-      class="w-full max-w-screen-xl m-auto flex justify-between items-center bg-white relative"
-      style="height: 444px"
+      class="w-full height-444 max-w-screen-xl m-auto flex flex-col lg:flex-row justify-between items-center bg-white relative"
     >
-      <div class="flex flex-col py-12">
+      <div class="flex flex-col py-12 px-8 px-0">
         <div class="flex flex-col">
           <h1 class="text-4xl font-bold"><b>Escríbenos o llámalos al</b></h1>
           <h1 class="text-4xl font-bold"><b>719-6218</b></h1>
@@ -827,12 +867,12 @@
         </form>
       </div>
       <img
-        class="absolute"
+        class="h-full absolute hidden lg:block"
         style="right: 16rem"
         src="imgs/home/img_wsp.png"
         alt="chica_indicando contacto"
       />
-      <div class="flex flex-col items-center" style="align-self: center">
+      <div class="flex flex-col items-center pb-12" style="align-self: center">
         <div class="flex flex-col">
           <h1 class="text-4xl font-bold">Encuéntranos en</h1>
           <h1 class="text-4xl font-bold"><b>WHATSAPP</b></h1>
@@ -848,7 +888,9 @@
 
     <footer class="w-full flex flex-col items-between bg-blue py-12">
       <div class="w-9/12 m-auto">
-        <div class="flex justify-between items-center">
+        <div
+          class="flex flex-col-reverse lg:flex-row justify-between items-center"
+        >
           <div class="flex space-x-3">
             <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
@@ -865,7 +907,7 @@
               />
             </a>
           </div>
-          <form class="w-1/2 flex bg-white rounded-md">
+          <form class="w-full lg:w-1/2 flex bg-white rounded-md mb-12 lg:mb-0">
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
                 src="imgs/icons_footer/suscribete.png"
