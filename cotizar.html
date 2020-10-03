@@ -49,7 +49,7 @@
 
         <div class="my-8 w-2/3" style="position: relative;left: 15%;" >
           <p class="text-justify text-white">
-¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al seguimiento de tus envío, ofertas, enterarte de nuestra novedades y mucho más.
+            ¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al seguimiento de tus envío, ofertas, enterarte de nuestra novedades y mucho más.
           </p>
 
           <p class="my-4 text-justify text-white">
@@ -202,129 +202,119 @@
     <!--==============================================================================
                                 MODAL
 =================================================================================-->
-    <div class="w-full h-screen flex" id="modal" style="display: none">
-      <div class="w-full flex flex-col px-32 py-12">
-        <div class="text-center">
-          <i
-            class="material-icons"
-            id="modal-close"
-            style="
-              font-size: 48px;
-              position: absolute;
-              margin-left: 30%;
-              color: white;
-              cursor: pointer;
-            "
-          >
-            close
-          </i>
-          <div class="w-32 flex" style="position: relative; left: 45%">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
-            >
-              <img
-                class="w-10"
-                src="imgs/contacto_comercial/icon_contacto-comercial.png"
-                alt="icon_contacto-comercial"
-              />
-            </div>
-          </div>
-
-          <div class="my-8 w-2/3" style="position: relative; left: 15%">
-            <p class="text-justify text-white">
-              Si quieres abrir tu propio negocio, ampliar el que ya tienes o
-              cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES
-              LOGÍSTICAS del mercado.
-            </p>
-
-            <p class="my-4 text-justify text-white">
-              Disponemos de la tecnología, la organización y las personas con la
-              experiencia necesaria para ayudarte en cada paso.
-            </p>
-
-            <p class="my-4 text-justify text-white">
-              Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN
-              COMPROMISO! <br />
-              <span style="color: #ffcc28">(*) Datos obligatorios</span>
-            </p>
-          </div>
-
-          <form
-            style="position: relative; left: 15%"
-            class="w-2/3 flex flex-col"
-          >
-            <div class="w-full flex flex-col">
-              <input
-                class="w-full border border-white pl-2 py-1"
-                type="text"
-                placeholder="* Nombre completo"
-                name="fullName"
-                required
-                id="fullName"
-                style="color: white"
-              />
-              <div class="w-full flex space-x-3 mt-3">
-                <input
-                  class="w-1/2 border border-white pl-2 py-1"
-                  type="email"
-                  placeholder="* E-mail"
-                  name="mailing"
-                  required
-                  id="mailing"
-                  style="color: white"
-                />
-                <input
-                  class="w-1/2 border border-white pl-2 py-1"
-                  type="text"
-                  placeholder="* Celular"
-                  name="tlf"
-                  maxlength="9"
-                  required
-                  id="tlf"
-                  style="color: white"
-                />
-              </div>
-              <div class="w-full flex space-x-3 mt-3">
-                <input
-                  class="w-1/2 border border-white pl-2 py-1"
-                  type="text"
-                  placeholder="* Nombre de la Empresa"
-                  name="companyName"
-                  required
-                  id="companyName"
-                  style="color: white"
-                />
-                <input
-                  class="w-1/2 border border-white pl-2 py-1"
-                  type="text"
-                  placeholder="* Dirección de la Empresa"
-                  name="addressName"
-                  required
-                  id="addressName"
-                  style="color: white"
-                />
-              </div>
-
-              <div class="flex justify-center mt-8">
-                <button
-                  id="enviar-modal"
-                  class="bg-blue px-10 py-2 text-white cursor-pointer"
-                  type="button"
-                >
-                  ENVIAR
-                </button>
-                <input
-                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
-                  type="button"
-                  value="CANCELAR"
-                  id="modal-cancelar"
-                />
-              </div>
-            </div>
-          </form>
+<div class="w-full h-screen flex" id="modal" style="display: none">
+  <div class="w-full flex flex-col px-6 lg:px-32 py-5 lg:py-12">
+    <div class="flex flex-col items-center">
+      <i
+        class="material-icons absolute cc-close-right text-4xl text-white cursor-pointer"
+        id="modal-close"
+      >
+        close
+      </i>
+      <div class="w-full lg:w-32 flex justify-center">
+        <div
+          class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
+        >
+          <img
+            class="w-10"
+            src="imgs/contacto_comercial/icon_contacto-comercial.png"
+            alt="icon_contacto-comercial"
+          />
         </div>
       </div>
+
+      <div class="w-full lg:w-2/3 my-8">
+        <p class="text-justify text-xs lg:text-base text-white">
+          Si quieres abrir tu propio negocio, ampliar el que ya tienes o
+          cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES
+          LOGÍSTICAS del mercado.
+        </p>
+
+        <p class="my-4 text-justify text-xs lg:text-base text-white">
+          Disponemos de la tecnología, la organización y las personas con la
+          experiencia necesaria para ayudarte en cada paso.
+        </p>
+
+        <p class="my-4 text-justify text-xs lg:text-base text-white">
+          Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN
+          COMPROMISO! <br />
+          <span style="color: #ffcc28">(*) Datos obligatorios</span>
+        </p>
+      </div>
+
+      <form class="w-full lg:w-2/3 flex flex-col">
+        <div class="w-full flex flex-col">
+          <input
+            class="w-full border border-white pl-2 py-1"
+            type="text"
+            placeholder="* Nombre completo"
+            name="fullName"
+            required
+            id="fullName"
+            style="color: white"
+          />
+          <div class="w-full flex space-x-3 mt-3">
+            <input
+              class="w-1/2 border border-white pl-2 py-1"
+              type="email"
+              placeholder="* E-mail"
+              name="mailing"
+              required
+              id="mailing"
+              style="color: white"
+            />
+            <input
+              class="w-1/2 border border-white pl-2 py-1"
+              type="text"
+              placeholder="* Celular"
+              name="tlf"
+              maxlength="9"
+              required
+              id="tlf"
+              style="color: white"
+            />
+          </div>
+          <div class="w-full flex space-x-3 mt-3">
+            <input
+              class="w-1/2 border border-white pl-2 py-1"
+              type="text"
+              placeholder="* Nombre de la Empresa"
+              name="companyName"
+              required
+              id="companyName"
+              style="color: white"
+            />
+            <input
+              class="w-1/2 border border-white pl-2 py-1"
+              type="text"
+              placeholder="* Dirección de la Empresa"
+              name="addressName"
+              required
+              id="addressName"
+              style="color: white"
+            />
+          </div>
+
+          <div class="flex justify-between mt-6">
+            <button
+              id="enviar-modal"
+              class="bg-blue px-10 py-2 text-white cursor-pointer"
+              type="button"
+            >
+              ENVIAR
+            </button>
+            <input
+              class="bg-blue px-8 py-2 text-white cursor-pointer"
+              type="button"
+              value="CANCELAR"
+              id="modal-cancelar"
+            />
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
     <!--==============================================================================
                                 MENU SIDE BAR  
@@ -437,45 +427,45 @@
     <!--==============================================================================
                                 CURPO DE LA PAGINA 
 =================================================================================-->
-<header
-class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
->
-<div>
-  <img class="w-40 lg:w-auto" src="imgs/home/logo.png" alt="logo" />
-</div>
-
-<div class="flex">
-  <div class="hidden lg:flex space-x-5">
-    <a
-      class="flex items-center text-xs text-black"
-      style="cursor: pointer"
-      id="modalRegistro-open"
+    <header
+    class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
     >
-      <img
-        class="mr-1"
-        src="imgs/home/icon_regis.png"
-        alt="icono_registro"
-      />
-      REGISTRARSE
-    </a>
-    <a
-      class="flex items-center text-xs text-black"
-      style="cursor: pointer"
-    >
-      <img
-        class="mr-1"
-        src="imgs/home/icon_login.png"
-        alt="icono_registro"
-      />
-      INGRESAR
-    </a>
-  </div>
+    <div>
+      <img class="w-40 lg:w-auto" src="imgs/home/logo.png" alt="logo" />
+    </div>
 
-  <a class="ml-12" id="btn_menu" style="cursor: pointer">
-    <img src="imgs/home/icon_menu.png" alt="icono_menu" />
-  </a>
-</div>
-</header>
+    <div class="flex">
+      <div class="hidden lg:flex space-x-5">
+        <a
+          class="flex items-center text-xs text-black"
+          style="cursor: pointer"
+          id="modalRegistro-open"
+        >
+          <img
+            class="mr-1"
+            src="imgs/home/icon_regis.png"
+            alt="icono_registro"
+          />
+          REGISTRARSE
+        </a>
+        <a
+          class="flex items-center text-xs text-black"
+          style="cursor: pointer"
+        >
+          <img
+            class="mr-1"
+            src="imgs/home/icon_login.png"
+            alt="icono_registro"
+          />
+          INGRESAR
+        </a>
+      </div>
+
+      <a class="ml-12" id="btn_menu" style="cursor: pointer">
+        <img src="imgs/home/icon_menu.png" alt="icono_menu" />
+      </a>
+    </div>
+    </header>
 
     <div class="w-full height-519 flex bg-cyan">
       <div class="w-1/2 hidden lg:block pr-5">
@@ -763,7 +753,9 @@ class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
 
     <footer class="w-full flex flex-col items-between bg-blue py-12">
       <div class="w-9/12 m-auto">
-        <div class="flex justify-between items-center">
+        <div
+          class="flex flex-col-reverse lg:flex-row justify-between items-center"
+        >
           <div class="flex space-x-3">
             <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
               <img
@@ -780,7 +772,7 @@ class="w-full header-height flex justify-between items-end px-5 lg:px-20 pb-5"
               />
             </a>
           </div>
-          <form class="w-1/2 flex bg-white rounded-md">
+          <form class="w-full lg:w-1/2 flex bg-white rounded-md mb-12 lg:mb-0">
             <label class="w-full flex justify-between items-center px-2 py-3">
               <img
                 src="imgs/icons_footer/suscribete.png"

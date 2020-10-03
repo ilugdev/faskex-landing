@@ -9,3 +9,13 @@ input[type="text"],
 [type="email"] {
   background-color: rgba(255, 99, 71, 0);
 }
+
+.cc-close-right {
+  right: 5rem;
+}
+
+@media (max-width: 640px) {
+  .cc-close-right {
+    right: 1rem;
+  }
+}

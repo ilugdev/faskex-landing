@@ -370,22 +370,15 @@
 =================================================================================-->
 
     <div class="w-full h-screen flex" id="modal" style="display: none">
-      <div class="w-full flex flex-col px-32 py-12">
-        <div class="text-center">
+      <div class="w-full flex flex-col px-6 lg:px-32 py-5 lg:py-12">
+        <div class="flex flex-col items-center">
           <i
-            class="material-icons"
+            class="material-icons absolute cc-close-right text-4xl text-white cursor-pointer"
             id="modal-close"
-            style="
-              font-size: 48px;
-              position: absolute;
-              margin-left: 30%;
-              color: white;
-              cursor: pointer;
-            "
           >
             close
           </i>
-          <div class="w-32 flex" style="position: relative; left: 45%">
+          <div class="w-full lg:w-32 flex justify-center">
             <div
               class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
             >
@@ -397,29 +390,26 @@
             </div>
           </div>
 
-          <div class="my-8 w-2/3" style="position: relative; left: 15%">
-            <p class="text-justify text-white">
+          <div class="w-full lg:w-2/3 my-8">
+            <p class="text-justify text-xs lg:text-base text-white">
               Si quieres abrir tu propio negocio, ampliar el que ya tienes o
               cambiar de rumbo empresarial, te ofrecemos las MEJORES SOLUCIONES
               LOGÍSTICAS del mercado.
             </p>
 
-            <p class="my-4 text-justify text-white">
+            <p class="my-4 text-justify text-xs lg:text-base text-white">
               Disponemos de la tecnología, la organización y las personas con la
               experiencia necesaria para ayudarte en cada paso.
             </p>
 
-            <p class="my-4 text-justify text-white">
+            <p class="my-4 text-justify text-xs lg:text-base text-white">
               Déjanos tus datos y nos ponemos en contacto contigo. ¡SIN
               COMPROMISO! <br />
               <span style="color: #ffcc28">(*) Datos obligatorios</span>
             </p>
           </div>
 
-          <form
-            style="position: relative; left: 15%"
-            class="w-2/3 flex flex-col"
-          >
+          <form class="w-full lg:w-2/3 flex flex-col">
             <div class="w-full flex flex-col">
               <input
                 class="w-full border border-white pl-2 py-1"
@@ -472,7 +462,7 @@
                 />
               </div>
 
-              <div class="flex justify-center mt-8">
+              <div class="flex justify-between mt-6">
                 <button
                   id="enviar-modal"
                   class="bg-blue px-10 py-2 text-white cursor-pointer"
@@ -481,7 +471,7 @@
                   ENVIAR
                 </button>
                 <input
-                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  class="bg-blue px-8 py-2 text-white cursor-pointer"
                   type="button"
                   value="CANCELAR"
                   id="modal-cancelar"
