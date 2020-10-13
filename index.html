@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FASKEX</title>
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/scrolling.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
-    <link rel="stylesheet" href="css/vanilla-slider.css" />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/registro.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -382,11 +384,11 @@
           </li>
           <li class="w-full py-2">
             <a
-              href="atencionalcliente.html"
+              href="contactenos.html"
               style="cursor: pointer"
               class="w-full text-left"
             >
-              ATENCIÓN AL CLIENTE
+              CONTÁCTENOS
               <hr />
             </a>
           </li>
@@ -482,129 +484,86 @@
       </div>
     </header>
 
-    <div id="carousel" class="w-full bg-cyan js-Carousel" style="height: 448px">
-      <ul>
-        <li>
-          <div class="w-full h-full flex justify-center items-center relative">
-            <img
-              class="w-full h-full absolute top-0 left-0"
-              src="imgs/banners_home/mensajeria.png"
-              alt="imagen_slider"
-            />
-            <div class="absolute text-center lg:text-left carousel-margin-left">
-              <div class="mb-3">
-                <h1 class="font-bold text-4xl leading-none">
-                  Dile <b>ADIÓS</b> a los
-                </h1>
-                <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
+    <div class="glide" style="height: 519px">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="w-full h-full flex justify-center items-center">
+              <div class="w-2/6 flex flex-col bg-blue-100 p-3">
+                <div class="text-4xl font-bold">
+                  <h1>SOY TU ENVÍO</h1>
+                  <h1>SÍGUEME</h1>
+                </div>
+
+                <div class="flex">
+                  <div class="w-1/2 flex space-x-8 pt-5">
+                    <label class="font-bold">
+                      <input type="radio" name="localizador" />
+                      TRK#
+                    </label>
+                    <label class="font-bold">
+                      <input type="radio" name="localizador" />
+                      REF#
+                    </label>
+                  </div>
+                  <div class="w-1/2">
+                    <input
+                      class="w-full pl-2 py-1"
+                      style="background: #fff"
+                      type="text"
+                      name=""
+                      placeholder="TRK#"
+                    />
+                    <div class="flex">
+                      <input
+                        class="w-2/3 pl-2 py-2"
+                        style="background: #fff"
+                        type="text"
+                        name=""
+                        placeholder="C. POSTAL"
+                      />
+                      <input class="w-4/12 py-2" type="submit" value="Buscar" />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                Enviós rápidos, transparentes y hasta 8
-              </p>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                veces más económicas que la competencia.
-              </p>
-              <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
-                DESCRUBE MÁS AQUÍ
-              </button>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="w-full h-full flex justify-center items-center relative">
-            <img
-              class="w-full h-full absolute top-0 left-0"
-              src="imgs/banners_home/mensajeria.png"
-              alt="imagen_slider"
-            />
-            <div class="absolute text-center lg:text-left carousel-margin-left">
-              <div class="mb-3">
-                <h1 class="font-bold text-4xl leading-none">
-                  Dile <b>ADIÓS</b> a los
-                </h1>
-                <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
-              </div>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                Enviós rápidos, transparentes y hasta 8
-              </p>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                veces más económicas que la competencia.
-              </p>
-              <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
-                DESCRUBE MÁS AQUÍ
-              </button>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="w-full h-full flex justify-center items-center relative">
-            <img
-              class="w-full h-full absolute top-0 left-0"
-              src="imgs/banners_home/mensajeria.png"
-              alt="imagen_slider"
-            />
-            <div class="absolute text-center lg:text-left carousel-margin-left">
-              <div class="mb-3">
-                <h1 class="font-bold text-4xl leading-none">
-                  Dile <b>ADIÓS</b> a los
-                </h1>
-                <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
-              </div>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                Enviós rápidos, transparentes y hasta 8
-              </p>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                veces más económicas que la competencia.
-              </p>
-              <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
-                DESCRUBE MÁS AQUÍ
-              </button>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="w-full h-full flex justify-center items-center relative">
-            <img
-              class="w-full h-full absolute top-0 left-0"
-              src="imgs/banners_home/mensajeria.png"
-              alt="imagen_slider"
-            />
-            <div class="absolute text-center lg:text-left carousel-margin-left">
-              <div class="mb-3">
-                <h1 class="font-bold text-4xl leading-none">
-                  Dile <b>ADIÓS</b> a los
-                </h1>
-                <h1 class="font-bold text-4xl leading-none">procesos lentos</h1>
-              </div>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                Enviós rápidos, transparentes y hasta 8
-              </p>
-              <p
-                class="w-3/4 lg:w-full whitespace-normal m-auto font-medium text-xl"
-              >
-                veces más económicas que la competencia.
-              </p>
-              <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
-                DESCRUBE MÁS AQUÍ
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="glide__slide">dasdadsa</li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"
+            ></path>
+          </svg>
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+        <button class="glide__bullet" data-glide-dir="=3"></button>
+      </div>
     </div>
 
     <div
@@ -625,94 +584,214 @@
       </div>
 
       <div class="height-306 flex flex-col px-5 lg:px-40">
-        <div
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="w-full flex flex-col">
+                    <div
           class="w-full flex flex-col lg:flex-row mt-10 relative lg:bg-white"
           style="height: 80%"
         >
-          <div
-            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-          >
-            <div class="flex flex-col items-center justify-center py-8">
-              <img src="imgs/home/icon_mensajeria.png" alt="icono_mensajeria" />
-              <div class="flex flex-col mt-2 text-center">
-                <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
-                <p class="text-xs">Envíe sus documentos a nivel local y</p>
-                <p class="text-xs">nacional de manera rápida y segura.</p>
-              </div>
+                      <div
+                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                      >
+                        <div
+                          class="flex flex-col items-center justify-center py-8"
+                        >
+                          <img
+                            src="imgs/home/icon_mensajeria.png"
+                            alt="icono_mensajeria"
+                          />
+                          <div class="flex flex-col mt-2 text-center">
+                            <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
+                            <p class="text-xs">
+                              Envíe sus documentos a nivel local y
+                            </p>
+                            <p class="text-xs">
+                              nacional de manera rápida y segura.
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+                          style="outline: none"
+                        >
+                          VER MÁS
+                        </button>
+                      </div>
+                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
+                      <div
+                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                      >
+                        <div
+                          class="flex flex-col items-center justify-center py-8"
+                        >
+                          <img
+                            src="imgs/home/icon_courier.png"
+                            alt="icono_mensajeria"
+                          />
+                          <div class="flex flex-col mt-2 text-center">
+                            <h1 class="font-bold text-blue mb-2">COURIER</h1>
+                            <p class="text-xs">
+                              Envíe paquetes y encomiendas a nuestors
+                            </p>
+                            <p class="text-xs">
+                              destionos del norte, centro y sur del país.
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+                          style="outline: none"
+                        >
+                          VER MÁS
+                        </button>
+                      </div>
+                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
+                      <div
+                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                      >
+                        <div
+                          class="flex flex-col items-center justify-center py-8"
+                        >
+                          <img
+                            src="imgs/home/icon_gestiones.png"
+                            alt="icono_mensajeria"
+                          />
+                          <div class="flex flex-col mt-2 text-center">
+                            <h1 class="font-bold text-blue mb-2">
+                              GESTIONES TOTALES
+                            </h1>
+                            <p class="text-xs">
+                              Externalice con nosotros la Gestión
+                            </p>
+                            <p class="text-xs">de sus trámites.</p>
+                          </div>
+                        </div>
+                        <button
+                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+                          style="outline: none"
+                        >
+                          VER MÁS
+                        </button>
+                      </div>
+                    </div>
+                    <div class="hidden lg:flex">
+                      <button
+                        class="w-full text-center bg-cyan text-white lg:py-3"
+                        style="outline: none"
+                      >
+                        VER MÁS
+                      </button>
+                      <button
+                        class="w-full text-center bg-cyan text-white lg:py-3"
+                        style="outline: none"
+                      >
+                        VER MÁS
+                      </button>
+                      <button
+                        class="w-full text-center bg-cyan text-white lg:py-3"
+                        style="outline: none"
+                      >
+                        VER MÁS
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="w-full flex flex-col">
+                    <div
+                    class="w-full flex flex-col lg:flex-row mt-10 relative lg:bg-white"
+                    style="height: 80%"
+                  >
+                      <div
+                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                      >
+                        <div
+                          class="flex flex-col items-center justify-center py-8"
+                        >
+                          <img
+                            src="imgs/home/icon_mensajeria.png"
+                            alt="icono_mensajeria"
+                          />
+                          <div class="flex flex-col mt-2 text-center">
+                            <h1 class="font-bold text-blue mb-2">
+                              OUTSOURCING
+                            </h1>
+                            <p class="text-xs">
+                              Envíe sus documentos a nivel local y
+                            </p>
+                            <p class="text-xs">
+                              nacional de manera rápida y segura.
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+                          style="outline: none"
+                        >
+                          VER MÁS
+                        </button>
+                      </div>
+                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
+                      <div
+                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                      >
+                        <div
+                          class="flex flex-col items-center justify-center py-8"
+                        >
+                          <img
+                            src="imgs/home/icon_courier.png"
+                            alt="icono_mensajeria"
+                          />
+                          <div class="flex flex-col mt-2 text-center">
+                            <h1 class="font-bold text-blue mb-2">E-COMMERCE</h1>
+                            <p class="text-xs">
+                              Envíe paquetes y encomiendas a nuestors
+                            </p>
+                            <p class="text-xs">
+                              destionos del norte, centro y sur del país.
+                            </p>
+                          </div>
+                        </div>
+                        <button
+                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
+                          style="outline: none"
+                        >
+                          VER MÁS
+                        </button>
+                      </div>
+                    </div>
+                    <div class="hidden lg:flex">
+                      <button
+                        class="w-full text-center bg-cyan text-white lg:py-3"
+                        style="outline: none"
+                      >
+                        VER MÁS
+                      </button>
+                      <button
+                        class="w-full text-center bg-cyan text-white lg:py-3"
+                        style="outline: none"
+                      >
+                        VER MÁS
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <button
-              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-              style="outline: none"
-            >
-              VER MÁS
-            </button>
-          </div>
-          <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
-          <div
-            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-          >
-            <div class="flex flex-col items-center justify-center py-8">
-              <img src="imgs/home/icon_courier.png" alt="icono_mensajeria" />
-              <div class="flex flex-col mt-2 text-center">
-                <h1 class="font-bold text-blue mb-2">COURIER</h1>
-                <p class="text-xs">Envíe paquetes y encomiendas a nuestors</p>
-                <p class="text-xs">
-                  destionos del norte, centro y sur del país.
-                </p>
-              </div>
+            <div class="glide__bullets bullets__services" data-glide-el="controls[nav]">
+              <button class="glide__bullet" data-glide-dir="=0"></button>
+              <button class="glide__bullet" data-glide-dir="=1"></button>
             </div>
-            <button
-              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-              style="outline: none"
-            >
-              VER MÁS
-            </button>
           </div>
-          <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
-          <div
-            class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-          >
-            <div class="flex flex-col items-center justify-center py-8">
-              <img src="imgs/home/icon_gestiones.png" alt="icono_mensajeria" />
-              <div class="flex flex-col mt-2 text-center">
-                <h1 class="font-bold text-blue mb-2">GESTIONES TOTALES</h1>
-                <p class="text-xs">Externalice con nosotros la Gestión</p>
-                <p class="text-xs">de sus trámites.</p>
-              </div>
-            </div>
-            <button
-              class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-              style="outline: none"
-            >
-              VER MÁS
-            </button>
-          </div>
-        </div>
-        <div class="hidden lg:flex">
-          <button
-            class="w-full text-center bg-cyan text-white lg:py-3"
-            style="outline: none"
-          >
-            VER MÁS
-          </button>
-          <button
-            class="w-full text-center bg-cyan text-white lg:py-3"
-            style="outline: none"
-          >
-            VER MÁS
-          </button>
-          <button
-            class="w-full text-center bg-cyan text-white lg:py-3"
-            style="outline: none"
-          >
-            VER MÁS
-          </button>
         </div>
       </div>
     </div>
 
     <div
-      class="w-full bg-cover bg-no-repeat"
+      class="w-full bg-cover bg-no-repeat pb-12 lg:pb-24"
       style="background-image: url(imgs/home/img_experiencia_faskex.png)"
     >
       <div class="w-full lg:w-1/2 flex flex-col items-center relative px-12">
@@ -726,58 +805,83 @@
           </p>
         </div>
 
-        <div class="flex flex-col md:flex-row mt-8 pb-24 space-y">
-          <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-            >
-              <img
-                class="w-12"
-                src="imgs/home/icon_seguimiento.png"
-                alt="icono_gestiones"
-              />
-            </div>
-            <div class="flex flex-col mt-2 text-center">
-              <h2 class="font-bold text-xs">Sin límite de tiempo</h2>
-              <h2 class="font-bold text-xs">o de lugar</h2>
-            </div>
+        <div class="glide pb-5">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="flex flex-col md:flex-row mt-12 justify-center items-center space-y">
+                  <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
+                    <div
+                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                    >
+                      <img
+                        class="w-12"
+                        src="imgs/home/icon_seguimiento.png"
+                        alt="icono_gestiones"
+                      />
+                    </div>
+                    <div class="flex flex-col mt-2 text-center">
+                      <h2 class="font-bold text-xs">Sin límite de tiempo</h2>
+                      <h2 class="font-bold text-xs">o de lugar</h2>
+                    </div>
+                  </div>
+                  <div class="w-40 flex flex-col items-center">
+                    <div
+                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                    >
+                      <img
+                        class="w-12"
+                        src="imgs/home/icon_tiempo.png"
+                        alt="icono_gestiones"
+                      />
+                    </div>
+                    <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
+                      <h2 class="font-bold text-xs">Velocidad como</h2>
+                      <h2 class="font-bold text-xs">prioridad</h2>
+                    </div>
+                  </div>
+                  <div class="w-40 flex flex-col items-center">
+                    <div
+                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                    >
+                      <img
+                        class="w-12"
+                        src="imgs/home/icon_atencion.png"
+                        alt="icono_gestiones"
+                      />
+                    </div>
+                    <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
+                      <h2 class="font-bold text-xs">Atención</h2>
+                      <h2 class="font-bold text-xs">personalizada</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col md:flex-row mt-12 justify-center items-center space-y">
+                  <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
+                    <div
+                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                    >
+                      <img
+                        class="w-12"
+                        src="imgs/home/mejores_tarifas.png"
+                        alt="icono_gestiones"
+                      />
+                    </div>
+                    <div class="flex flex-col mt-2 text-center">
+                      <h2 class="font-bold text-xs">Mejores</h2>
+                      <h2 class="font-bold text-xs">tarifas</h2>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="w-40 flex flex-col items-center">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-            >
-              <img
-                class="w-12"
-                src="imgs/home/icon_tiempo.png"
-                alt="icono_gestiones"
-              />
-            </div>
-            <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
-              <h2 class="font-bold text-xs">Velocidad como</h2>
-              <h2 class="font-bold text-xs">prioridad</h2>
-            </div>
+          <div class="glide__bullets bullets__services" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
           </div>
-          <div class="w-40 flex flex-col items-center">
-            <div
-              class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-            >
-              <img
-                class="w-12"
-                src="imgs/home/icon_atencion.png"
-                alt="icono_gestiones"
-              />
-            </div>
-            <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
-              <h2 class="font-bold text-xs">Atención</h2>
-              <h2 class="font-bold text-xs">personalizada</h2>
-            </div>
-          </div>
-        </div>
-        <div class="absolute flex space-x-3" style="bottom: 3.7rem">
-          <div class="w-3 h-3 bg-white rounded-full"></div>
-          <div
-            class="w-3 h-3 bg-white opacity-50 rounded-full cursor-pointer"
-          ></div>
         </div>
       </div>
     </div>
@@ -876,48 +980,74 @@
       </div>
     </div>
 
-    <footer class="w-full flex flex-col items-between bg-blue py-12">
-      <div class="w-9/12 m-auto">
-        <div
-          class="flex flex-col-reverse lg:flex-row justify-between items-center"
-        >
-          <div class="flex space-x-3">
-            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
-              <img
-                class="w-8 h-8"
-                src="imgs/icons_footer/facebook.png"
-                alt="icono_facebook"
-              />
-            </a>
-            <a href="facebook.com" target="_BLANK" rel="noopener noreferrer">
-              <img
-                class="w-8 h-8"
-                src="imgs/icons_footer/instagram.png"
-                alt="icono_instagram"
-              />
-            </a>
+    <footer class="w-full flex flex-col items-between gradient-bg-blue py-12">
+      <div class="w-9/12 flex flex-col m-auto">
+        <div class="w-full flex flex-col lg:flex-row justify-between text-white py-12">
+          <div class="flex justify-start">
+            <div class="flex flex-col">
+              <h1 class="cursor-pointer">SOBRE FASKEX</h1>
+              <div class="flex flex-col mt-5 space-y-2">
+                <p class="cursor-pointer">Nuestra Empresa</p>
+                <p class="cursor-pointer">Registrarse</p>
+                <p class="cursor-pointer">Contáctenos</p>
+                <p class="cursor-pointer">Contacto Comercial</p>
+              </div>
+            </div>
+            <div class="flex flex-col ml-16 lg:ml-32">
+              <h1 class="cursor-pointer">SERVICIOS</h1>
+              <div class="flex flex-col mt-5 space-y-2">
+                <p class="cursor-pointer">Mensajería</p>
+                <p class="cursor-pointer">Courier</p>
+                <p class="cursor-pointer">Gestiones Totales</p>
+                <p class="cursor-pointer">Outsourcing</p>
+                <p class="cursor-pointer">E-Commerce</p>
+              </div>
+            </div>
           </div>
-          <form class="w-full lg:w-1/2 flex bg-white rounded-md mb-12 lg:mb-0">
-            <label class="w-full flex justify-between items-center px-2 py-3">
+          <div class="flex flex-col mt-12 lg:mt-0">
+            <p>Sede Principal: Jr. General Cordova 1857</p>
+            <p>LINCE- LIMA - PERÚ</p>
+            <p>E-mail: ventas@faskex.com</p>
+            <div class="flex space-x-3 mt-3">
+              <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
+                <img
+                  class="w-8 h-8"
+                  src="imgs/icons_footer/facebook.png"
+                  alt="icono_facebook"
+                />
+              </a>
+              <a href="https://twitter.com/Faskex" target="_BLANK" rel="noopener noreferrer">
+                <img
+                  class="w-8 h-8"
+                  src="imgs/icons_footer/twitter.png"
+                  alt="icono_twitter"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name" target="_BLANK" rel="noopener noreferrer">
+                <img
+                  class="w-8 h-8"
+                  src="imgs/icons_footer/linkedin.png"
+                  alt="icono_linkedin"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-end text-white pb-5">
+          <div>
+            <p>Centro de Atención al Cliente:</p>
+            <div class="flex items-center space-x-3">
               <img
-                src="imgs/icons_footer/suscribete.png"
-                alt="icono_subscribirse"
+                class="w-10 bg-white rounded-full p-2"
+                src="imgs/atencion_al_cliente/icon_phone.png"
+                alt="icono_telefono"
               />
-              <input
-                class="w-full mx-3 text-sm outline-none"
-                type="text"
-                placeholder="Ingresa tu E-mail para enterarte de nuestras novedades."
-              />
-              <input
-                class="text-xs mr-1 px-3 py-2 bg-blue text-white rounded-md cursor-pointer"
-                type="submit"
-                value="ÚNETE"
-              />
-            </label>
-          </form>
+              <h1 class="font-bold text-4xl"><b>963 348 230</b></h1>
+            </div>
+          </div>
         </div>
         <p class="text-white text-center mt-12">
-          &copy; Copyright 2019 - Faskex.com Todos los Derechos Reservados.
+          FASKEX.COM &copy;2020. Todos los derechos reservados.
         </p>
       </div>
     </footer>
@@ -926,23 +1056,15 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
-    <script type="text/javascript" src="./js/dist/vanilla-slider.js"></script>
     <script type="text/javascript" src="./js/modalRegiestro.js"></script>
+    <script type="text/javascript" src="./js/glide.min.js"></script>
 
     <script>
       /*====================================================================================
                                CAROUSEL
 ======================================================================================*/
-      var carousel = new Carousel({
-        elem: "carousel", // id of the carousel container
-        autoplay: false, // starts the rotation automatically
-        infinite: true, // enables infinite mode
-        interval: 1500, // interval between slide changes
-        initial: 0, // slide to start with
-        dots: true, // show navigation dots
-        arrows: false, // show navigation arrows
-        buttons: false, // hide <play>/<stop> buttons,
-        btnStopText: "Pause", // <stop> button text
+      document.querySelectorAll(".glide").forEach((item) => {
+        new Glide(item).mount();
       });
     </script>
 

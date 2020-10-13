@@ -8,6 +8,10 @@
   height: 100px;
 }
 
+.gradient-bg-blue {
+  background: linear-gradient(#215d93, #0094d2);
+}
+
 @media (min-width: 1024px) {
   .carousel-margin-left {
     margin-left: calc(100% - 50%);
