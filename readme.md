@@ -1,3 +1,3 @@
 # faskex-landing
 
-Landing page create with tailwind.css and plain html.
+Web page created with tailwind.css and plain html.

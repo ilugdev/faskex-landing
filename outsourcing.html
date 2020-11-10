@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
     <link rel="stylesheet" href="css/registro.css" />
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,71 +19,78 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+
+<style>
+    .fondo{
+      background:white;
+      color:#0086BE;
+    }
+
+    .fondo:hover {
+        opacity: 0.7;
+    }
+
+    .fa {
+      padding: 4px;
+      font-size: 10px;
+      width: 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+</style>
   </head>
   <body class="bg-white">
     <!--==============================================================================
                              MODAL REGISTRO
 =================================================================================-->
     <div class="w-full h-screen flex" id="modalRegistro" style="display: none">
-      <div class="w-full flex flex-col px-32 py-12">
-        <div class="text-center">
+      <div class="w-full flex flex-col px-6 lg:px-32 py-5 lg:py-12">
+        <div class="flex flex-col items-center">
           <i
-            class="material-icons"
+            class="material-icons absolute cc-close-right text-4xl text-white cursor-pointer"
             id="modalRegistro-close"
-            style="
-              font-size: 48px;
-              position: absolute;
-              margin-left: 30%;
-              color: white;
-              cursor: pointer;
-            "
           >
             close
           </i>
-          <div class="w-32 flex" style="position: relative; left: 45%">
+          <div class="w-full lg:w-32 flex justify-center">
             <div
               class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
             >
               <img
                 class="w-10"
                 src="imgs/home/icon_regis.png"
-                alt="icon_regis"
+                alt="icon_contacto-comercial"
               />
             </div>
           </div>
 
-          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+          <div class="w-full lg:w-2/3 my-8">
             <p class="text-justify text-white">
               ¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al
               seguimiento de tus envío, ofertas, enterarte de nuestra novedades
               y mucho más.
             </p>
 
-            <p class="my-4 text-justify text-white">
+            <p class="my-4 text-justify text-xs lg:text-base text-white">
               <span style="color: #ffcc28">(*) Datos obligatorios</span>
             </p>
           </div>
 
-          <form
-            style="position: relative; left: 15%"
-            class="w-2/3 flex flex-col"
-          >
+          <form class="w-full lg:w-2/3 flex flex-col">
             <div class="w-full flex flex-col">
-              <div class="w-full flex space-x-3 mt-3">
+              <div class="w-full flex space-x-3">
                 <select
                   class="w-1/2 border border-white pl-2 py-1"
                   name="typeDocument"
                   id="typeDocument"
                   required
                 >
-                  <option value="" disabled selected>
-                    * Tipo de documento
-                  </option>
-                  <option value="DNI">DNI</option>
-                  <option value="CE">CARNET DE EXTRANJERIA</option>
-                  <option value="PASAPORTE">PASAPORTE</option>
+                    <option value="" disabled selected> * Tipo de documento</option>
+                    <option value="DNI">DNI</option>
+                    <option value="CE">CARNET DE EXTRANJERIA</option>
+                    <option value="PASAPORTE">PASAPORTE</option>
                 </select>
-
+                
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
                   type="text"
@@ -92,10 +101,10 @@
                   maxlength="8"
                   style="color: white"
                 />
-              </div>
-
+              </div>   
+              
               <input
-                class="w-full border border-white space-x-3 mt-3 pl-2 py-1"
+                class="w-full border border-white mt-3 pl-2 py-1"
                 type="text"
                 placeholder="* Nombre completo"
                 name="NombreRegistro"
@@ -103,7 +112,6 @@
                 id="NombreRegistro"
                 style="color: white"
               />
-
               <div class="w-full flex space-x-3 mt-3">
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
@@ -115,7 +123,7 @@
                   id="numberTelephone"
                   style="color: white"
                 />
-
+                
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
                   type="text"
@@ -127,7 +135,6 @@
                   style="color: white"
                 />
               </div>
-
               <div class="w-full flex space-x-3 mt-3">
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
@@ -149,7 +156,7 @@
                   style="color: white"
                 />
               </div>
-
+              
               <div class="w-full flex space-x-3 mt-3">
                 <div class="w-1/2 flex">
                   <input
@@ -192,7 +199,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-center mt-8">
+              <div class="flex justify-center mt-6">
                 <button
                   id="enviar-registro"
                   class="bg-blue px-10 py-2 text-white cursor-pointer"
@@ -201,7 +208,7 @@
                   ENVIAR
                 </button>
                 <input
-                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  class="bg-blue px-8 mx-6 py-2 text-white cursor-pointer"
                   type="button"
                   value="CANCELAR"
                   id="modalRehistrocancelar"
@@ -212,6 +219,7 @@
         </div>
       </div>
     </div>
+
 
     <!--==============================================================================
                                 MODAL
@@ -309,7 +317,7 @@
                 />
               </div>
 
-              <div class="flex justify-between mt-6">
+              <div class="flex justify-center mt-6">
                 <button
                   id="enviar-modal"
                   class="bg-blue px-10 py-2 text-white cursor-pointer"
@@ -318,7 +326,7 @@
                   ENVIAR
                 </button>
                 <input
-                  class="bg-blue px-8 py-2 text-white cursor-pointer"
+                  class="bg-blue px-8 mx-6 py-2 text-white cursor-pointer"
                   type="button"
                   value="CANCELAR"
                   id="modal-cancelar"
@@ -411,10 +419,12 @@
           </h1>
         </div>
 
-        <div class="flex lg:hidden space-x-12 my-4">
+        <div class="flex  space-x-12 my-4">
           <a
             class="flex items-center font-bold text-black"
             style="font-size: 0.6rem"
+            id="modalRegistro-open2"
+            
           >
             <img
               class="mr-1"
@@ -426,6 +436,7 @@
           <a
             class="flex items-center font-bold text-black"
             style="font-size: 0.6rem"
+            href="login.html"
           >
             <img
               class="mr-1"
@@ -505,6 +516,16 @@
         </p>
         <p class="mt-3">Dentro de los servicios que ofrecemos son:</p>
 
+
+
+ <!-- ========================================================================
+                              slider
+      ========================================================================-->
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">
+   <div class="glide__slides">
+     <div class="glide__slide">   
+
         <div class="flex flex-col lg:flex-row justify-start mt-5">
           <div class="flex flex-col items-center">
             <div
@@ -529,6 +550,72 @@
             </div>
           </div>
         </div>
+    </div>
+        
+        
+<!-- MOTORIZADOS DESTACADOS-->
+  <div class="glide__slide">
+        <div class="flex flex-col lg:flex-row justify-start mt-5">
+          <div class="flex flex-col items-center">
+            <div
+              class="flex justify-center items-center bg-white rounded-full"
+              style="width: 121px; height: 121px"
+            >
+              <img
+                src="imgs/outsourcing/motorizados_icon.png"
+                alt="icono_outsourcing"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center pl-2 mt-5 lg:mt-0">
+            <div class="flex flex-col mt-2">
+              <h2 class="font-bold text-md">MOTORIZADOS DESTACADOS</h2>
+              <p class="text-md text-justify">
+                 Hacer entrega de las correspondencias externas que emita la empresa a las diversas 
+                 instituciones públicas o privadas a tiempo completo. A tiempo completo o medio tiempo.
+              </p>
+            </div>
+          </div>
+        </div>    
+    </div>    
+    
+
+        
+<!-- CALL CENTER -->
+  <div class="glide__slide">
+        <div class="flex flex-col lg:flex-row justify-start mt-5">
+          <div class="flex flex-col items-center">
+            <div
+              class="flex justify-center items-center bg-white rounded-full"
+              style="width: 121px; height: 121px"
+            >
+              <img
+                src="imgs/outsourcing/call_center_icon.png"
+                alt="icono_outsourcing"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center pl-2 mt-5 lg:mt-0">
+            <div class="flex flex-col mt-2">
+              <h2 class="font-bold text-md">CALL CENTER </h2>
+              <p class="text-md text-justify">
+                 Nuestro servicio de Call Center gestiona las llamadas, proporcionando información 
+                 y atendiendo sugerencias, peticiones y reclamaciones relativas a los productos y 
+                 ervicios que ofrecen nuestros clientes.
+              </p>
+            </div>
+          </div>
+        </div>    
+    </div>    
+   
+</div >
+  </div>
+   </div >        
+        
+        
+        
       </div>
     </div>
 
@@ -544,91 +631,80 @@
           mercado.
         </p>
       </div>
-      <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
-        ¡LO QUIERO YA!
-      </button>
+      <a href="cotizar.html">
+         <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
+           SOLICITAR COTIZACIÓN
+         </button>
+      </a>
     </div>
+
 
     <footer class="w-full flex flex-col items-between gradient-bg-blue py-12">
       <div class="w-9/12 flex flex-col m-auto">
-        <div
-          class="w-full flex flex-col lg:flex-row justify-between text-white py-12"
-        >
+        <div class="w-full flex flex-col lg:flex-row justify-between text-white py-12">
           <div class="flex justify-start">
             <div class="flex flex-col">
               <h1 class="cursor-pointer">SOBRE FASKEX</h1>
               <div class="flex flex-col mt-5 space-y-2">
-                <p class="cursor-pointer">Nuestra Empresa</p>
-                <p class="cursor-pointer">Registrarse</p>
-                <p class="cursor-pointer">Contáctenos</p>
-                <p class="cursor-pointer">Contacto Comercial</p>
+                <a class="cursor-pointer" href="./us.html">Nuestra Empresa</a>
+                <p class="cursor-pointer" id="registro3">Registrarse</p>
+                <a class="cursor-pointer" href="./contactenos.html">Contáctenos</a>
+                <p class="cursor-pointer" id="contacto3">Contacto Comercial</p>
               </div>
             </div>
             <div class="flex flex-col ml-16 lg:ml-32">
               <h1 class="cursor-pointer">SERVICIOS</h1>
               <div class="flex flex-col mt-5 space-y-2">
-                <p class="cursor-pointer">Mensajería</p>
-                <p class="cursor-pointer">Courier</p>
-                <p class="cursor-pointer">Gestiones Totales</p>
-                <p class="cursor-pointer">Outsourcing</p>
-                <p class="cursor-pointer">E-Commerce</p>
+                <a class="cursor-pointer" href="./mensajeria.html">Mensajería</a>
+                <a class="cursor-pointer" href="./courier.html">Courier</a>
+                <a class="cursor-pointer" href="./gestionesTotales.html">Gestiones Totales</a>
+                <a class="cursor-pointer" href="./outsourcing.html">Outsourcing</a>
+                <a class="cursor-pointer" href="#">E-Commerce</a>
               </div>
             </div>
+            <div class="flex flex-col ml-16 lg:ml-32">
+              <h1 class="cursor-pointer">SIGUENOS</h1>
+              <div class="flex flex-col mt-5 space-y-2">
+                <p class="cursor-pointer">
+                   <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
+                      <i class="fa fa-facebook fondo"></i> Facebook
+                    </a>
+                </p>
+                
+                 <p class="cursor-pointer">
+                   <a href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name" target="_BLANK" rel="noopener noreferrer">
+                      <i class="fa fa-linkedin fondo"></i> Linkedin
+                    </a>
+                </p>               
+
+                <p class="cursor-pointer">
+                   <a href="https://twitter.com/Faskex" target="_BLANK" rel="noopener noreferrer">
+                      <i class="fa fa-twitter fondo"></i> Twitter
+                    </a>
+                </p>       
+                
+                 <p class="cursor-pointer">
+                   <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
+                      <i class="fa fa-youtube fondo"></i> Youtube
+                    </a>
+                </p>                
+              </div>
+            </div> 
+           
           </div>
           <div class="flex flex-col mt-12 lg:mt-0">
             <p>Sede Principal: Jr. General Cordova 1857</p>
             <p>LINCE- LIMA - PERÚ</p>
             <p>E-mail: ventas@faskex.com</p>
-            <div class="flex space-x-3 mt-3">
-              <a
-                href="https://www.facebook.com/faskexexpres/"
-                target="_BLANK"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/facebook.png"
-                  alt="icono_facebook"
-                />
-              </a>
-              <a
-                href="https://twitter.com/Faskex"
-                target="_BLANK"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/twitter.png"
-                  alt="icono_twitter"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name"
-                target="_BLANK"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/linkedin.png"
-                  alt="icono_linkedin"
-                />
-              </a>
+            <div class="flex space-x-3 mt-2">
+
+              <h1 class="font-bold text-3xl"><i class="material-icons">phone_android</i><b> 963 348 230</b></h1>
+
+
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-end text-white pb-5">
-          <div>
-            <p>Centro de Atención al Cliente:</p>
-            <div class="flex items-center space-x-3">
-              <img
-                class="w-10 bg-white rounded-full p-2"
-                src="imgs/atencion_al_cliente/icon_phone.png"
-                alt="icono_telefono"
-              />
-              <h1 class="font-bold text-4xl"><b>963 348 230</b></h1>
-            </div>
-          </div>
-        </div>
+
         <p class="text-white text-center mt-12">
           FASKEX.COM &copy;2020. Todos los derechos reservados.
         </p>
@@ -637,11 +713,38 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/glide.min.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/modalComercial.js"></script>
     <script type="text/javascript" src="./js/modalRegiestro.js"></script>
+    <script type="text/javascript" src="./js/footerScript.js"></script>
 
+<script>
+  new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 1,
+    focusAt: 'center',
+    autoplay: 10000,
+  }).mount()
+
+</script>
     <script>
+ /*==============================================================================
+                           sidebar | abrir modal registro 
+===============================================================================*/    
+    
+    $(document).ready(function () {
+        $("#modalRegistro-open2").click(function () {
+             $("#modalRegistro").css("display", "block");
+             $("#sideBar").css("display", "none");
+             $(".dark").css("display", "none");
+             $("#sideBar").animate({right: '-100%'}, "slow");
+             $("#sideBar").css("display", "none");  
+        });
+    });
+           
+    
       /*====================================================================================
                                VALIDACION DE DATOS 
 ======================================================================================*/

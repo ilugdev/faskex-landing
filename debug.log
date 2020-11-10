@@ -1,0 +1,2 @@
+[1018/181135.824:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1018/203723.094:ERROR:file_io.cc(135)] WriteFile: Se está cerrando la canalización. (0xE8)

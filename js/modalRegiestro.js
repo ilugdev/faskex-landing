@@ -41,8 +41,14 @@ function showPasswordConfi() {
 $(document).ready(function () {
   $("#modalRegistro-open").click(function () {
     $("#modalRegistro").css("display", "block");
+    
   });
 });
+
+
+
+
+
 
 $(document).ready(function () {
   $("#modalRegistro-close").click(function () {

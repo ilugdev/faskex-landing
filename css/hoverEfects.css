@@ -1,0 +1,92 @@
+    
+/*==============================================================================
+                                 URGENTE 
+===============================================================================*/
+        .urgente-text {
+          display: none;
+        }
+    
+        #urgente:hover .urgente-text {
+          display:block !important;
+        }
+        
+         #urgente:hover .urgente-img {
+          opacity: 0.1 !important;
+        }    
+        
+/*==============================================================================
+                                 INTERDIARIO 
+===============================================================================*/       
+        .interdiario-text {
+          display: none;
+        }
+    
+        #interdiario:hover .interdiario-text {
+          display:block !important;
+        }
+        
+         #interdiario:hover .interdiario-img {
+          opacity: 0.1 !important;
+        }            
+        
+        
+/*==============================================================================
+                                 REGULAR 
+===============================================================================*/       
+        .regular-text {
+          display: none;
+        }
+    
+        #regular:hover .regular-text {
+          display:block !important;
+        }
+        
+         #regular:hover .regular-img {
+          opacity: 0.1 !important;
+        }            
+                
+ /*==============================================================================
+                                 BÁSICO 
+===============================================================================*/       
+        .basico-text {
+          display: none;
+        }
+    
+        #basico:hover .basico-text {
+          display:block !important;
+        }
+        
+         #basico:hover .basico-img {
+          opacity: 0.1 !important;
+        }        
+        
+
+ /*==============================================================================
+                                 SUPER EXPRESS 
+===============================================================================*/       
+        .se-text {
+          display: none;
+        }
+    
+        #se:hover .se-text {
+          display:block !important;
+        }
+        
+         #se:hover .se-img {
+          opacity: 0.1 !important;
+        }        
+        
+  /*==============================================================================
+                                   EXPRESS 
+===============================================================================*/       
+        .express-text {
+          display: none;
+        }
+    
+        #express:hover .express-text {
+          display:block !important;
+        }
+        
+         #express:hover .express-img {
+          opacity: 0.1 !important;
+        }  

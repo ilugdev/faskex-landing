@@ -20,57 +20,66 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+
+    <style>
+      .fondo {
+        background: white;
+        color: #0086be;
+      }
+
+      .fondo:hover {
+        opacity: 0.7;
+      }
+
+      .fa {
+        padding: 4px;
+        font-size: 10px;
+        width: 16px;
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body class="bg-white">
     <!--==============================================================================
                              MODAL REGISTRO
 =================================================================================-->
     <div class="w-full h-screen flex" id="modalRegistro" style="display: none">
-      <div class="w-full flex flex-col px-32 py-12">
-        <div class="text-center">
+      <div class="w-full flex flex-col px-6 lg:px-32 py-5 lg:py-12">
+        <div class="flex flex-col items-center">
           <i
-            class="material-icons"
+            class="material-icons absolute cc-close-right text-4xl text-white cursor-pointer"
             id="modalRegistro-close"
-            style="
-              font-size: 48px;
-              position: absolute;
-              margin-left: 30%;
-              color: white;
-              cursor: pointer;
-            "
           >
             close
           </i>
-          <div class="w-32 flex" style="position: relative; left: 45%">
+          <div class="w-full lg:w-32 flex justify-center">
             <div
               class="w-24 h-24 flex justify-center items-center bg-white rounded-full"
             >
               <img
                 class="w-10"
                 src="imgs/home/icon_regis.png"
-                alt="icon_regis"
+                alt="icon_contacto-comercial"
               />
             </div>
           </div>
 
-          <div class="my-8 w-2/3" style="position: relative; left: 15%">
+          <div class="w-full lg:w-2/3 my-8">
             <p class="text-justify text-white">
               ¡Quiero ser Cliente Faskex! Registrandote podras tener acceso al
               seguimiento de tus envío, ofertas, enterarte de nuestra novedades
               y mucho más.
             </p>
 
-            <p class="my-4 text-justify text-white">
+            <p class="my-4 text-justify text-xs lg:text-base text-white">
               <span style="color: #ffcc28">(*) Datos obligatorios</span>
             </p>
           </div>
 
-          <form
-            style="position: relative; left: 15%"
-            class="w-2/3 flex flex-col"
-          >
+          <form class="w-full lg:w-2/3 flex flex-col">
             <div class="w-full flex flex-col">
-              <div class="w-full flex space-x-3 mt-3">
+              <div class="w-full flex space-x-3">
                 <select
                   class="w-1/2 border border-white pl-2 py-1"
                   name="typeDocument"
@@ -98,7 +107,7 @@
               </div>
 
               <input
-                class="w-full border border-white space-x-3 mt-3 pl-2 py-1"
+                class="w-full border border-white mt-3 pl-2 py-1"
                 type="text"
                 placeholder="* Nombre completo"
                 name="NombreRegistro"
@@ -106,7 +115,6 @@
                 id="NombreRegistro"
                 style="color: white"
               />
-
               <div class="w-full flex space-x-3 mt-3">
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
@@ -130,7 +138,6 @@
                   style="color: white"
                 />
               </div>
-
               <div class="w-full flex space-x-3 mt-3">
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
@@ -195,7 +202,7 @@
                 </div>
               </div>
 
-              <div class="flex justify-center mt-8">
+              <div class="flex justify-center mt-6">
                 <button
                   id="enviar-registro"
                   class="bg-blue px-10 py-2 text-white cursor-pointer"
@@ -204,7 +211,7 @@
                   ENVIAR
                 </button>
                 <input
-                  class="bg-blue mx-4 px-8 py-2 text-white cursor-pointer"
+                  class="bg-blue px-8 mx-6 py-2 text-white cursor-pointer"
                   type="button"
                   value="CANCELAR"
                   id="modalRehistrocancelar"
@@ -312,7 +319,7 @@
                 />
               </div>
 
-              <div class="flex justify-between mt-6">
+              <div class="flex justify-center mt-6">
                 <button
                   id="enviar-modal"
                   class="bg-blue px-10 py-2 text-white cursor-pointer"
@@ -321,7 +328,7 @@
                   ENVIAR
                 </button>
                 <input
-                  class="bg-blue px-8 py-2 text-white cursor-pointer"
+                  class="bg-blue px-8 mx-6 py-2 text-white cursor-pointer"
                   type="button"
                   value="CANCELAR"
                   id="modal-cancelar"
@@ -414,10 +421,11 @@
           </h1>
         </div>
 
-        <div class="flex lg:hidden space-x-12 my-4">
+        <div class="flex space-x-12 my-4">
           <a
             class="flex items-center font-bold text-black"
             style="font-size: 0.6rem"
+            id="modalRegistro-open2"
           >
             <img
               class="mr-1"
@@ -429,6 +437,7 @@
           <a
             class="flex items-center font-bold text-black"
             style="font-size: 0.6rem"
+            href="login.html"
           >
             <img
               class="mr-1"
@@ -468,6 +477,7 @@
           <a
             class="flex items-center text-xs text-black"
             style="cursor: pointer"
+            href="login.html"
           >
             <img
               class="mr-1"
@@ -488,75 +498,37 @@
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides">
           <li class="glide__slide">
-            <div class="w-full h-full flex justify-center items-center">
-              <div class="w-2/6 flex flex-col bg-blue-100 p-3">
-                <div class="text-4xl font-bold">
-                  <h1>SOY TU ENVÍO</h1>
-                  <h1>SÍGUEME</h1>
+            <div
+              class="w-full h-full flex justify-center items-center relative"
+            >
+              <img
+                class="w-full h-full absolute top-0 left-0"
+                src="imgs/banners_home/mensajeria.png"
+                alt="imagen_slider"
+              />
+              <div class="absolute" style="margin-left: calc(100% - 50%)">
+                <div class="mb-3">
+                  <h1 class="font-bold text-4xl leading-none">
+                    <b>Llegamos rápido</b>
+                  </h1>
+                  <h1 class="font-bold text-4xl leading-none">
+                    <b>a todo el Perú</b>
+                  </h1>
                 </div>
-
-                <div class="flex">
-                  <div class="w-1/2 flex space-x-8 pt-5">
-                    <label class="font-bold">
-                      <input type="radio" name="localizador" />
-                      TRK#
-                    </label>
-                    <label class="font-bold">
-                      <input type="radio" name="localizador" />
-                      REF#
-                    </label>
-                  </div>
-                  <div class="w-1/2">
-                    <input
-                      class="w-full pl-2 py-1"
-                      style="background: #fff"
-                      type="text"
-                      name=""
-                      placeholder="TRK#"
-                    />
-                    <div class="flex">
-                      <input
-                        class="w-2/3 pl-2 py-2"
-                        style="background: #fff"
-                        type="text"
-                        name=""
-                        placeholder="C. POSTAL"
-                      />
-                      <input class="w-4/12 py-2" type="submit" value="Buscar" />
-                    </div>
-                  </div>
-                </div>
+                <p class="font-medium text-xl">
+                  Enviós rápidos, transparentes y más
+                </p>
+                <p class="font-medium text-xl">
+                  económicas que la competencia.
+                </p>
+                <button class="bg-blue px-8 py-3 mt-5 text-white font-bold">
+                  DESCRUBE MÁS AQUÍ
+                </button>
               </div>
             </div>
           </li>
           <li class="glide__slide">dasdadsa</li>
         </ul>
-      </div>
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M0 12l10.975 11 2.848-2.828-6.176-6.176H24v-3.992H7.646l6.176-6.176L10.975 1 0 12z"
-            ></path>
-          </svg>
-        </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"
-            ></path>
-          </svg>
-        </button>
       </div>
       <div class="glide__bullets" data-glide-el="controls[nav]">
         <button class="glide__bullet" data-glide-dir="=0"></button>
@@ -567,9 +539,9 @@
     </div>
 
     <div
-      class="w-full height-519 flex flex-col justify-center py-16 bg-blue relative"
+      class="w-full height-519 flex flex-col justify-center py-16 bg-white relative"
     >
-      <div class="text-center text-white">
+      <div class="text-center text-black">
         <h1 class="w-3/4 lg:w-full m-auto text-2xl font-bold leading-0">
           <b>ENVÍOS</b>
           courier, rápido, fácil y seguro
@@ -583,208 +555,170 @@
         </p>
       </div>
 
-      <div class="height-306 flex flex-col px-5 lg:px-40">
-          <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <div class="w-full flex flex-col">
-                    <div
-          class="w-full flex flex-col lg:flex-row mt-10 relative lg:bg-white"
-          style="height: 80%"
-        >
-                      <div
-                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-                      >
-                        <div
-                          class="flex flex-col items-center justify-center py-8"
-                        >
-                          <img
-                            src="imgs/home/icon_mensajeria.png"
-                            alt="icono_mensajeria"
-                          />
-                          <div class="flex flex-col mt-2 text-center">
-                            <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
-                            <p class="text-xs">
-                              Envíe sus documentos a nivel local y
-                            </p>
-                            <p class="text-xs">
-                              nacional de manera rápida y segura.
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-                          style="outline: none"
-                        >
-                          VER MÁS
-                        </button>
-                      </div>
-                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
-                      <div
-                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-                      >
-                        <div
-                          class="flex flex-col items-center justify-center py-8"
-                        >
-                          <img
-                            src="imgs/home/icon_courier.png"
-                            alt="icono_mensajeria"
-                          />
-                          <div class="flex flex-col mt-2 text-center">
-                            <h1 class="font-bold text-blue mb-2">COURIER</h1>
-                            <p class="text-xs">
-                              Envíe paquetes y encomiendas a nuestors
-                            </p>
-                            <p class="text-xs">
-                              destionos del norte, centro y sur del país.
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-                          style="outline: none"
-                        >
-                          VER MÁS
-                        </button>
-                      </div>
-                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
-                      <div
-                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-                      >
-                        <div
-                          class="flex flex-col items-center justify-center py-8"
-                        >
-                          <img
-                            src="imgs/home/icon_gestiones.png"
-                            alt="icono_mensajeria"
-                          />
-                          <div class="flex flex-col mt-2 text-center">
-                            <h1 class="font-bold text-blue mb-2">
-                              GESTIONES TOTALES
-                            </h1>
-                            <p class="text-xs">
-                              Externalice con nosotros la Gestión
-                            </p>
-                            <p class="text-xs">de sus trámites.</p>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-                          style="outline: none"
-                        >
-                          VER MÁS
-                        </button>
-                      </div>
-                    </div>
-                    <div class="hidden lg:flex">
-                      <button
-                        class="w-full text-center bg-cyan text-white lg:py-3"
-                        style="outline: none"
-                      >
-                        VER MÁS
-                      </button>
-                      <button
-                        class="w-full text-center bg-cyan text-white lg:py-3"
-                        style="outline: none"
-                      >
-                        VER MÁS
-                      </button>
-                      <button
-                        class="w-full text-center bg-cyan text-white lg:py-3"
-                        style="outline: none"
-                      >
-                        VER MÁS
-                      </button>
+      <div class="height-306 flex flex-col px-5 mt-12 lg:px-40">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div
+                  class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                >
+                  <div class="flex flex-col items-center justify-center py-8">
+                    <img
+                      style="height: 75px"
+                      src="imgs/home/icon_mensajeria.png"
+                      alt="icono_mensajeria"
+                    />
+                    <div class="flex flex-col mt-2 text-center">
+                      <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
+                      <p class="text-xs">
+                        Envíe sus documentos a nivel local y
+                      </p>
+                      <p class="text-xs">nacional de manera rápida y segura.</p>
                     </div>
                   </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="w-full flex flex-col">
-                    <div
-                    class="w-full flex flex-col lg:flex-row mt-10 relative lg:bg-white"
-                    style="height: 80%"
+                  <button
+                    class="w-full py-3 text-center bg-cyan text-white"
+                    style="outline: none"
+                    id="mensajeria2"
                   >
-                      <div
-                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-                      >
-                        <div
-                          class="flex flex-col items-center justify-center py-8"
-                        >
-                          <img
-                            src="imgs/home/icon_mensajeria.png"
-                            alt="icono_mensajeria"
-                          />
-                          <div class="flex flex-col mt-2 text-center">
-                            <h1 class="font-bold text-blue mb-2">
-                              OUTSOURCING
-                            </h1>
-                            <p class="text-xs">
-                              Envíe sus documentos a nivel local y
-                            </p>
-                            <p class="text-xs">
-                              nacional de manera rápida y segura.
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-                          style="outline: none"
-                        >
-                          VER MÁS
-                        </button>
-                      </div>
-                      <div class="w-1 hidden lg:flex my-auto bg-blue"></div>
-                      <div
-                        class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
-                      >
-                        <div
-                          class="flex flex-col items-center justify-center py-8"
-                        >
-                          <img
-                            src="imgs/home/icon_courier.png"
-                            alt="icono_mensajeria"
-                          />
-                          <div class="flex flex-col mt-2 text-center">
-                            <h1 class="font-bold text-blue mb-2">E-COMMERCE</h1>
-                            <p class="text-xs">
-                              Envíe paquetes y encomiendas a nuestors
-                            </p>
-                            <p class="text-xs">
-                              destionos del norte, centro y sur del país.
-                            </p>
-                          </div>
-                        </div>
-                        <button
-                          class="w-full lg:hidden py-3 text-center bg-cyan text-white"
-                          style="outline: none"
-                        >
-                          VER MÁS
-                        </button>
-                      </div>
-                    </div>
-                    <div class="hidden lg:flex">
-                      <button
-                        class="w-full text-center bg-cyan text-white lg:py-3"
-                        style="outline: none"
-                      >
-                        VER MÁS
-                      </button>
-                      <button
-                        class="w-full text-center bg-cyan text-white lg:py-3"
-                        style="outline: none"
-                      >
-                        VER MÁS
-                      </button>
+                    VER MÁS
+                  </button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                >
+                  <div class="flex flex-col items-center justify-center py-8">
+                    <img
+                      style="height: 75px"
+                      src="imgs/home/icon_courier.png"
+                      alt="icono_mensajeria"
+                    />
+                    <div class="flex flex-col mt-2 text-center">
+                      <h1 class="font-bold text-blue mb-2">COURIER</h1>
+                      <p class="text-xs">
+                        Envíe paquetes y encomiendas a nuestors
+                      </p>
+                      <p class="text-xs">
+                        destionos del norte, centro y sur del país.
+                      </p>
                     </div>
                   </div>
-                </li>
-              </ul>
-            </div>
-            <div class="glide__bullets bullets__services" data-glide-el="controls[nav]">
-              <button class="glide__bullet" data-glide-dir="=0"></button>
-              <button class="glide__bullet" data-glide-dir="=1"></button>
-            </div>
+                  <button
+                    class="w-full py-3 text-center bg-cyan text-white"
+                    style="outline: none"
+                    id="courier2"
+                  >
+                    VER MÁS
+                  </button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                >
+                  <div class="flex flex-col items-center justify-center py-8">
+                    <img
+                      style="height: 75px"
+                      src="imgs/home/icon_gestiones.png"
+                      alt="icono_mensajeria"
+                    />
+                    <div class="flex flex-col mt-2 text-center">
+                      <h1 class="font-bold text-blue mb-2">
+                        GESTIONES TOTALES
+                      </h1>
+                      <p class="text-xs">Externalice con nosotros la Gestión</p>
+                      <p class="text-xs">de sus trámites.</p>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full py-3 text-center bg-cyan text-white"
+                    style="outline: none"
+                    id="gestiones2"
+                  >
+                    VER MÁS
+                  </button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                >
+                  <div class="flex flex-col items-center justify-center py-8">
+                    <img
+                      style="height: 75px"
+                      src="imgs/home/icon_mensajeria.png"
+                      alt="icono_mensajeria"
+                    />
+                    <div class="flex flex-col mt-2 text-center">
+                      <h1 class="font-bold text-blue mb-2">OUTSOURCING</h1>
+                      <p class="text-xs">
+                        Envíe sus documentos a nivel local y
+                      </p>
+                      <p class="text-xs">nacional de manera rápida y segura.</p>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full py-3 text-center bg-cyan text-white"
+                    style="outline: none"
+                    id="outsourcing"
+                  >
+                    VER MÁS
+                  </button>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div
+                  class="w-full flex flex-col justify-center items-center bg-white mb-12 lg:mb-0"
+                >
+                  <div class="flex flex-col items-center justify-center py-8">
+                    <img
+                      style="height: 75px"
+                      src="imgs/home/icon_courier.png"
+                      alt="icono_mensajeria"
+                    />
+                    <div class="flex flex-col mt-2 text-center">
+                      <h1 class="font-bold text-blue mb-2">E-COMMERCE</h1>
+                      <p class="text-xs">
+                        Envíe paquetes y encomiendas a nuestors
+                      </p>
+                      <p class="text-xs">
+                        destionos del norte, centro y sur del país.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full py-3 text-center bg-cyan text-white"
+                    style="outline: none"
+                    id="ecommerce"
+                  >
+                    VER MÁS
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <div class="top-arrow"></div>
+              <div class="bottom-arrow"></div>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <div class="top-arrow"></div>
+              <div class="bottom-arrow"></div>
+            </button>
+          </div>
+          <div
+            class="glide__bullets bullets__services"
+            data-glide-el="controls[nav]"
+          >
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
           </div>
         </div>
       </div>
@@ -805,82 +739,87 @@
           </p>
         </div>
 
-        <div class="glide pb-5">
+        <div class="glide pb-5 mt-12">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="flex flex-col md:flex-row mt-12 justify-center items-center space-y">
-                  <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
-                    <div
-                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-                    >
-                      <img
-                        class="w-12"
-                        src="imgs/home/icon_seguimiento.png"
-                        alt="icono_gestiones"
-                      />
-                    </div>
-                    <div class="flex flex-col mt-2 text-center">
-                      <h2 class="font-bold text-xs">Sin límite de tiempo</h2>
-                      <h2 class="font-bold text-xs">o de lugar</h2>
-                    </div>
+              <li class="glide__slide flex justify-center">
+                <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
+                  <div
+                    class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                  >
+                    <img
+                      class="w-12"
+                      src="imgs/home/icon_seguimiento.png"
+                      alt="icono_gestiones"
+                    />
                   </div>
-                  <div class="w-40 flex flex-col items-center">
-                    <div
-                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-                    >
-                      <img
-                        class="w-12"
-                        src="imgs/home/icon_tiempo.png"
-                        alt="icono_gestiones"
-                      />
-                    </div>
-                    <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
-                      <h2 class="font-bold text-xs">Velocidad como</h2>
-                      <h2 class="font-bold text-xs">prioridad</h2>
-                    </div>
-                  </div>
-                  <div class="w-40 flex flex-col items-center">
-                    <div
-                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-                    >
-                      <img
-                        class="w-12"
-                        src="imgs/home/icon_atencion.png"
-                        alt="icono_gestiones"
-                      />
-                    </div>
-                    <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
-                      <h2 class="font-bold text-xs">Atención</h2>
-                      <h2 class="font-bold text-xs">personalizada</h2>
-                    </div>
+                  <div class="flex flex-col mt-2 text-center">
+                    <h2 class="font-bold text-xs">Sin límite de tiempo</h2>
+                    <h2 class="font-bold text-xs">o de lugar</h2>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="flex flex-col md:flex-row mt-12 justify-center items-center space-y">
-                  <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
-                    <div
-                      class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
-                    >
-                      <img
-                        class="w-12"
-                        src="imgs/home/mejores_tarifas.png"
-                        alt="icono_gestiones"
-                      />
-                    </div>
-                    <div class="flex flex-col mt-2 text-center">
-                      <h2 class="font-bold text-xs">Mejores</h2>
-                      <h2 class="font-bold text-xs">tarifas</h2>
-                    </div>
+              <li class="glide__slide flex justify-center">
+                <div class="w-40 flex flex-col items-center">
+                  <div
+                    class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                  >
+                    <img
+                      class="w-12"
+                      src="imgs/home/icon_tiempo.png"
+                      alt="icono_gestiones"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
+                    <h2 class="font-bold text-xs">Velocidad como</h2>
+                    <h2 class="font-bold text-xs">prioridad</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide flex justify-center">
+                <div class="w-40 flex flex-col items-center">
+                  <div
+                    class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                  >
+                    <img
+                      class="w-12"
+                      src="imgs/home/icon_atencion.png"
+                      alt="icono_gestiones"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-2 text-center mb-8 lg:mb-0">
+                    <h2 class="font-bold text-xs">Atención</h2>
+                    <h2 class="font-bold text-xs">personalizada</h2>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide flex justify-center">
+                <div class="w-40 flex flex-col items-center mb-8 lg:mb-0">
+                  <div
+                    class="w-24 h-24 flex justify-center items-center bg-white rounded-full cursor-pointer"
+                  >
+                    <img
+                      class="w-12"
+                      src="imgs/home/mejores_tarifas.png"
+                      alt="icono_gestiones"
+                    />
+                  </div>
+                  <div class="flex flex-col mt-2 text-center">
+                    <h2 class="font-bold text-xs">Mejores</h2>
+                    <h2 class="font-bold text-xs">tarifas</h2>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="glide__bullets bullets__services" data-glide-el="controls[nav]">
+          <div
+            class="glide__bullets bullets__services"
+            data-glide-el="controls[nav]"
+          >
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
           </div>
         </div>
       </div>
@@ -898,109 +837,129 @@
           mercado.
         </p>
       </div>
-      <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
-        ¡LO QUIERO YA!
-      </button>
+
+      <a href="cotizar.html">
+        <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
+          SOLICITAR COTIZACIÓN
+        </button>
+      </a>
     </div>
 
     <div
-      class="w-full height-444 max-w-screen-xl m-auto flex flex-col lg:flex-row justify-between items-center bg-white relative"
+      class="w-full height-444 max-w-screen-xl m-auto relative flex flex-col lg:flex-row justify-between items-center bg-white relative"
     >
-      <div class="flex flex-col py-12 px-8 px-0">
-        <div class="flex flex-col">
-          <h1 class="text-4xl font-bold"><b>Escríbenos o llámalos al</b></h1>
-          <h1 class="text-4xl font-bold"><b>719-6218</b></h1>
-        </div>
-        <form class="w-full flex flex-col">
-          <div class="flex space-x-3 mb-1">
-            <input
-              class="w-1/2 pl-3 py-2 border"
-              style="border-color: #215d93"
-              type="text"
-              name="name"
-              placeholder="NOMBRE"
-            />
-            <input
-              class="w-1/2 pl-3 py-2 border"
-              style="border-color: #215d93"
-              type="text"
-              name="lastname"
-              placeholder="APELLIDO"
-            />
-          </div>
-          <div class="flex space-x-3 mb-1">
-            <input
-              class="w-1/2 pl-3 py-2 border"
-              style="border-color: #215d93"
-              type="email"
-              name="email"
-              placeholder="E-MAIL"
-            />
-            <input
-              class="w-1/2 pl-3 y-2 border"
-              style="border-color: #215d93"
-              type="number"
-              name="mobileNumber"
-              placeholder="CELULAR"
-            />
-          </div>
-          <textarea
-            class="resize-none border pl-3 pt-3 mb-3"
-            style="border-color: #215d93"
-            rows="5"
-            name="message"
-            placeholder="MENSAJE"
-          ></textarea>
-          <div>
-            <input
-              class="bg-blue px-10 py-3 text-white cursor-pointer"
-              type="submit"
-              value="ENVIAR"
-            />
-          </div>
-        </form>
-      </div>
       <img
-        class="h-full absolute hidden lg:block"
-        style="right: 16rem"
+        class="w-full h-full absolute hidden lg:block"
         src="imgs/home/img_wsp.png"
-        alt="chica_indicando contacto"
+        alt="fondo_contacta_whatsapp"
       />
-      <div class="flex flex-col items-center pb-12" style="align-self: center">
+      <div class="flex flex-col py-12 px-8 px-0" style="z-index: 1">
         <div class="flex flex-col">
-          <h1 class="text-4xl font-bold">Encuéntranos en</h1>
-          <h1 class="text-4xl font-bold"><b>WHATSAPP</b></h1>
+          <h1 class="text-2xl font-bold"><b>Porque ahora somos...</b></h1>
         </div>
-        <div class="w-32 h-32 my-5 bg-black"></div>
-        <div class="text-left pl-8" style="align-self: flex-start">
-          <p>Escanéa este código QR que</p>
-          <p>aparece en esta seccón y</p>
-          <p>añádenos a tus contactos.</p>
+        <div class="my-8 text-blue">
+          <h1 class="text-4xl font-bold"><b>+ Millenials</b></h1>
+          <h1 class="text-4xl font-bold"><b>+ Cercanos</b></h1>
+          <h1 class="text-4xl font-bold"><b>+ Rápidos</b></h1>
+        </div>
+        <h1 class="text-2xl font-bold"><b>Te lo ponemos más facil</b></h1>
+      </div>
+      <div class="flex flex-col items-center pb-8 lg:pb-0" style="z-index: 1">
+        <div class="w-full flex flex-col">
+          <h1 class="text-4xl font-bold leading-0">Ahora también</h1>
+          <h1 class="text-4xl font-bold leading-0">estamos en</h1>
+          <h1 class="text-4xl font-bold leading-0">WHATSAPP</h1>
+        </div>
+        <div class="flex items-center">
+          <div class="w-32 h-32 my-5 bg-black"></div>
+          <div class="text-left pl-8 hidden lg:block">
+            <p>Escanéa este código QR que</p>
+            <p>aparece en esta seccón y</p>
+            <p>añádenos a tus contactos.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <footer class="w-full flex flex-col items-between gradient-bg-blue py-12">
       <div class="w-9/12 flex flex-col m-auto">
-        <div class="w-full flex flex-col lg:flex-row justify-between text-white py-12">
-          <div class="flex justify-start">
-            <div class="flex flex-col">
-              <h1 class="cursor-pointer">SOBRE FASKEX</h1>
-              <div class="flex flex-col mt-5 space-y-2">
-                <p class="cursor-pointer">Nuestra Empresa</p>
-                <p class="cursor-pointer">Registrarse</p>
-                <p class="cursor-pointer">Contáctenos</p>
-                <p class="cursor-pointer">Contacto Comercial</p>
+        <div
+          class="w-full flex flex-col lg:flex-row justify-between text-white py-12"
+        >
+          <div class="flex flex-col lg:flex-row justify-start">
+            <div class="flex">
+              <div class="flex flex-col">
+                <h1 class="cursor-pointer">SOBRE FASKEX</h1>
+                <div class="flex flex-col mt-5 space-y-2">
+                  <a class="cursor-pointer" href="./us.html">Nuestra Empresa</a>
+                  <p class="cursor-pointer" id="registro3">Registrarse</p>
+                  <a class="cursor-pointer" href="./contactenos.html"
+                    >Contáctenos</a
+                  >
+                  <p class="cursor-pointer" id="contacto3">
+                    Contacto Comercial
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col ml-16 lg:ml-32">
+                <h1 class="cursor-pointer">SERVICIOS</h1>
+                <div class="flex flex-col mt-5 space-y-2">
+                  <a class="cursor-pointer" href="./mensajeria.html"
+                    >Mensajería</a
+                  >
+                  <a class="cursor-pointer" href="./courier.html">Courier</a>
+                  <a class="cursor-pointer" href="./gestionesTotales.html"
+                    >Gestiones Totales</a
+                  >
+                  <a class="cursor-pointer" href="./outsourcing.html"
+                    >Outsourcing</a
+                  >
+                  <a class="cursor-pointer" href="#">E-Commerce</a>
+                </div>
               </div>
             </div>
-            <div class="flex flex-col ml-16 lg:ml-32">
-              <h1 class="cursor-pointer">SERVICIOS</h1>
+            <div class="flex flex-col mt-12 lg:mt-0 lg:ml-32">
+              <h1 class="cursor-pointer">SIGUENOS</h1>
               <div class="flex flex-col mt-5 space-y-2">
-                <p class="cursor-pointer">Mensajería</p>
-                <p class="cursor-pointer">Courier</p>
-                <p class="cursor-pointer">Gestiones Totales</p>
-                <p class="cursor-pointer">Outsourcing</p>
-                <p class="cursor-pointer">E-Commerce</p>
+                <p class="cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/faskexexpres/"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-facebook fondo"></i> Facebook
+                  </a>
+                </p>
+
+                <p class="cursor-pointer">
+                  <a
+                    href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-linkedin fondo"></i> Linkedin
+                  </a>
+                </p>
+
+                <p class="cursor-pointer">
+                  <a
+                    href="https://twitter.com/Faskex"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-twitter fondo"></i> Twitter
+                  </a>
+                </p>
+
+                <p class="cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/faskexexpres/"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-youtube fondo"></i> Youtube
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -1008,44 +967,14 @@
             <p>Sede Principal: Jr. General Cordova 1857</p>
             <p>LINCE- LIMA - PERÚ</p>
             <p>E-mail: ventas@faskex.com</p>
-            <div class="flex space-x-3 mt-3">
-              <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/facebook.png"
-                  alt="icono_facebook"
-                />
-              </a>
-              <a href="https://twitter.com/Faskex" target="_BLANK" rel="noopener noreferrer">
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/twitter.png"
-                  alt="icono_twitter"
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name" target="_BLANK" rel="noopener noreferrer">
-                <img
-                  class="w-8 h-8"
-                  src="imgs/icons_footer/linkedin.png"
-                  alt="icono_linkedin"
-                />
-              </a>
+            <div class="flex space-x-3 mt-2">
+              <h1 class="font-bold text-3xl">
+                <i class="material-icons">phone_android</i><b> 963 348 230</b>
+              </h1>
             </div>
           </div>
         </div>
-        <div class="w-full flex justify-end text-white pb-5">
-          <div>
-            <p>Centro de Atención al Cliente:</p>
-            <div class="flex items-center space-x-3">
-              <img
-                class="w-10 bg-white rounded-full p-2"
-                src="imgs/atencion_al_cliente/icon_phone.png"
-                alt="icono_telefono"
-              />
-              <h1 class="font-bold text-4xl"><b>963 348 230</b></h1>
-            </div>
-          </div>
-        </div>
+
         <p class="text-white text-center mt-12">
           FASKEX.COM &copy;2020. Todos los derechos reservados.
         </p>
@@ -1058,13 +987,105 @@
     <script type="text/javascript" src="./js/modalComercial.js"></script>
     <script type="text/javascript" src="./js/modalRegiestro.js"></script>
     <script type="text/javascript" src="./js/glide.min.js"></script>
+    <script type="text/javascript" src="./js/footerScript.js"></script>
 
+    <script type="text/javascript">
+      /*==============================================================================
+                           sidebar | abrir modal registro 
+===============================================================================*/
+
+      $(document).ready(function () {
+        $("#modalRegistro-open2").click(function () {
+          $("#modalRegistro").css("display", "block");
+          $("#sideBar").css("display", "none");
+          $(".dark").css("display", "none");
+          $("#sideBar").animate({ right: "-100%" }, "slow");
+          $("#sideBar").css("display", "none");
+        });
+      });
+
+      /*==============================================================================
+                           ridireciones 
+===============================================================================*/
+
+      $(document).ready(function () {
+        $("#mensajeria").click(function () {
+          window.location.href = "mensajeria.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#courier").click(function () {
+          window.location.href = "courier.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#gestiones").click(function () {
+          window.location.href = "gestionesTotales.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#mensajeria2").click(function () {
+          window.location.href = "mensajeria.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#courier2").click(function () {
+          window.location.href = "courier.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#gestiones2").click(function () {
+          window.location.href = "gestionesTotales.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#outsourcing").click(function () {
+          window.location.href = "outsourcing.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#outsourcing2").click(function () {
+          window.location.href = "outsourcing.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#ecommerce").click(function () {
+          window.location.href = "ecommerce.html";
+        });
+      });
+
+      $(document).ready(function () {
+        $("#ecommerce2").click(function () {
+          window.location.href = "ecommerce.html";
+        });
+      });
+    </script>
     <script>
       /*====================================================================================
                                CAROUSEL
 ======================================================================================*/
-      document.querySelectorAll(".glide").forEach((item) => {
-        new Glide(item).mount();
+      document.querySelectorAll(".glide").forEach((item, index) => {
+        if (index === 0) {
+          new Glide(item).mount();
+        } else {
+          new Glide(item, {
+            type: "carousel",
+            perView: 3,
+            breakpoints: {
+              600: {
+                perView: 1,
+              },
+            },
+          }).mount();
+        }
       });
     </script>
 
