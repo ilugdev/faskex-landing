@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/modal_contactoComercial.css" />
     <link rel="stylesheet" href="css/registro.css" />
     <link rel="stylesheet" href="css/hoverEfects.css" />
-   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -20,25 +20,24 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
-<style>
-    .fondo{
-      background:white;
-      color:#0086BE;
-    }
+    <style>
+      .fondo {
+        background: white;
+        color: #0086be;
+      }
 
-    .fondo:hover {
+      .fondo:hover {
         opacity: 0.7;
-    }
+      }
 
-    .fa {
-      padding: 4px;
-      font-size: 10px;
-      width: 16px;
-      text-align: center;
-      text-decoration: none;
-    }
-</style>
-
+      .fa {
+        padding: 4px;
+        font-size: 10px;
+        width: 16px;
+        text-align: center;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body class="bg-white">
     <!--==============================================================================
@@ -86,12 +85,14 @@
                   id="typeDocument"
                   required
                 >
-                    <option value="" disabled selected> * Tipo de documento</option>
-                    <option value="DNI">DNI</option>
-                    <option value="CE">CARNET DE EXTRANJERIA</option>
-                    <option value="PASAPORTE">PASAPORTE</option>
+                  <option value="" disabled selected>
+                    * Tipo de documento
+                  </option>
+                  <option value="DNI">DNI</option>
+                  <option value="CE">CARNET DE EXTRANJERIA</option>
+                  <option value="PASAPORTE">PASAPORTE</option>
                 </select>
-                
+
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
                   type="text"
@@ -102,8 +103,8 @@
                   maxlength="8"
                   style="color: white"
                 />
-              </div>   
-              
+              </div>
+
               <input
                 class="w-full border border-white mt-3 pl-2 py-1"
                 type="text"
@@ -124,7 +125,7 @@
                   id="numberTelephone"
                   style="color: white"
                 />
-                
+
                 <input
                   class="w-1/2 border border-white pl-2 py-1"
                   type="text"
@@ -157,7 +158,7 @@
                   style="color: white"
                 />
               </div>
-              
+
               <div class="w-full flex space-x-3 mt-3">
                 <div class="w-1/2 flex">
                   <input
@@ -220,7 +221,6 @@
         </div>
       </div>
     </div>
-
 
     <!--==============================================================================
                                 MODAL
@@ -344,9 +344,9 @@
 =================================================================================-->
     <div class="dark"></div>
     <div class="bg-white w-full lg:w-1/3 h-screen sideBar" id="sideBar">
-      <header class="w-full flex justify-between px-20 lg:py-3">
+      <header class="w-full hidden lg:flex justify-between px-20 lg:py-3">
         <div class="w-full flex justify-end">
-          <a class="py-8" id="menu_close" style="cursor: pointer">
+          <a class="menu_close py-8" style="cursor: pointer">
             <img
               class="w-10"
               src="imgs/menu/icon_cerrar_menu.png"
@@ -355,11 +355,18 @@
           </a>
         </div>
       </header>
-      <div class="lg:px-20 items-center content-center">
-        <img class="m-auto lg:w-56" src="imgs/home/logo.png" alt="logo" />
+      <div class="flex m-auto mx-10 lg:px-20 items-center justify-between">
+        <img class="w-40 lg:w-56" src="imgs/home/logo.png" alt="logo" />
+        <a class="menu_close lg:hidden py-8" style="cursor: pointer">
+          <img
+            class="w-10"
+            src="imgs/menu/icon_cerrar_menu.png"
+            alt="icono_menu_cerrar"
+          />
+        </a>
       </div>
 
-      <div class="m-auto mx-20 lg:mx-0 lg:px-20">
+      <div class="m-auto mx-10 lg:mx-0 lg:px-20">
         <ul class="w-full py-5">
           <li class="w-full py-2">
             <a
@@ -367,8 +374,7 @@
               class="w-full text-left"
               style="cursor: pointer"
             >
-              <i class="material-icons" id="arrow_list">arrow_forward</i>
-              <span class="ml-8">HOME</span>
+              HOME
               <hr />
             </a>
           </li>
@@ -406,7 +412,7 @@
           </li>
         </ul>
 
-        <div>
+        <div class="mt-8">
           <p class="text-sm">
             Queremos ayudarte. Comunícate con nosotros.¡SIN COMPROMISO!
           </p>
@@ -420,12 +426,11 @@
           </h1>
         </div>
 
-        <div class="flex  space-x-12 my-4">
+        <div class="flex justify-between mt-10">
           <a
             class="flex items-center font-bold text-black"
-            style="font-size: 0.6rem"
+            style="font-size: 0.9rem"
             id="modalRegistro-open2"
-            
           >
             <img
               class="mr-1"
@@ -436,7 +441,7 @@
           </a>
           <a
             class="flex items-center font-bold text-black"
-            style="font-size: 0.6rem"
+            style="font-size: 0.9rem"
             href="login.html"
           >
             <img
@@ -520,7 +525,7 @@
         </p>
 
         <div
-          class="flex flex-col lg:flex-row items-center justify-between mt-10 space-y-5 lg:space-y-0"
+          class="flex items-center flex-wrap justify-between mt-10 lg:space-y-0"
         >
           <div class="w-32 flex flex-col items-center">
             <div
@@ -528,9 +533,14 @@
               style="width: 121px; height: 121px"
               id="urgente"
             >
-              <h3 class="urgente-text font-bold text-xs absolute">Entrega<br>24 Hrs</h3>
-
-              <img src="imgs/mensajeria/icon_u.png" alt="icono_mensajeria" class="urgente-img"/>
+              <h3 class="urgente-text font-bold text-xs absolute">
+                Entrega<br />24 Hrs
+              </h3>
+              <img
+                src="imgs/mensajeria/icon_u.png"
+                alt="icono_mensajeria"
+                class="urgente-img"
+              />
             </div>
             <div class="flex flex-col mt-2 text-center">
               <h2 class="font-bold text-xs">URGENTE</h2>
@@ -542,34 +552,52 @@
               style="width: 121px; height: 121px"
               id="interdiario"
             >
-              <h3 class="interdiario-text font-bold text-xs absolute">Entrega<br>48 Hrs</h3>
-              <img src="imgs/mensajeria/icon_i.png" alt="icono_mensajeria" class="interdiario-img"/>
+              <h3 class="interdiario-text font-bold text-xs absolute">
+                Entrega<br />48 Hrs
+              </h3>
+              <img
+                src="imgs/mensajeria/icon_i.png"
+                alt="icono_mensajeria"
+                class="interdiario-img"
+              />
             </div>
             <div class="flex flex-col mt-2 text-center">
               <h2 class="font-bold text-xs">INTERDIARIO</h2>
             </div>
           </div>
-          <div class="w-32 flex flex-col items-center">
+          <div class="w-32 flex flex-col items-center mt-8">
             <div
               class="flex justify-center items-center bg-white rounded-full hover:bg-blue-700"
               style="width: 121px; height: 121px"
               id="regular"
             >
-              <h3 class="regular-text font-bold text-xs absolute">Entrega<br>73 Hrs</h3>
-              <img src="imgs/mensajeria/icon_r.png" alt="icono_mensajeria" class="regular-img"/>
+              <h3 class="regular-text font-bold text-xs absolute">
+                Entrega<br />73 Hrs
+              </h3>
+              <img
+                src="imgs/mensajeria/icon_r.png"
+                alt="icono_mensajeria"
+                class="regular-img"
+              />
             </div>
             <div class="flex flex-col mt-2 text-center">
               <h2 class="font-bold text-xs">REGULAR</h2>
             </div>
           </div>
-          <div class="w-32 flex flex-col items-center">
+          <div class="w-32 flex flex-col items-center mt-8">
             <div
               class="flex justify-center items-center bg-white rounded-full hover:bg-blue-700"
               style="width: 121px; height: 121px"
               id="basico"
             >
-              <h3 class="basico-text font-bold text-xs absolute">Entrega<br>96 Hrs</h3>
-              <img src="imgs/mensajeria/icon_b.png" alt="icono_mensajeria" class="basico-img"/>
+              <h3 class="basico-text font-bold text-xs absolute">
+                Entrega<br />96 Hrs
+              </h3>
+              <img
+                src="imgs/mensajeria/icon_b.png"
+                alt="icono_mensajeria"
+                class="basico-img"
+              />
             </div>
             <div class="flex flex-col mt-2 text-center">
               <h2 class="font-bold text-xs">BÁSICO</h2>
@@ -667,75 +695,102 @@
         </p>
       </div>
       <a href="cotizar.html">
-         <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
-           SOLICITAR COTIZACIÓN
-         </button>
+        <button class="px-12 py-2 mt-12 lg:mt-0 bg-blue text-white">
+          SOLICITAR COTIZACIÓN
+        </button>
       </a>
     </div>
 
-
     <footer class="w-full flex flex-col items-between gradient-bg-blue py-12">
       <div class="w-9/12 flex flex-col m-auto">
-        <div class="w-full flex flex-col lg:flex-row justify-between text-white py-12">
-          <div class="flex justify-start">
-            <div class="flex flex-col">
-              <h1 class="cursor-pointer">SOBRE FASKEX</h1>
-              <div class="flex flex-col mt-5 space-y-2">
-                <a class="cursor-pointer" href="./us.html">Nuestra Empresa</a>
-                <p class="cursor-pointer" id="registro3">Registrarse</p>
-                <a class="cursor-pointer" href="./contactenos.html">Contáctenos</a>
-                <p class="cursor-pointer" id="contacto3">Contacto Comercial</p>
+        <div
+          class="w-full flex flex-col lg:flex-row justify-between text-white py-12"
+        >
+          <div class="flex flex-col lg:flex-row justify-start">
+            <div class="flex">
+              <div class="flex flex-col">
+                <h1 class="cursor-pointer">SOBRE FASKEX</h1>
+                <div class="flex flex-col mt-5 space-y-2">
+                  <a class="cursor-pointer" href="./us.html">Nuestra Empresa</a>
+                  <p class="cursor-pointer" id="registro3">Registrarse</p>
+                  <a class="cursor-pointer" href="./contactenos.html"
+                    >Contáctenos</a
+                  >
+                  <p class="cursor-pointer" id="contacto3">
+                    Contacto Comercial
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col ml-16 lg:ml-32">
+                <h1 class="cursor-pointer">SERVICIOS</h1>
+                <div class="flex flex-col mt-5 space-y-2">
+                  <a class="cursor-pointer" href="./mensajeria.html"
+                    >Mensajería</a
+                  >
+                  <a class="cursor-pointer" href="./courier.html">Courier</a>
+                  <a class="cursor-pointer" href="./gestionesTotales.html"
+                    >Gestiones Totales</a
+                  >
+                  <a class="cursor-pointer" href="./outsourcing.html"
+                    >Outsourcing</a
+                  >
+                  <a class="cursor-pointer" href="#">E-Commerce</a>
+                </div>
               </div>
             </div>
-            <div class="flex flex-col ml-16 lg:ml-32">
-              <h1 class="cursor-pointer">SERVICIOS</h1>
-              <div class="flex flex-col mt-5 space-y-2">
-                <a class="cursor-pointer" href="./mensajeria.html">Mensajería</a>
-                <a class="cursor-pointer" href="./courier.html">Courier</a>
-                <a class="cursor-pointer" href="./gestionesTotales.html">Gestiones Totales</a>
-                <a class="cursor-pointer" href="./outsourcing.html">Outsourcing</a>
-                <a class="cursor-pointer" href="#">E-Commerce</a>
-              </div>
-            </div>
-            <div class="flex flex-col ml-16 lg:ml-32">
+            <div class="flex flex-col mt-12 lg:mt-0 lg:ml-32">
               <h1 class="cursor-pointer">SIGUENOS</h1>
               <div class="flex flex-col mt-5 space-y-2">
                 <p class="cursor-pointer">
-                   <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
-                      <i class="fa fa-facebook fondo"></i> Facebook
-                    </a>
+                  <a
+                    href="https://www.facebook.com/faskexexpres/"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-facebook fondo"></i> Facebook
+                  </a>
                 </p>
-                
-                 <p class="cursor-pointer">
-                   <a href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name" target="_BLANK" rel="noopener noreferrer">
-                      <i class="fa fa-linkedin fondo"></i> Linkedin
-                    </a>
-                </p>               
 
                 <p class="cursor-pointer">
-                   <a href="https://twitter.com/Faskex" target="_BLANK" rel="noopener noreferrer">
-                      <i class="fa fa-twitter fondo"></i> Twitter
-                    </a>
-                </p>       
-                
-                 <p class="cursor-pointer">
-                   <a href="https://www.facebook.com/faskexexpres/" target="_BLANK" rel="noopener noreferrer">
-                      <i class="fa fa-youtube fondo"></i> Youtube
-                    </a>
-                </p>                
+                  <a
+                    href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-linkedin fondo"></i> Linkedin
+                  </a>
+                </p>
+
+                <p class="cursor-pointer">
+                  <a
+                    href="https://twitter.com/Faskex"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-twitter fondo"></i> Twitter
+                  </a>
+                </p>
+
+                <p class="cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/faskexexpres/"
+                    target="_BLANK"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa fa-youtube fondo"></i> Youtube
+                  </a>
+                </p>
               </div>
-            </div> 
-           
+            </div>
           </div>
           <div class="flex flex-col mt-12 lg:mt-0">
             <p>Sede Principal: Jr. General Cordova 1857</p>
             <p>LINCE- LIMA - PERÚ</p>
             <p>E-mail: ventas@faskex.com</p>
             <div class="flex space-x-3 mt-2">
-
-              <h1 class="font-bold text-3xl"><i class="material-icons">phone_android</i><b> 963 348 230</b></h1>
-
-
+              <h1 class="font-bold text-3xl">
+                <i class="material-icons">phone_android</i><b> 963 348 230</b>
+              </h1>
             </div>
           </div>
         </div>
@@ -754,22 +809,21 @@
     <script type="text/javascript" src="./js/footerScript.js"></script>
 
     <script>
-/*==============================================================================
+      /*==============================================================================
                            sidebar | abrir modal registro 
-===============================================================================*/    
-    
-    $(document).ready(function () {
+===============================================================================*/
+
+      $(document).ready(function () {
         $("#modalRegistro-open2").click(function () {
-             $("#modalRegistro").css("display", "block");
-             $("#sideBar").css("display", "none");
-             $(".dark").css("display", "none");
-             $("#sideBar").animate({right: '-100%'}, "slow");
-             $("#sideBar").css("display", "none");  
+          $("#modalRegistro").css("display", "block");
+          $("#sideBar").css("display", "none");
+          $(".dark").css("display", "none");
+          $("#sideBar").animate({ right: "-100%" }, "slow");
+          $("#sideBar").css("display", "none");
         });
-    });
-        
-    
-/*====================================================================================
+      });
+
+      /*====================================================================================
                                VALIDACION DE DATOS 
 ======================================================================================*/
 

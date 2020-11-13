@@ -12,8 +12,12 @@
   background: linear-gradient(#215d93, #0094d2);
 }
 
+.main-carousel-data {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
-  .carousel-margin-left {
+  .main-carousel-data {
     margin-left: calc(100% - 50%);
   }
   .header-height {

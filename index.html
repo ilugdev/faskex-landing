@@ -345,9 +345,9 @@
 =================================================================================-->
     <div class="dark"></div>
     <div class="bg-white w-full lg:w-1/3 h-screen sideBar" id="sideBar">
-      <header class="w-full flex justify-between px-20 lg:py-3">
+      <header class="w-full hidden lg:flex justify-between px-20 lg:py-3">
         <div class="w-full flex justify-end">
-          <a class="py-8" id="menu_close" style="cursor: pointer">
+          <a class="menu_close py-8" style="cursor: pointer">
             <img
               class="w-10"
               src="imgs/menu/icon_cerrar_menu.png"
@@ -356,11 +356,18 @@
           </a>
         </div>
       </header>
-      <div class="lg:px-20 items-center content-center">
-        <img class="m-auto lg:w-56" src="imgs/home/logo.png" alt="logo" />
+      <div class="flex m-auto mx-10 lg:px-20 items-center justify-between">
+        <img class="w-40 lg:w-56" src="imgs/home/logo.png" alt="logo" />
+        <a class="menu_close lg:hidden py-8" style="cursor: pointer">
+          <img
+            class="w-10"
+            src="imgs/menu/icon_cerrar_menu.png"
+            alt="icono_menu_cerrar"
+          />
+        </a>
       </div>
 
-      <div class="m-auto mx-20 lg:mx-0 lg:px-20">
+      <div class="m-auto mx-10 lg:mx-0 lg:px-20">
         <ul class="w-full py-5">
           <li class="w-full py-2">
             <a
@@ -407,7 +414,7 @@
           </li>
         </ul>
 
-        <div>
+        <div class="mt-8">
           <p class="text-sm">
             Queremos ayudarte. Comunícate con nosotros.¡SIN COMPROMISO!
           </p>
@@ -421,10 +428,10 @@
           </h1>
         </div>
 
-        <div class="flex space-x-12 my-4">
+        <div class="flex justify-between mt-10">
           <a
             class="flex items-center font-bold text-black"
-            style="font-size: 0.6rem"
+            style="font-size: 0.9rem"
             id="modalRegistro-open2"
           >
             <img
@@ -436,7 +443,7 @@
           </a>
           <a
             class="flex items-center font-bold text-black"
-            style="font-size: 0.6rem"
+            style="font-size: 0.9rem"
             href="login.html"
           >
             <img
@@ -506,7 +513,9 @@
                 src="imgs/banners_home/mensajeria.png"
                 alt="imagen_slider"
               />
-              <div class="absolute" style="margin-left: calc(100% - 50%)">
+              <div
+                class="flex flex-col space-y-3 lg:space-y-0 absolute main-carousel-data"
+              >
                 <div class="mb-3">
                   <h1 class="font-bold text-4xl leading-none">
                     <b>Llegamos rápido</b>
