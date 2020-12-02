@@ -1,0 +1,114 @@
+    /* Super Small (ssm) */
+    @media (max-width: 639px) { 
+      .bg_modalConten{
+        height: 92vh;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 12px 12px rgba(0, 0, 0, 0.3);
+     } 
+
+     .close_btn{
+      z-index: 9;
+      position: relative;
+      left: 90%;
+      margin-top: -4%;
+         z-index: 9999!important;
+      
+  }
+
+
+}
+
+/* Small (sm)  */
+@media (min-width: 640px) { 
+       .bg_modalConten{
+        height: 128vh;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 12px 12px rgba(0, 0, 0, 0.3);
+     } 
+
+     .close_btn{
+      z-index: 9;
+      position: relative;
+      left: 90%;
+      margin-top: 0%;
+         z-index: 9999!important;
+
+  }
+
+ }
+
+/* Medium (md) */
+@media (min-width: 768px) { 
+    .bg_modalConten{
+        height:50vh;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 12px 12px rgba(0, 0, 0, 0.3);
+     } 
+
+     .close_btn{
+      z-index: 9;
+      position: relative;
+      left: 90%;
+      margin-top: 0%;
+      z-index: 9999!important;
+
+  }
+
+ }
+
+  /* Large (lg) */
+  @media (min-width: 1024px) { 
+     .bg_modalConten{
+        height: 72.4vh;
+        border-radius: 1rem;
+        box-shadow: 1px 4px 12px 12px rgba(0, 0, 0, 0.3);
+     }    
+
+     .close_btn{
+      z-index: 9;
+      position: relative;
+      left: 90%;
+      margin-top: 0%;
+         z-index: 9999!important;
+
+  }
+
+
+   }
+
+  /* Extra Large (xl) */
+  @media (min-width: 1280px) { 
+       .bg_modalConten{
+        height: 72.4vh;
+          border-radius: 1rem;
+          box-shadow: 1px 4px 12px 12px rgba(0, 0, 0, 0.3);
+       } 
+
+       .close_btn{
+         position: relative;
+         left: 90%;
+         margin-top: 0%;
+         z-index: 9999!important;
+
+     }
+
+   }
+
+   .swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #0D80BB;
+    font-size: 12px;
+    border: none;
+ }
+
+    .bg-modal{
+       background-color: rgba(0, 0, 0, 0.6);
+       z-index: 9998!important;
+    }
+
+     .img_modal{
+        position: absolute;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem; 
+    }

@@ -344,8 +344,8 @@
                                 MENU SIDE BAR  
 =================================================================================-->
     <div class="dark"></div>
-    <div class="bg-white w-full lg:w-1/3 h-screen sideBar" id="sideBar">
-      <header class="w-full hidden lg:flex justify-between px-20 lg:py-3">
+    <div class="bg-white w-full md:w-1/3 h-screen sideBar" id="sideBar">
+    <header class="w-full hidden lg:flex justify-between px-20 lg:py-3">
         <div class="w-full flex justify-end">
           <a class="menu_close py-8" style="cursor: pointer">
             <img
@@ -580,10 +580,14 @@
                     />
                     <div class="flex flex-col mt-2 text-center">
                       <h1 class="font-bold text-blue mb-2">MENSAJERÍA</h1>
-                      <p class="text-xs">
-                        Envíe sus documentos a nivel local y
-                      </p>
-                      <p class="text-xs">nacional de manera rápida y segura.</p>
+                      <div class="h-10">
+                        <p class="text-xs">
+                          Envíe sus documentos a nivel local y
+                        </p>
+                        <p class="text-xs">
+                          nacional de manera rápida y segura.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <button
@@ -607,12 +611,14 @@
                     />
                     <div class="flex flex-col mt-2 text-center">
                       <h1 class="font-bold text-blue mb-2">COURIER</h1>
-                      <p class="text-xs">
-                        Envíe paquetes y encomiendas a nuestors
-                      </p>
-                      <p class="text-xs">
-                        destionos del norte, centro y sur del país.
-                      </p>
+                      <div class="h-10">
+                        <p class="text-xs">
+                          Envíe paquetes y encomiendas a nuestors
+                        </p>
+                        <p class="text-xs">
+                          destionos del norte, centro y sur del país.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <button
@@ -638,8 +644,12 @@
                       <h1 class="font-bold text-blue mb-2">
                         GESTIONES TOTALES
                       </h1>
-                      <p class="text-xs">Externalice con nosotros la Gestión</p>
-                      <p class="text-xs">de sus trámites.</p>
+                      <div class="h-10">
+                        <p class="text-xs">
+                          Externalice con nosotros la Gestión
+                        </p>
+                        <p class="text-xs">de sus trámites.</p>
+                      </div>
                     </div>
                   </div>
                   <button
@@ -663,10 +673,14 @@
                     />
                     <div class="flex flex-col mt-2 text-center">
                       <h1 class="font-bold text-blue mb-2">OUTSOURCING</h1>
-                      <p class="text-xs">
-                        Envíe sus documentos a nivel local y
-                      </p>
-                      <p class="text-xs">nacional de manera rápida y segura.</p>
+                      <div class="h-10">
+                        <p class="text-xs">
+                          Envíe sus documentos a nivel local y
+                        </p>
+                        <p class="text-xs">
+                          nacional de manera rápida y segura.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <button
@@ -690,12 +704,14 @@
                     />
                     <div class="flex flex-col mt-2 text-center">
                       <h1 class="font-bold text-blue mb-2">E-COMMERCE</h1>
-                      <p class="text-xs">
-                        Envíe paquetes y encomiendas a nuestors
-                      </p>
-                      <p class="text-xs">
-                        destionos del norte, centro y sur del país.
-                      </p>
+                      <div class="h-10">
+                        <p class="text-xs">
+                          Envíe paquetes y encomiendas a nuestors
+                        </p>
+                        <p class="text-xs">
+                          destionos del norte, centro y sur del país.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <button
@@ -862,7 +878,7 @@
         src="imgs/home/img_wsp.png"
         alt="fondo_contacta_whatsapp"
       />
-      <div class="flex flex-col py-12 px-8 px-0" style="z-index: 1">
+      <div class="flex flex-col py-12 px-8" style="z-index: 1">
         <div class="flex flex-col">
           <h1 class="text-2xl font-bold"><b>Porque ahora somos...</b></h1>
         </div>
@@ -873,7 +889,7 @@
         </div>
         <h1 class="text-2xl font-bold"><b>Te lo ponemos más facil</b></h1>
       </div>
-      <div class="flex flex-col items-center pb-8 lg:pb-0" style="z-index: 1">
+      <div class="flex flex-col items-center py-12 px-8" style="z-index: 1">
         <div class="w-full flex flex-col">
           <h1 class="text-4xl font-bold leading-0">Ahora también</h1>
           <h1 class="text-4xl font-bold leading-0">estamos en</h1>
@@ -893,93 +909,92 @@
     <footer class="w-full flex flex-col items-between gradient-bg-blue py-12">
       <div class="w-9/12 flex flex-col m-auto">
         <div
-          class="w-full flex flex-col lg:flex-row justify-between text-white py-12"
+          class="w-full flex flex-col lg:flex-row justify-between lg:justify-start text-white py-12"
         >
           <div class="flex flex-col lg:flex-row justify-start">
-            <div class="flex">
+            <div class="flex justify-center px-24 lg:px-0">
               <div class="flex flex-col">
-                <h1 class="cursor-pointer">SOBRE FASKEX</h1>
+                <h1 class="cursor-pointer text-sm">SOBRE FASKEX</h1>
                 <div class="flex flex-col mt-5 space-y-2">
-                  <a class="cursor-pointer" href="./us.html">Nuestra Empresa</a>
-                  <p class="cursor-pointer" id="registro3">Registrarse</p>
-                  <a class="cursor-pointer" href="./contactenos.html"
+                  <a class="cursor-pointer text-sm" href="./us.html">Nuestra Empresa</a>
+                  <p class="cursor-pointer text-sm" id="registro3">Registrarse</p>
+                  <a class="cursor-pointer text-sm" href="./contactenos.html"
                     >Contáctenos</a
                   >
-                  <p class="cursor-pointer" id="contacto3">
+                  <p class="cursor-pointer text-sm" id="contacto3">
                     Contacto Comercial
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col ml-16 lg:ml-32">
-                <h1 class="cursor-pointer">SERVICIOS</h1>
+              <div class="flex flex-col ml-3 md:ml-16 lg:ml-32">
+                <h1 class="cursor-pointer text-sm">SERVICIOS</h1>
                 <div class="flex flex-col mt-5 space-y-2">
-                  <a class="cursor-pointer" href="./mensajeria.html"
+                  <a class="cursor-pointer text-sm" href="./mensajeria.html"
                     >Mensajería</a
                   >
-                  <a class="cursor-pointer" href="./courier.html">Courier</a>
-                  <a class="cursor-pointer" href="./gestionesTotales.html"
+                  <a class="cursor-pointer text-sm" href="./courier.html">Courier</a>
+                  <a class="cursor-pointer text-sm" href="./gestionesTotales.html"
                     >Gestiones Totales</a
                   >
-                  <a class="cursor-pointer" href="./outsourcing.html"
+                  <a class="cursor-pointer text-sm" href="./outsourcing.html"
                     >Outsourcing</a
                   >
-                  <a class="cursor-pointer" href="#">E-Commerce</a>
+                  <a class="cursor-pointer text-sm" href="#">E-Commerce</a>
                 </div>
               </div>
-            </div>
-            <div class="flex flex-col mt-12 lg:mt-0 lg:ml-32">
-              <h1 class="cursor-pointer">SIGUENOS</h1>
-              <div class="flex flex-col mt-5 space-y-2">
-                <p class="cursor-pointer">
+              <div class="flex flex-col ml-3 md:ml-16 lg:ml-32">
+                <h1 class="cursor-pointer text-sm">SIGUENOS</h1>
+                <div class="flex flex-col mt-5 space-y-2">
                   <a
+                  class="flex space-x-2"
                     href="https://www.facebook.com/faskexexpres/"
                     target="_BLANK"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa fa-facebook fondo"></i> Facebook
+                    <i class="fa fa-facebook fondo"></i> <span class="text-sm"> Facebook</span>
                   </a>
-                </p>
 
-                <p class="cursor-pointer">
                   <a
+                  class="flex space-x-2"
                     href="https://www.linkedin.com/in/faskex-express-01a9a7104/?trk=hp-identity-name"
                     target="_BLANK"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa fa-linkedin fondo"></i> Linkedin
+                    <i class="fa fa-linkedin fondo"></i> <span class="text-sm"> Linkedin</span>
                   </a>
-                </p>
 
-                <p class="cursor-pointer">
                   <a
+                  class="flex space-x-2"
                     href="https://twitter.com/Faskex"
                     target="_BLANK"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa fa-twitter fondo"></i> Twitter
+                    <i class="fa fa-twitter fondo"></i> <span class="text-sm"> Twitter</span>
                   </a>
-                </p>
 
-                <p class="cursor-pointer">
-                  <a
+                  <aa
+                  class="flex space-x-2"
                     href="https://www.facebook.com/faskexexpres/"
                     target="_BLANK"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa fa-youtube fondo"></i> Youtube
+                    <i class="fa fa-youtube fondo"></i> <span class="text-sm"> Youtube</span>
                   </a>
-                </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col mt-12 lg:mt-0">
-            <p>Sede Principal: Jr. General Cordova 1857</p>
-            <p>LINCE- LIMA - PERÚ</p>
-            <p>E-mail: ventas@faskex.com</p>
-            <div class="flex space-x-3 mt-2">
-              <h1 class="font-bold text-3xl">
-                <i class="material-icons">phone_android</i><b> 963 348 230</b>
-              </h1>
+            <div class="flex justify-center">
+              <div class="flex flex-col mt-12 md:ml-32 lg:mt-0">
+                <p>Sede Principal: Jr. General Cordova 1857</p>
+                <p>LINCE- LIMA - PERÚ</p>
+                <p>E-mail: ventas@faskex.com</p>
+                <div class="flex space-x-3 mt-2">
+                  <h1 class="font-bold text-3xl">
+                    <i class="material-icons">phone_android</i
+                    ><b> 963 348 230</b>
+                  </h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>

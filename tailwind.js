@@ -258,6 +258,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "Neometric",
         "Helvetica",
         "OpenSans-Regular",
         "system-ui",
@@ -275,6 +276,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
+        "Neometric",
         "fontbold",
         "Georgia",
         "Cambria",

@@ -1,7 +1,13 @@
 @font-face {
-  font-family: geometric_415_black;
-  src: url("../font/geometric_415_black.ttf");
+  font-family: Neometric;
+  src: url("../font/NEOMETRIC-EXTRA-BOLD-(BOLD).OTF");
   font-weight: bold;
+}
+
+@font-face {
+  font-family: Neometric;
+  src: url("../font/NEOMETRIC-REGULAR.OTF");
+  font-weight: normal;
 }
 
 .header-height {
@@ -38,10 +44,6 @@
   .height-444 {
     height: 444px;
   }
-}
-
-b {
-  font-family: geometric_415_black;
 }
 
 @import "tailwindcss/base";
